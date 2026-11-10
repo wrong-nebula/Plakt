@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technique labels</title>
+<style>
+:root{
+  --bg:#f6f5f2;--surface:#fff;--ink:#1b1b1a;--muted:#6c6a66;--line:#dedbd5;--tile:#ebe8e2;
+  --yes:#1f7a4d;--yes-soft:#e3f2ea;--no:#a8423a;--no-soft:#f6e4e2;--unsure:#9a6a10;--unsure-soft:#f6eedb;--focus:#2d5bd7;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#151514;--surface:#1f1f1d;--ink:#eceae5;--muted:#9c9992;--line:#34332f;--tile:#2a2926;
+  --yes:#5fc28f;--yes-soft:#1d3328;--no:#e27d73;--no-soft:#3a2321;--unsure:#e0b25a;--unsure-soft:#362d1b;--focus:#7ea2ff;
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif}
+header{position:sticky;top:0;z-index:2;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 20px 12px}
+.top{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.eyebrow{color:var(--muted);font-size:13px;letter-spacing:.02em}
+h1{margin:2px 0 2px;font-size:24px;line-height:1.15;font-weight:650}
+.definition{margin:0;max-width:60ch;color:var(--ink)}
+.side{display:flex;flex-direction:column;align-items:flex-end;gap:8px;min-width:220px}
+.meter{width:220px;height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.meter>i{display:block;height:100%;background:var(--yes);width:0;transition:width .2s}
+.nav{display:flex;gap:6px}
+button{font:inherit;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:5px 11px;cursor:pointer}
+button:hover{border-color:var(--muted)}
+button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+button.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:10px;color:var(--muted);font-size:13px}
+.tools kbd{font:12px ui-monospace,Menlo,monospace;border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 4px;color:var(--ink)}
+.status{margin-left:auto}
+.status.error{color:var(--no)}
+main{padding:16px 20px 60px;display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:12px}
+.card{background:var(--surface);border:2px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;outline:none}
+.card:focus-visible,.card.focused{box-shadow:0 0 0 3px var(--focus)}
+.card.yes{border-color:var(--yes);background:var(--yes-soft)}
+.card.no{border-color:var(--no);background:var(--no-soft)}
+.card.unsure{border-color:var(--unsure);background:var(--unsure-soft)}
+.card.no img{opacity:.55}
+.frame{aspect-ratio:3/4;background:var(--tile);display:flex;align-items:center;justify-content:center;cursor:pointer}
+.frame img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.choices{display:grid;grid-template-columns:1fr 1fr 40px;gap:4px;padding:6px}
+.choices button{padding:4px 0;font-size:13px;border-radius:6px}
+.choices button[aria-pressed=true][data-label=yes]{background:var(--yes);border-color:var(--yes);color:#fff}
+.choices button[aria-pressed=true][data-label=no]{background:var(--no);border-color:var(--no);color:#fff}
+.choices button[aria-pressed=true][data-label=unsure]{background:var(--unsure);border-color:var(--unsure);color:#fff}
+dialog{border:none;padding:0;background:transparent;max-width:96vw;max-height:96vh}
+dialog::backdrop{background:rgba(0,0,0,.78)}
+dialog img{max-width:92vw;max-height:88vh;display:block;border-radius:6px}
+dialog p{color:#ddd;margin:8px 0 0;font-size:13px;text-align:center}
+.done{grid-column:1/-1;text-align:center;padding:60px 0;color:var(--muted)}
+@media (max-width:600px){header{padding:12px 16px}main{padding:12px 16px 48px;grid-template-columns:repeat(2,1fr)}.side{align-items:flex-start;min-width:0}.meter{width:160px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div>
+      <div class="eyebrow" id="position">Loading…</div>
+      <h1 id="technique"></h1>
+      <p class="definition" id="definition"></p>
+    </div>
+    <div class="side">
+      <div class="eyebrow" id="overall"></div>
+      <div class="meter" aria-hidden="true"><i id="bar"></i></div>
+      <div class="nav"><button id="prev">← Previous</button><button id="next">Next →</button></div>
+    </div>
+  </div>
+  <div class="tools">
+    <button id="rest">Mark the rest No</button>
+    <span>Click a poster for Yes · <kbd>Y</kbd> <kbd>N</kbd> <kbd>U</kbd> label the focused poster · arrows move · <kbd>Space</kbd> enlarges · <kbd>[</kbd> <kbd>]</kbd> change technique</span>
+    <span class="status" id="status" role="status"></span>
+  </div>
+</header>
+<main id="grid" aria-live="polite"></main>
+<dialog id="zoom"></dialog>
+<script>
+let token,pools=[],judgments={},index=0,focus=0;
+const $=id=>document.getElementById(id),grid=$('grid'),statusLine=$('status');
+const labelOf=(t,p)=>judgments[t]?.[p]?.label??null;
+const total=()=>pools.reduce((n,p)=>n+p.candidates.length,0);
+const judged=()=>pools.reduce((n,p)=>n+p.candidates.filter(c=>labelOf(p.technique,c.posterID)).length,0);
+
+async function setLabel(technique,posterID,label){
+  const previous=judgments[technique]?.[posterID];
+  (judgments[technique]??={});
+  if(label)judgments[technique][posterID]={label};else delete judgments[technique][posterID];
+  render();
+  try{
+    const response=await fetch('/api/judgment',{method:'POST',headers:{'Content-Type':'application/json','X-Label-Token':token},body:JSON.stringify({technique,posterID,label})});
+    if(!response.ok)throw Error((await response.json()).error||response.statusText);
+    statusLine.textContent='Saved';statusLine.className='status';
+  }catch(error){
+    if(previous)judgments[technique][posterID]=previous;else delete judgments[technique][posterID];
+    statusLine.textContent='Not saved: '+error.message;statusLine.className='status error';render();
+  }
+}
+
+function render(){
+  const pool=pools[index];if(!pool)return;
+  $('position').textContent=`Technique ${index+1} of ${pools.length}`;
+  $('technique').textContent=pool.technique.replaceAll('-',' ');
+  $('definition').textContent=`Does this poster use it? ${pool.definition}`;
+  const done=judged();$('overall').textContent=`${done} of ${total()} labelled`;$('bar').style.width=`${100*done/total()}%`;
+  $('prev').disabled=index===0;
+  const complete=pool.candidates.every(c=>labelOf(pool.technique,c.posterID));
+  $('next').className=complete?'primary':'';$('next').textContent=index===pools.length-1?'Finish':'Next →';
+  $('rest').disabled=complete;
+  grid.replaceChildren(...pool.candidates.map((candidate,i)=>{
+    const label=labelOf(pool.technique,candidate.posterID);
+    const card=document.createElement('div');card.className='card'+(label?' '+label:'')+(i===focus?' focused':'');card.tabIndex=-1;
+    card.innerHTML=`<div class="frame"><img loading="lazy" alt="Poster ${i+1}" src="/thumbs/${candidate.posterID}.jpg"></div><div class="choices"></div>`;
+    card.querySelector('.frame').onclick=()=>{focus=i;setLabel(pool.technique,candidate.posterID,label==='yes'?null:'yes')};
+    card.querySelector('.frame').ondblclick=()=>enlarge(i);
+    for(const [value,text] of [['yes','Yes'],['no','No'],['unsure','?']]){
+      const button=document.createElement('button');button.dataset.label=value;button.textContent=text;
+      button.setAttribute('aria-pressed',String(label===value));button.title=value==='unsure'?'Unsure':text;
+      button.onclick=()=>{focus=i;setLabel(pool.technique,candidate.posterID,label===value?null:value)};
+      card.querySelector('.choices').append(button);
+    }
+    return card;
+  }));
+  if(done===total()){const note=document.createElement('p');note.className='done';note.textContent='All labels are saved. You can close this page.';grid.append(note)}
+  try{localStorage.setItem('technique-index',String(index))}catch{}
+}
+
+function go(step){index=Math.max(0,Math.min(pools.length-1,index+step));focus=0;render();window.scrollTo(0,0)}
+function columns(){return getComputedStyle(grid).gridTemplateColumns.split(' ').length}
+function enlarge(i){
+  const c=pools[index].candidates[i],z=$('zoom'),image=document.createElement('img'),caption=document.createElement('p');
+  image.src=`/thumbs/${c.posterID}.jpg`;image.alt=`Poster ${i+1}, enlarged`;
+  caption.textContent=`${pools[index].technique.replaceAll('-',' ')} · poster ${i+1} · click or Space to close`;
+  z.replaceChildren(image,caption);z.showModal();
+}
+
+$('prev').onclick=()=>go(-1);
+$('next').onclick=()=>go(1);
+$('rest').onclick=async()=>{const pool=pools[index];for(const c of pool.candidates)if(!labelOf(pool.technique,c.posterID))await setLabel(pool.technique,c.posterID,'no')};
+$('zoom').onclick=()=>$('zoom').close();
+document.addEventListener('keydown',event=>{
+  if($('zoom').open){if(event.key===' '){event.preventDefault();$('zoom').close()}return}
+  if(event.metaKey||event.ctrlKey||event.altKey||event.target.tagName==='BUTTON'&&event.key===' ')return;
+  const pool=pools[index],count=pool?.candidates.length??0,c=pool?.candidates[focus];
+  const moves={ArrowRight:1,ArrowLeft:-1,ArrowDown:columns(),ArrowUp:-columns()};
+  if(event.key in moves){event.preventDefault();focus=Math.max(0,Math.min(count-1,focus+moves[event.key]));render();grid.children[focus]?.scrollIntoView({block:'nearest'});return}
+  const labels={y:'yes',n:'no',u:'unsure'};
+  if(labels[event.key.toLowerCase()]&&c){event.preventDefault();setLabel(pool.technique,c.posterID,labels[event.key.toLowerCase()]);focus=Math.min(count-1,focus+1);render();return}
+  if((event.key==='Backspace'||event.key==='Delete')&&c){event.preventDefault();setLabel(pool.technique,c.posterID,null);return}
+  if(event.key===' '&&c){event.preventDefault();enlarge(focus);return}
+  if(event.key===']')go(1);
+  if(event.key==='[')go(-1);
+});
+
+fetch('/api/state').then(r=>r.json()).then(state=>{
+  token=state.token;pools=state.pools.pools;judgments=state.judgments;
+  let saved=null;try{saved=Number(localStorage.getItem('technique-index'))}catch{}
+  const firstOpen=pools.findIndex(p=>p.candidates.some(c=>!labelOf(p.technique,c.posterID)));
+  index=Number.isInteger(saved)&&saved>=0&&saved<pools.length?saved:Math.max(0,firstOpen);
+  render();
+}).catch(error=>{statusLine.textContent='Could not load: '+error.message;statusLine.className='status error'});
+</script>
+</body>
+</html>

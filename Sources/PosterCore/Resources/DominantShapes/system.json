@@ -1,0 +1,49 @@
+{
+  "id": "dominant-shape-poster-v1",
+  "name": "One or two oversized objects",
+  "sourcePosterID": "6f0afba09e88052dee70c023-p0",
+  "sourceTitle": "L Viscosi",
+  "sourceCredit": "Studio Feixen / Luzerner Theater (saved source caption and official identity project)",
+  "sourceURL": "https://www.studiofeixen.ch/luzerner-theater/",
+  "logicalObjects": [
+    1,
+    2
+  ],
+  "framing": [
+    "span",
+    "zoom",
+    "offset",
+    "edge",
+    "corner"
+  ],
+  "depth": [
+    "behind",
+    "front",
+    "weave"
+  ],
+  "tags": [
+    "dominant-object",
+    "whole-poster",
+    "oversized-geometry",
+    "figure-ground",
+    "weaving",
+    "occlusion",
+    "text-displacement",
+    "contour-repulsion",
+    "zoom",
+    "offset-crop",
+    "edge-fragment",
+    "corner-fragment"
+  ],
+  "rules": [
+    "The logical object remains continuous across repeated render passes.",
+    "Draw object behind display type, then repeat the same geometry through explicit foreground windows.",
+    "Supporting information uses local clearance based on actual glyph width, not a full-width paper stripe.",
+    "For edge and corner framing, fit an optional visible-ink target by sampling the actual native shape mask, then apply manual offsets.",
+    "Nudge display blocks away from occupied shape-mask regions while retaining safe paper bounds and avoiding other text blocks.",
+    "Store the original anchors, actual displacement vectors, object envelope, crop-fit translation, parameters, seed and clipped foreground passes.",
+    "Keep judging targets specific to framing: a deliberate tiny fragment does not need full-page ink coverage."
+  ],
+  "judgingBasis": "Authored measured mask/framing/displacement ballots plus independent native Vision/Core ML and existing explicit-vote preference ballots; no synthetic user labels or new SigLIP training.",
+  "artisticPolicy": "Pale-on-pale is permitted. No additional contrast penalty or rejection is applied."
+}

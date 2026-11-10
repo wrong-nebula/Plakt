@@ -1,0 +1,29 @@
+{
+  "archivo": {
+    "file": "geometry-bench/experiments/native-pretext-20261108/workspace/Sources/PosterCore/Resources/Fonts/archivoblack/ArchivoBlack-Regular.ttf",
+    "family": "Archivo Black",
+    "fullName": "Archivo Black Regular",
+    "license": "SIL Open Font License 1.1",
+    "licenseFile": "geometry-bench/experiments/native-pretext-20261108/workspace/Sources/PosterCore/Resources/Fonts/archivoblack/OFL.txt",
+    "copyright": "Copyright 2017 The Archivo Black Project Authors (https://github.com/Omnibus-Type/ArchivoBlack)",
+    "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180"
+  },
+  "anton": {
+    "file": "geometry-bench/experiments/native-pretext-20261108/workspace/Sources/PosterCore/Resources/Fonts/anton/Anton-Regular.ttf",
+    "family": "Anton",
+    "fullName": "Anton Regular",
+    "license": "SIL Open Font License 1.1",
+    "licenseFile": "geometry-bench/experiments/native-pretext-20261108/workspace/Sources/PosterCore/Resources/Fonts/anton/OFL.txt",
+    "copyright": "Copyright 2020 The Anton Project Authors (https://github.com/googlefonts/AntonFont.git)",
+    "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab"
+  },
+  "rubik": {
+    "file": "geometry-bench/experiments/native-pretext-20261108/workspace/Sources/PosterCore/Resources/Fonts/rubikmonoone/RubikMonoOne-Regular.ttf",
+    "family": "Rubik Mono One",
+    "fullName": "Rubik Mono One Regular",
+    "license": "SIL Open Font License 1.1",
+    "licenseFile": "geometry-bench/experiments/native-pretext-20261108/workspace/Sources/PosterCore/Resources/Fonts/rubikmonoone/OFL.txt",
+    "copyright": "Copyright 2015 The Rubik Project Authors (mail@hubertfischer.com)",
+    "sha256": "b22624b6a36e543e942106edfccd198c50b57b65b924bfe02a6f0a5699429e6b"
+  }
+}

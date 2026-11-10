@@ -1,0 +1,21 @@
+# PosterLab
+
+> Local print-poster workshop for macOS, driven by LLM agents through 23 tools (MCP over stdio, or `poster tool call NAME '{json}'`). Posters are editable vector scenes; every edit is a new revision; results come back as summary + JSON + images.
+
+## Docs
+- [README](README.md): build, commands, checks
+- [AGENTS.md](AGENTS.md): rules for agents making posters, and how to connect
+- Tool `guide`: the full agent playbook (workflow, coordinates, roles, edit operations, taste)
+
+## Tools
+- guide, list_briefs, list_styles, list_shape_recipes, list_fonts, list_judges
+- create_poster, sketch_variations, remake_poster, list_projects
+- describe_poster, edit_poster, poster_history, revert_poster
+- view_poster, critique_poster, rank_posters
+- export_poster, import_scene, run_study, inspect_study
+- open_in_studio, studio_state
+
+## Source
+- [Sources/PosterCore/Agent/AgentTools.swift](Sources/PosterCore/Agent/AgentTools.swift): tool implementations
+- [Sources/PosterCore/Agent/AgentGuide.swift](Sources/PosterCore/Agent/AgentGuide.swift): guide text and input schemas
+- [Sources/PosterCLI/AgentCommand.swift](Sources/PosterCLI/AgentCommand.swift): MCP server and shell interface

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'none'; font-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>PosterLab · Print preview</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="preview.css">
+  <script defer src="../../Sources/PosterCore/Resources/PrintPreview/preview.js"></script>
+</head>
+<body>
+  <header class="toolbar">
+    <div class="document"><h1>Print preview</h1><span id="artwork-name">Sample artwork</span></div>
+    <div class="toolbar-actions"><button id="import-artwork">Choose artwork…</button><label class="output-size"><span>Output</span><select id="render-size" name="renderSize" form="settings" aria-label="Output resolution" title="PNG long edge resolution"><option value="viewport">Viewport</option><option value="4k" selected>4K</option><option value="8k">8K</option><option value="12k">12K</option></select></label><button id="export" class="primary" disabled>Render PNG…</button></div>
+  </header>
+  <main>
+    <section class="stage" aria-label="Poster scene">
+      <div id="viewport"></div>
+      <img id="render-hold" alt="" aria-hidden="true" hidden>
+      <div id="render-progress" class="render-progress" role="status" hidden><span id="render-status">Preparing render…</span><button id="cancel-render">Cancel</button></div>
+      <div id="loading" class="loading" role="status"><strong>Preparing the paper and light…</strong><span>Everything renders locally.</span></div>
+      <div id="error" class="error" role="alert" hidden><strong>The preview could not start.</strong><p id="error-message"></p><button id="retry">Try again</button></div>
+      <div class="scene-switch" role="group" aria-label="Environment"><button data-environment="studio" aria-pressed="true">Studio</button><button data-environment="display" aria-pressed="false">City display</button><button data-environment="courtyard" aria-pressed="false">Outside</button><button data-environment="gallery" aria-pressed="false">Inside</button></div>
+      <div class="view-controls" role="group" aria-label="Camera view"><button data-view="perspective">Perspective</button><button data-view="front">Front</button><button data-view="detail">Paper detail</button><button data-view="context">In context</button></div>
+      <div class="stage-footer"><span id="scene-status" role="status">Starting renderer</span><span>Drag to orbit · Scroll to zoom</span></div>
+    </section>
+    <aside aria-label="Print and scene settings">
+      <form id="settings">
+        <fieldset>
+          <legend>Paper & mounting</legend>
+          <label class="row">Format<select name="size" aria-label="Format"><option value="City" selected>City · 900 mm</option><option>A2</option><option>A1</option><option>A0</option></select></label>
+          <label class="row">Stock<select name="stock" aria-label="Stock"><option value="uncoated">Uncoated</option><option value="coated">Silk coated</option><option value="newsprint">Newsprint</option><option value="cotton">Cotton rag</option></select></label>
+          <label class="slider-label" for="gsm">Paper weight<output for="gsm" data-output="gsm"></output></label><input id="gsm" name="gsm" type="range" min="60" max="350" step="5">
+          <div data-display class="row"><span>Housing</span><span class="hint">Flush metal · twin posts</span></div>
+          <div data-unframed hidden>
+          <label class="row">Mounting<select name="mounting" aria-label="Mounting"><option value="paste">Wheatpaste</option><option value="tape">Masking tape</option><option value="floating">Loose sheet</option></select></label>
+          <label class="slider-label" for="wrinkles">Wrinkles<output for="wrinkles" data-output="wrinkles"></output></label><input id="wrinkles" name="wrinkles" type="range" min="0" max="1" step="0.01">
+          <label class="slider-label" for="curl">Edge lift<output for="curl" data-output="curl"></output></label><input id="curl" name="curl" type="range" min="0" max="1" step="0.01">
+          <div data-paste><label class="slider-label" for="glue">Paste layer<output for="glue" data-output="glue"></output></label><input id="glue" name="glue" type="range" min="0" max="1" step="0.01"></div>
+          <label class="slider-label" for="damp">Paper dampness<output for="damp" data-output="damp"></output></label><input id="damp" name="damp" type="range" min="0" max="1" step="0.01">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Ink & finish</legend>
+          <label class="row">Process<select name="process" aria-label="Process"><option value="digital">Digital</option><option value="offset">Offset lithography</option><option value="riso">Risograph approximation</option></select></label>
+          <div data-plates><label class="slider-label" for="registration">Plate misregistration<output for="registration" data-output="registration"></output></label><input id="registration" name="registration" type="range" min="0" max="1.5" step="0.01"></div>
+          <div data-plates><label class="slider-label" for="lpi">Screen ruling<output for="lpi" data-output="lpi"></output></label><input id="lpi" name="lpi" type="range" min="35" max="180" step="1"></div>
+          <label class="slider-label" for="ink">Ink density<output for="ink" data-output="ink"></output></label><input id="ink" name="ink" type="range" min="0.4" max="1.3" step="0.01">
+          <label class="row">Special finish<select name="finish" aria-label="Special finish"><option value="none">None</option><option value="metallic">Metallic spot ink</option><option value="gold">Gold foil</option><option value="silver">Silver foil</option><option value="holographic">Holographic foil</option><option value="varnish">Spot varnish</option></select></label>
+          <div data-finish hidden>
+            <label class="row">Apply to<select name="mask" aria-label="Apply to"><option value="dark">Dark artwork</option><option value="accent">Colored artwork</option><option value="all">Entire sheet</option><option value="custom">Custom finish mask</option></select></label>
+            <div data-custom-mask hidden><button type="button" id="import-mask">Choose mask…</button><span id="mask-name" class="hint">White applies the finish; black protects the print.</span></div>
+            <label class="row" data-metallic>Spot ink color<input type="color" name="spotColor" aria-label="Metallic spot ink color"></label>
+            <label class="slider-label" for="finishAmount">Finish coverage<output for="finishAmount" data-output="finishAmount"></output></label><input id="finishAmount" name="finishAmount" type="range" min="0" max="1" step="0.01">
+            <label class="checkbox"><input name="showMask" type="checkbox">Show finish selection</label>
+          </div>
+          <details><summary>Wear</summary><label class="slider-label" for="wear">Edge abrasion<output for="wear" data-output="wear"></output></label><input id="wear" name="wear" type="range" min="0" max="1" step="0.01"></details>
+        </fieldset>
+        <fieldset>
+          <legend>Light & surroundings</legend>
+          <div data-backdrop><label class="row">Backdrop<select name="backdrop" aria-label="Backdrop"><option value="white">White</option><option value="grey">Grey</option><option value="black">Black</option></select></label></div>
+          <div data-studio hidden>
+            <label class="slider-label" for="keyAngle">Key light<output for="keyAngle" data-output="keyAngle"></output></label><input id="keyAngle" name="keyAngle" type="range" min="-80" max="80" step="1">
+            <label class="slider-label" for="softness">Softbox<output for="softness" data-output="softness"></output></label><input id="softness" name="softness" type="range" min="0" max="1" step="0.01">
+            <label class="slider-label" for="fillLight">Fill<output for="fillLight" data-output="fillLight"></output></label><input id="fillLight" name="fillLight" type="range" min="0" max="1" step="0.01">
+          </div>
+          <div data-outdoor>
+            <label class="row">Wall<select name="surface" aria-label="Wall"><option value="concrete">Cast concrete</option><option value="brick">Weathered brick</option><option value="plaster">Lime plaster</option></select></label>
+          </div>
+          <div data-natural-light hidden>
+          <label class="slider-label" for="hour">Solar time<output for="hour" data-output="hour"></output></label><input id="hour" name="hour" type="range" min="0" max="24" step="0.1">
+          <div class="time-presets" role="group" aria-label="Time presets"><button type="button" data-hour="7">Morning</button><button type="button" data-hour="12">Noon</button><button type="button" data-hour="17.5">Evening</button><button type="button" data-hour="22">Night</button></div>
+          </div>
+          <div data-outdoor>
+            <label class="slider-label" for="cloud">Atmospheric haze<output for="cloud" data-output="cloud"></output></label><input id="cloud" name="cloud" type="range" min="0" max="1" step="0.01">
+            <label class="slider-label" for="exteriorLight">Night wall lamp<output for="exteriorLight" data-output="exteriorLight"></output></label><input id="exteriorLight" name="exteriorLight" type="range" min="0" max="5" step="0.1">
+          </div>
+          <div data-indoor hidden>
+            <label class="slider-label" for="indoorTemperature">Lamp temperature<output for="indoorTemperature" data-output="indoorTemperature"></output></label><input id="indoorTemperature" name="indoorTemperature" type="range" min="2700" max="6500" step="100">
+          </div>
+          <div data-artificial-light><label class="slider-label" for="indoorIntensity">Light intensity<output for="indoorIntensity" data-output="indoorIntensity"></output></label><input id="indoorIntensity" name="indoorIntensity" type="range" min="0" max="8" step="0.1"></div>
+          <label class="slider-label" for="exposure">Exposure<output for="exposure" data-output="exposure"></output></label><input id="exposure" name="exposure" type="range" min="0.3" max="2" step="0.01">
+          <details data-natural-light hidden><summary>Sun position</summary>
+            <label class="slider-label" for="latitude">Latitude<output for="latitude" data-output="latitude"></output></label><input id="latitude" name="latitude" type="range" min="-65" max="65" step="0.1">
+            <label class="slider-label" for="day">Day of year<output for="day" data-output="day"></output></label><input id="day" name="day" type="range" min="1" max="365" step="1">
+            <p class="hint">Solar time excludes time zones and daylight saving. The wall faces 28° west of south.</p>
+          </details>
+          <label class="row">Preview quality<select name="quality" aria-label="Preview quality"><option value="standard">Standard</option><option value="high">High</option></select></label>
+        </fieldset>
+      </form>
+      <div class="panel-footer"><button id="reset">Reset materials & light</button><p class="hint">A material study, not a calibrated print proof. Spot colors are RGB approximations; Riso uses simulated plates.</p></div>
+    </aside>
+  </main>
+  <input type="file" id="image-file" accept="image/png,image/jpeg,image/webp" hidden>
+  <input type="file" id="mask-file" accept="image/png,image/jpeg,image/webp" hidden>
+  <div id="notice" role="status" hidden></div>
+</body>
+</html>

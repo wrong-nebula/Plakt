@@ -1,0 +1,147 @@
+{
+  "heads" : [
+    {
+      "accuracy" : 1,
+      "category" : "bauhaus",
+      "holdoutRows" : 182,
+      "modelFile" : "bauhaus.mlmodel",
+      "name" : "Bauhaus",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "abstract",
+      "holdoutRows" : 182,
+      "modelFile" : "abstract.mlmodel",
+      "name" : "Abstract",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "minimal",
+      "holdoutRows" : 182,
+      "modelFile" : "minimal.mlmodel",
+      "name" : "Minimal",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "swiss",
+      "holdoutRows" : 182,
+      "modelFile" : "swiss.mlmodel",
+      "name" : "Swiss",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "expressive",
+      "holdoutRows" : 182,
+      "modelFile" : "expressive.mlmodel",
+      "name" : "Expressive",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "constructivist",
+      "holdoutRows" : 182,
+      "modelFile" : "constructivist.mlmodel",
+      "name" : "Constructivist",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "editorial",
+      "holdoutRows" : 182,
+      "modelFile" : "editorial.mlmodel",
+      "name" : "Editorial",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "optical",
+      "holdoutRows" : 182,
+      "modelFile" : "optical.mlmodel",
+      "name" : "Optical",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "brutalist",
+      "holdoutRows" : 182,
+      "modelFile" : "brutalist.mlmodel",
+      "name" : "Brutalist",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "kinetic",
+      "holdoutRows" : 182,
+      "modelFile" : "kinetic.mlmodel",
+      "name" : "Kinetic type",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "color-field",
+      "holdoutRows" : 182,
+      "modelFile" : "color-field.mlmodel",
+      "name" : "Color field",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "halftone",
+      "holdoutRows" : 182,
+      "modelFile" : "halftone.mlmodel",
+      "name" : "Tonal halftone",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "guilloche",
+      "holdoutRows" : 182,
+      "modelFile" : "guilloche.mlmodel",
+      "name" : "Serif & guilloche",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    },
+    {
+      "accuracy" : 1,
+      "category" : "typographic-collage",
+      "holdoutRows" : 182,
+      "modelFile" : "typographic-collage.mlmodel",
+      "name" : "Typographic collage",
+      "reviewedHoldoutRows" : 0,
+      "reviewedTrainingRows" : 0,
+      "trainingRows" : 714
+    }
+  ],
+  "note" : "Starter labels describe authored procedural recipes. Holdout uses unseen seeds of the same recipes, not independent historical\/design-style ground truth. Reviewed source labels add real examples; unknown styles are excluded from those labels. Style scores are uncalibrated classifier outputs, not probabilities of art-historical attribution.",
+  "projection" : "vision-r2-scaleFit-signed-bucket-64-l2-v1",
+  "version" : "style-judges-v1"
+}

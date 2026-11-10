@@ -1,0 +1,3714 @@
+{
+  "version": "poster-shape-library-v3",
+  "discoverySnapshotSHA256": "d22dec16c75f76675ef6e9e67fdf8ccbf571dc2781e0c85820971121a64a5e4a",
+  "discoverySource": "/PosterLab/output/siglip-shape-discovery-v1/discovery.json",
+  "note": "Independent shape library. Saved SigLIP rankings are read-only reference hints, not labels or geometric reconstruction. Existing system-* renderers are consumed without modifying the active SigLIP implementation. Compatibility is an explicit authored heuristic. Six source-reviewed SAM interpretations extend the catalog. Original IDs and valid parameter values remain supported; zero satellites now expose a plain disc grid in the existing cluster family.",
+  "recipes": [
+    {
+      "id": "spiral-stack",
+      "name": "Stacked spirals",
+      "group": "Repetition",
+      "renderer": "system-spiral-stack",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Stack count",
+          "value": 4,
+          "min": 2,
+          "max": 8,
+          "step": 1
+        },
+        {
+          "id": "turns",
+          "label": "Spiral turns",
+          "value": 2,
+          "min": 0.5,
+          "max": 4,
+          "step": 0.1
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        },
+        {
+          "id": "lineWidth",
+          "label": "Line weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.035,
+          "step": 0.001
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.8,
+        "mass": 0.2,
+        "regularity": 0.9,
+        "counterform": 0.8,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "optical",
+        "guilloche",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.4,
+        "width": 1,
+        "serif": 1,
+        "mono": 0,
+        "italic": 0.2
+      },
+      "idealAspect": 0.7,
+      "tags": [
+        "repetition",
+        "concentric-rings",
+        "scale-sequence"
+      ],
+      "logic": "Archimedean spirals share an axis; pitch and growth govern the stack.",
+      "references": [
+        {
+          "queryID": "concentric-rings",
+          "posterID": "f2b3f8537df23ab8db0bf337-p0",
+          "similarity": 0.14625463107967668
+        },
+        {
+          "queryID": "concentric-rings",
+          "posterID": "4bd9464478b8b27382de1f96-p0",
+          "similarity": 0.11837773428255816
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "f70bb53f4658ac5997f897c2-p0",
+          "similarity": 0.13267347544681013
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.12978390323682218
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "wave-lines",
+      "name": "Wave-line field",
+      "group": "Line fields",
+      "renderer": "system-wave-lines",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Line count",
+          "value": 24,
+          "min": 6,
+          "max": 60,
+          "step": 1
+        },
+        {
+          "id": "amplitude",
+          "label": "Amplitude",
+          "value": 0.16,
+          "min": 0.02,
+          "max": 0.32,
+          "step": 0.01
+        },
+        {
+          "id": "frequency",
+          "label": "Frequency",
+          "value": 1.3,
+          "min": 0.3,
+          "max": 4,
+          "step": 0.1
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        },
+        {
+          "id": "lineWidth",
+          "label": "Line weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.035,
+          "step": 0.001
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.9,
+        "mass": 0.3,
+        "regularity": 0.9,
+        "counterform": 0,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "optical",
+        "abstract",
+        "editorial",
+        "guilloche"
+      ],
+      "fontTarget": {
+        "weight": 0.45,
+        "width": 1,
+        "serif": 0.5,
+        "mono": 0,
+        "italic": 0.1
+      },
+      "idealAspect": 1.5,
+      "tags": [
+        "line-fields",
+        "wave-stripes",
+        "moire-lines"
+      ],
+      "logic": "Parallel baselines receive a coherent sinusoidal displacement; endpoints stay bounded.",
+      "references": [
+        {
+          "queryID": "wave-stripes",
+          "posterID": "12f8c6f637febe36ba66d7b6-p0",
+          "similarity": 0.12887037827991252
+        },
+        {
+          "queryID": "wave-stripes",
+          "posterID": "432870b4896b3def63c7edce-p0",
+          "similarity": 0.12679447414983164
+        },
+        {
+          "queryID": "moire-lines",
+          "posterID": "12f8c6f637febe36ba66d7b6-p0",
+          "similarity": 0.1526972735761466
+        },
+        {
+          "queryID": "moire-lines",
+          "posterID": "fac44fee509db0d6c554dcbc-p0",
+          "similarity": 0.1503204353584901
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "mirror-arcs",
+      "name": "Mirrored arc field",
+      "group": "Line fields",
+      "renderer": "system-mirror-arcs",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Arc count",
+          "value": 6,
+          "min": 3,
+          "max": 16,
+          "step": 1
+        },
+        {
+          "id": "bend",
+          "label": "Bend",
+          "value": 0.4,
+          "min": 0.08,
+          "max": 0.75,
+          "step": 0.02
+        },
+        {
+          "id": "lineWidth",
+          "label": "Line weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.035,
+          "step": 0.001
+        }
+      ],
+      "traits": {
+        "angularity": 0.1,
+        "curvature": 1,
+        "detail": 0.7,
+        "mass": 0.2,
+        "regularity": 1,
+        "counterform": 0.7,
+        "directionality": 0.4,
+        "volume": 0
+      },
+      "styles": [
+        "swiss",
+        "optical",
+        "minimal",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.4,
+        "width": 1,
+        "serif": 0.7,
+        "mono": 0,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "line-fields",
+        "shape-reflection",
+        "moire-lines"
+      ],
+      "logic": "One quadratic arc family is reflected through four quadrants.",
+      "references": [
+        {
+          "queryID": "shape-reflection",
+          "posterID": "b69b2f4d6b16fca5eba6efd4-p0",
+          "similarity": 0.1583111677002682
+        },
+        {
+          "queryID": "shape-reflection",
+          "posterID": "ab0b22d162a95bd5cf8e5502-p0",
+          "similarity": 0.13203382562304278
+        },
+        {
+          "queryID": "moire-lines",
+          "posterID": "12f8c6f637febe36ba66d7b6-p0",
+          "similarity": 0.1526972735761466
+        },
+        {
+          "queryID": "moire-lines",
+          "posterID": "fac44fee509db0d6c554dcbc-p0",
+          "similarity": 0.1503204353584901
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "folded-tiles",
+      "name": "Folded tile matrix",
+      "group": "Modular grids",
+      "renderer": "system-folded-tiles",
+      "parameters": [
+        {
+          "id": "rows",
+          "label": "Rows",
+          "value": 6,
+          "min": 2,
+          "max": 14,
+          "step": 1
+        },
+        {
+          "id": "columns",
+          "label": "Columns",
+          "value": 5,
+          "min": 2,
+          "max": 14,
+          "step": 1
+        },
+        {
+          "id": "slant",
+          "label": "Fold slant",
+          "value": 0.43,
+          "min": 0.1,
+          "max": 0.85,
+          "step": 0.05
+        }
+      ],
+      "traits": {
+        "angularity": 1,
+        "curvature": 0.1,
+        "detail": 0.65,
+        "mass": 0.75,
+        "regularity": 1,
+        "counterform": 0.2,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "constructivist",
+        "bauhaus",
+        "brutalist",
+        "swiss"
+      ],
+      "fontTarget": {
+        "weight": 0.8,
+        "width": 0.8,
+        "serif": 0,
+        "mono": 0.3,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "modular-grids",
+        "tessellation",
+        "tile-rotation"
+      ],
+      "logic": "A shared parallelogram cell repeats over a grid; fold slant sets the directional rhythm.",
+      "references": [
+        {
+          "queryID": "tessellation",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.14086436364598726
+        },
+        {
+          "queryID": "tessellation",
+          "posterID": "220a20609d677ab8c4f7f11c-p0",
+          "similarity": 0.11218976819997946
+        },
+        {
+          "queryID": "tile-rotation",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.14494245340590578
+        },
+        {
+          "queryID": "tile-rotation",
+          "posterID": "47270c8359ab8f719a1d48f0-p0",
+          "similarity": 0.13912290869516947
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "circle-clusters",
+      "name": "Satellite clusters",
+      "group": "Repetition",
+      "renderer": "system-circle-clusters",
+      "parameters": [
+        {
+          "id": "rows",
+          "label": "Rows",
+          "value": 6,
+          "min": 2,
+          "max": 14,
+          "step": 1
+        },
+        {
+          "id": "columns",
+          "label": "Columns",
+          "value": 5,
+          "min": 2,
+          "max": 14,
+          "step": 1
+        },
+        {
+          "id": "satellite",
+          "label": "Satellite size",
+          "value": 0.45,
+          "min": 0,
+          "max": 0.75,
+          "step": 0.05
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.6,
+        "mass": 0.7,
+        "regularity": 0.8,
+        "counterform": 0,
+        "directionality": 0.1,
+        "volume": 0
+      },
+      "styles": [
+        "color-field",
+        "abstract",
+        "bauhaus",
+        "expressive"
+      ],
+      "fontTarget": {
+        "weight": 0.7,
+        "width": 1,
+        "serif": 0,
+        "mono": 0,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "repetition",
+        "organic-repeat",
+        "radial-repeat",
+        "disc-grid"
+      ],
+      "logic": "Each grid cell joins a main disc to two orbiting satellite discs.",
+      "references": [
+        {
+          "queryID": "organic-repeat",
+          "posterID": "8600d11110fd184fdfca0960-p0",
+          "similarity": 0.12796644918179617
+        },
+        {
+          "queryID": "organic-repeat",
+          "posterID": "5c50ca2e2e2fafd3036d2c56-p0",
+          "similarity": 0.12269091489897348
+        },
+        {
+          "queryID": "radial-repeat",
+          "posterID": "b69b2f4d6b16fca5eba6efd4-p0",
+          "similarity": 0.11228562748208519
+        },
+        {
+          "queryID": "radial-repeat",
+          "posterID": "02f8efca35d0a69f7065e7e8-p0",
+          "similarity": 0.1116722483658348
+        },
+        {
+          "queryID": "sam-visual-review",
+          "posterID": "8f4f5df02d00dfb9b167d46b-p0",
+          "similarity": null
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "perforated-grid",
+      "name": "Perforated modules",
+      "group": "Counterforms",
+      "renderer": "system-perforated-grid",
+      "parameters": [
+        {
+          "id": "rows",
+          "label": "Rows",
+          "value": 6,
+          "min": 2,
+          "max": 12,
+          "step": 1
+        },
+        {
+          "id": "columns",
+          "label": "Columns",
+          "value": 5,
+          "min": 2,
+          "max": 12,
+          "step": 1
+        },
+        {
+          "id": "holes",
+          "label": "Holes per tile",
+          "value": 4,
+          "min": 2,
+          "max": 7,
+          "step": 1
+        }
+      ],
+      "traits": {
+        "angularity": 0.5,
+        "curvature": 0.5,
+        "detail": 0.75,
+        "mass": 0.8,
+        "regularity": 1,
+        "counterform": 0.8,
+        "directionality": 0,
+        "volume": 0
+      },
+      "styles": [
+        "bauhaus",
+        "swiss",
+        "brutalist",
+        "optical"
+      ],
+      "fontTarget": {
+        "weight": 0.8,
+        "width": 0.9,
+        "serif": 0,
+        "mono": 0.8,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "counterforms",
+        "interlocking-counterforms",
+        "tessellation"
+      ],
+      "logic": "Rounded modules use even-odd circular holes; changing hole count preserves the modular envelope.",
+      "references": [
+        {
+          "queryID": "interlocking-counterforms",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.13478640271203163
+        },
+        {
+          "queryID": "interlocking-counterforms",
+          "posterID": "1cce5ac5d899453546c75146-p0",
+          "similarity": 0.12735948498496047
+        },
+        {
+          "queryID": "tessellation",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.14086436364598726
+        },
+        {
+          "queryID": "tessellation",
+          "posterID": "220a20609d677ab8c4f7f11c-p0",
+          "similarity": 0.11218976819997946
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "radial-spokes",
+      "name": "Radial spokes",
+      "group": "Radial forms",
+      "renderer": "system-radial-spokes",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Spoke count",
+          "value": 32,
+          "min": 8,
+          "max": 64,
+          "step": 1
+        },
+        {
+          "id": "innerRadius",
+          "label": "Inner radius",
+          "value": 0.1,
+          "min": 0.02,
+          "max": 0.35,
+          "step": 0.01
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        },
+        {
+          "id": "lineWidth",
+          "label": "Line weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.035,
+          "step": 0.001
+        }
+      ],
+      "traits": {
+        "angularity": 0.5,
+        "curvature": 0.5,
+        "detail": 0.6,
+        "mass": 0.2,
+        "regularity": 1,
+        "counterform": 0.6,
+        "directionality": 0.5,
+        "volume": 0
+      },
+      "styles": [
+        "swiss",
+        "minimal",
+        "optical",
+        "bauhaus"
+      ],
+      "fontTarget": {
+        "weight": 0.4,
+        "width": 1,
+        "serif": 0.3,
+        "mono": 0.2,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "radial-forms",
+        "radial-repeat"
+      ],
+      "logic": "Equally spaced rays connect an inner and outer circle.",
+      "references": [
+        {
+          "queryID": "radial-repeat",
+          "posterID": "b69b2f4d6b16fca5eba6efd4-p0",
+          "similarity": 0.11228562748208519
+        },
+        {
+          "queryID": "radial-repeat",
+          "posterID": "02f8efca35d0a69f7065e7e8-p0",
+          "similarity": 0.1116722483658348
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "petal-rosette",
+      "name": "Petal rosette",
+      "group": "Radial forms",
+      "renderer": "system-petal-rosette",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Petals",
+          "value": 7,
+          "min": 3,
+          "max": 16,
+          "step": 1
+        },
+        {
+          "id": "petalWidth",
+          "label": "Petal width",
+          "value": 0.4,
+          "min": 0.1,
+          "max": 0.7,
+          "step": 0.025
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        }
+      ],
+      "traits": {
+        "angularity": 0.1,
+        "curvature": 1,
+        "detail": 0.5,
+        "mass": 0.7,
+        "regularity": 1,
+        "counterform": 0.2,
+        "directionality": 0,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "guilloche",
+        "editorial",
+        "color-field"
+      ],
+      "fontTarget": {
+        "weight": 0.45,
+        "width": 1,
+        "serif": 1,
+        "mono": 0,
+        "italic": 0.3
+      },
+      "idealAspect": 1,
+      "tags": [
+        "radial-forms",
+        "radial-repeat",
+        "organic-repeat"
+      ],
+      "logic": "A closed Bezier petal rotates about a common center.",
+      "references": [
+        {
+          "queryID": "radial-repeat",
+          "posterID": "b69b2f4d6b16fca5eba6efd4-p0",
+          "similarity": 0.11228562748208519
+        },
+        {
+          "queryID": "radial-repeat",
+          "posterID": "02f8efca35d0a69f7065e7e8-p0",
+          "similarity": 0.1116722483658348
+        },
+        {
+          "queryID": "organic-repeat",
+          "posterID": "8600d11110fd184fdfca0960-p0",
+          "similarity": 0.12796644918179617
+        },
+        {
+          "queryID": "organic-repeat",
+          "posterID": "5c50ca2e2e2fafd3036d2c56-p0",
+          "similarity": 0.12269091489897348
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "superellipse",
+      "name": "Soft monolith",
+      "group": "Solid forms",
+      "renderer": "motif-superellipse",
+      "parameters": [
+        {
+          "id": "exponent",
+          "label": "Corner tension",
+          "value": 3,
+          "min": 0.7,
+          "max": 7,
+          "step": 0.1
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        }
+      ],
+      "traits": {
+        "angularity": 0.3,
+        "curvature": 0.8,
+        "detail": 0.1,
+        "mass": 0.9,
+        "regularity": 0.9,
+        "counterform": 0,
+        "directionality": 0,
+        "volume": 0
+      },
+      "styles": [
+        "minimal",
+        "abstract",
+        "color-field",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 1,
+        "serif": 0.2,
+        "mono": 0,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "solid-forms",
+        "transparent-overlap"
+      ],
+      "logic": "A signed-power superellipse moves continuously from pointed diamond to rounded rectangle.",
+      "references": [
+        {
+          "queryID": "transparent-overlap",
+          "posterID": "db355bd0704c8cead6badee5-p0",
+          "similarity": 0.12535510795921256
+        },
+        {
+          "queryID": "transparent-overlap",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.11952112645714405
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "lens-pair",
+      "name": "Intersecting lenses",
+      "group": "Counterforms",
+      "renderer": "motif-lens-pair",
+      "parameters": [
+        {
+          "id": "spread",
+          "label": "Spread",
+          "value": 0.25,
+          "min": 0.04,
+          "max": 0.45,
+          "step": 0.01
+        },
+        {
+          "id": "aperture",
+          "label": "Aperture",
+          "value": 0.2,
+          "min": 0.05,
+          "max": 0.4,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.2,
+        "mass": 0.6,
+        "regularity": 0.9,
+        "counterform": 0.6,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "minimal",
+        "bauhaus",
+        "abstract",
+        "swiss"
+      ],
+      "fontTarget": {
+        "weight": 0.6,
+        "width": 1,
+        "serif": 0,
+        "mono": 0,
+        "italic": 0
+      },
+      "idealAspect": 1.4,
+      "tags": [
+        "counterforms",
+        "transparent-overlap"
+      ],
+      "logic": "Two circular lenses overlap; an even-odd counterform protects their central aperture.",
+      "references": [
+        {
+          "queryID": "transparent-overlap",
+          "posterID": "db355bd0704c8cead6badee5-p0",
+          "similarity": 0.12535510795921256
+        },
+        {
+          "queryID": "transparent-overlap",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.11952112645714405
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "crescent-orbits",
+      "name": "Crescent orbits",
+      "group": "Counterforms",
+      "renderer": "motif-crescent-orbits",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Orbits",
+          "value": 4,
+          "min": 2,
+          "max": 9,
+          "step": 1
+        },
+        {
+          "id": "spread",
+          "label": "Spread",
+          "value": 0.25,
+          "min": 0.04,
+          "max": 0.45,
+          "step": 0.01
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.45,
+        "mass": 0.55,
+        "regularity": 0.75,
+        "counterform": 0.8,
+        "directionality": 0.5,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "optical",
+        "guilloche"
+      ],
+      "fontTarget": {
+        "weight": 0.5,
+        "width": 1,
+        "serif": 0.8,
+        "mono": 0,
+        "italic": 0.15
+      },
+      "idealAspect": 1,
+      "tags": [
+        "counterforms",
+        "concentric-rings"
+      ],
+      "logic": "Orbit clipped disc-minus-offset-disc crescents around a common center; rotate the entire arrangement by a shared phase.",
+      "references": [
+        {
+          "queryID": "concentric-rings",
+          "posterID": "f2b3f8537df23ab8db0bf337-p0",
+          "similarity": 0.14625463107967668
+        },
+        {
+          "queryID": "concentric-rings",
+          "posterID": "4bd9464478b8b27382de1f96-p0",
+          "similarity": 0.11837773428255816
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "offset-discs",
+      "name": "Offset echo trail",
+      "group": "Repetition",
+      "renderer": "motif-offset-discs",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Echo count",
+          "value": 10,
+          "min": 3,
+          "max": 24,
+          "step": 1
+        },
+        {
+          "id": "spread",
+          "label": "Spread",
+          "value": 0.25,
+          "min": 0.04,
+          "max": 0.45,
+          "step": 0.01
+        },
+        {
+          "id": "lineWidth",
+          "label": "Line weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.035,
+          "step": 0.001
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.6,
+        "mass": 0.5,
+        "regularity": 0.8,
+        "counterform": 0.4,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "kinetic",
+        "optical",
+        "expressive",
+        "abstract"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 0.8,
+        "serif": 0,
+        "mono": 0,
+        "italic": 0.2
+      },
+      "idealAspect": 1.6,
+      "tags": [
+        "repetition",
+        "offset-trail"
+      ],
+      "logic": "A disc contour translates and scales along a diagonal; every echo remains a complete loop.",
+      "references": [
+        {
+          "queryID": "offset-trail",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.15213914185345195
+        },
+        {
+          "queryID": "offset-trail",
+          "posterID": "f70bb53f4658ac5997f897c2-p0",
+          "similarity": 0.14055419866831373
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "ring-stack",
+      "name": "Nested ring field",
+      "group": "Line fields",
+      "renderer": "motif-ring-stack",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Rings",
+          "value": 12,
+          "min": 3,
+          "max": 28,
+          "step": 1
+        },
+        {
+          "id": "eccentricity",
+          "label": "Eccentricity",
+          "value": 0.08,
+          "min": 0,
+          "max": 0.3,
+          "step": 0.01
+        },
+        {
+          "id": "lineWidth",
+          "label": "Line weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.035,
+          "step": 0.001
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.7,
+        "mass": 0.25,
+        "regularity": 1,
+        "counterform": 0.9,
+        "directionality": 0,
+        "volume": 0
+      },
+      "styles": [
+        "optical",
+        "swiss",
+        "guilloche",
+        "minimal"
+      ],
+      "fontTarget": {
+        "weight": 0.35,
+        "width": 1,
+        "serif": 0.7,
+        "mono": 0.3,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "line-fields",
+        "concentric-rings"
+      ],
+      "logic": "Concentric ellipses shrink in equal physical increments with optional eccentric drift.",
+      "references": [
+        {
+          "queryID": "concentric-rings",
+          "posterID": "f2b3f8537df23ab8db0bf337-p0",
+          "similarity": 0.14625463107967668
+        },
+        {
+          "queryID": "concentric-rings",
+          "posterID": "4bd9464478b8b27382de1f96-p0",
+          "similarity": 0.11837773428255816
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "triangle-fan",
+      "name": "Triangle fan",
+      "group": "Radial forms",
+      "renderer": "motif-triangle-fan",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Blades",
+          "value": 12,
+          "min": 3,
+          "max": 28,
+          "step": 1
+        },
+        {
+          "id": "duty",
+          "label": "Blade width",
+          "value": 0.55,
+          "min": 0.15,
+          "max": 0.85,
+          "step": 0.025
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        }
+      ],
+      "traits": {
+        "angularity": 1,
+        "curvature": 0,
+        "detail": 0.5,
+        "mass": 0.8,
+        "regularity": 1,
+        "counterform": 0.3,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "bauhaus",
+        "constructivist",
+        "brutalist",
+        "expressive"
+      ],
+      "fontTarget": {
+        "weight": 0.85,
+        "width": 0.8,
+        "serif": 0,
+        "mono": 0,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "radial-forms",
+        "triangle-fan"
+      ],
+      "logic": "Alternating triangular sectors share one pivot; duty cycle sets solid versus open rhythm.",
+      "references": [
+        {
+          "queryID": "triangle-fan",
+          "posterID": "f9b20c749def6a4256f9106b-p0",
+          "similarity": 0.1295496628719626
+        },
+        {
+          "queryID": "triangle-fan",
+          "posterID": "a9d1a3290f10d8d56a0d9577-p0",
+          "similarity": 0.12872319046618927
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "ribbon-knot",
+      "name": "Looped ribbon",
+      "group": "Curves",
+      "renderer": "motif-ribbon-knot",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Ribbon strands",
+          "value": 6,
+          "min": 2,
+          "max": 14,
+          "step": 1
+        },
+        {
+          "id": "bend",
+          "label": "Bend",
+          "value": 0.4,
+          "min": 0.08,
+          "max": 0.85,
+          "step": 0.02
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        },
+        {
+          "id": "lineWidth",
+          "label": "Line weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.035,
+          "step": 0.001
+        }
+      ],
+      "traits": {
+        "angularity": 0.1,
+        "curvature": 1,
+        "detail": 0.55,
+        "mass": 0.4,
+        "regularity": 0.7,
+        "counterform": 0.7,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "editorial",
+        "guilloche",
+        "expressive"
+      ],
+      "fontTarget": {
+        "weight": 0.4,
+        "width": 1,
+        "serif": 1,
+        "mono": 0,
+        "italic": 0.4
+      },
+      "idealAspect": 1.4,
+      "tags": [
+        "curves",
+        "offset-trail"
+      ],
+      "logic": "A smooth figure-eight loop repeats with physical pen offsets, preserving its two counterforms.",
+      "references": [
+        {
+          "queryID": "offset-trail",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.15213914185345195
+        },
+        {
+          "queryID": "offset-trail",
+          "posterID": "f70bb53f4658ac5997f897c2-p0",
+          "similarity": 0.14055419866831373
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "lissajous",
+      "name": "Lissajous weave",
+      "group": "Curves",
+      "renderer": "motif-lissajous",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Frequency ratio",
+          "value": 3,
+          "min": 2,
+          "max": 7,
+          "step": 1
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        },
+        {
+          "id": "lineWidth",
+          "label": "Line weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.035,
+          "step": 0.001
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.9,
+        "mass": 0.25,
+        "regularity": 1,
+        "counterform": 0.8,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "guilloche",
+        "optical",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.35,
+        "width": 1,
+        "serif": 1,
+        "mono": 0,
+        "italic": 0.5
+      },
+      "idealAspect": 1,
+      "tags": [
+        "curves",
+        "moire-lines"
+      ],
+      "logic": "Coprime sine frequencies create a closed woven orbit; phase changes crossings without breaking the path.",
+      "references": [
+        {
+          "queryID": "moire-lines",
+          "posterID": "12f8c6f637febe36ba66d7b6-p0",
+          "similarity": 0.1526972735761466
+        },
+        {
+          "queryID": "moire-lines",
+          "posterID": "fac44fee509db0d6c554dcbc-p0",
+          "similarity": 0.1503204353584901
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "contour-islands",
+      "name": "Contour islands",
+      "group": "Line fields",
+      "renderer": "motif-contour-islands",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Contour count",
+          "value": 14,
+          "min": 4,
+          "max": 26,
+          "step": 1
+        },
+        {
+          "id": "amplitude",
+          "label": "Amplitude",
+          "value": 0.16,
+          "min": 0.02,
+          "max": 0.32,
+          "step": 0.01
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        },
+        {
+          "id": "lineWidth",
+          "label": "Line weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.035,
+          "step": 0.001
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.85,
+        "mass": 0.2,
+        "regularity": 0.5,
+        "counterform": 0.75,
+        "directionality": 0,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "editorial",
+        "guilloche",
+        "halftone"
+      ],
+      "fontTarget": {
+        "weight": 0.4,
+        "width": 1,
+        "serif": 0.8,
+        "mono": 0,
+        "italic": 0.2
+      },
+      "idealAspect": 1.2,
+      "tags": [
+        "line-fields",
+        "organic-repeat"
+      ],
+      "logic": "Nested radial contours share a multi-frequency boundary, giving a coherent topographic field.",
+      "references": [
+        {
+          "queryID": "organic-repeat",
+          "posterID": "8600d11110fd184fdfca0960-p0",
+          "similarity": 0.12796644918179617
+        },
+        {
+          "queryID": "organic-repeat",
+          "posterID": "5c50ca2e2e2fafd3036d2c56-p0",
+          "similarity": 0.12269091489897348
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "modular-arcs",
+      "name": "Rotated arc tiles",
+      "group": "Modular grids",
+      "renderer": "motif-modular-arcs",
+      "parameters": [
+        {
+          "id": "rows",
+          "label": "Rows",
+          "value": 6,
+          "min": 2,
+          "max": 14,
+          "step": 1
+        },
+        {
+          "id": "columns",
+          "label": "Columns",
+          "value": 5,
+          "min": 2,
+          "max": 14,
+          "step": 1
+        },
+        {
+          "id": "lineWidth",
+          "label": "Line weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.035,
+          "step": 0.001
+        }
+      ],
+      "traits": {
+        "angularity": 0.4,
+        "curvature": 0.8,
+        "detail": 0.6,
+        "mass": 0.45,
+        "regularity": 1,
+        "counterform": 0.6,
+        "directionality": 0.5,
+        "volume": 0
+      },
+      "styles": [
+        "swiss",
+        "bauhaus",
+        "optical",
+        "color-field"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 1,
+        "serif": 0,
+        "mono": 0.6,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "modular-grids",
+        "tile-rotation"
+      ],
+      "logic": "Quarter-circle tiles rotate by a seeded orientation schedule while sharing cell dimensions.",
+      "references": [
+        {
+          "queryID": "tile-rotation",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.14494245340590578
+        },
+        {
+          "queryID": "tile-rotation",
+          "posterID": "47270c8359ab8f719a1d48f0-p0",
+          "similarity": 0.13912290869516947
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "checker-warp",
+      "name": "Warped checker field",
+      "group": "Modular grids",
+      "renderer": "motif-checker-warp",
+      "parameters": [
+        {
+          "id": "rows",
+          "label": "Rows",
+          "value": 6,
+          "min": 2,
+          "max": 14,
+          "step": 1
+        },
+        {
+          "id": "columns",
+          "label": "Columns",
+          "value": 5,
+          "min": 2,
+          "max": 14,
+          "step": 1
+        },
+        {
+          "id": "amplitude",
+          "label": "Amplitude",
+          "value": 0.16,
+          "min": 0.02,
+          "max": 0.32,
+          "step": 0.01
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        }
+      ],
+      "traits": {
+        "angularity": 0.7,
+        "curvature": 0.6,
+        "detail": 0.7,
+        "mass": 0.6,
+        "regularity": 1,
+        "counterform": 0.2,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "optical",
+        "constructivist",
+        "bauhaus"
+      ],
+      "fontTarget": {
+        "weight": 0.75,
+        "width": 0.9,
+        "serif": 0,
+        "mono": 0.7,
+        "italic": 0
+      },
+      "idealAspect": 1.3,
+      "tags": [
+        "modular-grids",
+        "tessellation"
+      ],
+      "logic": "A checker lattice receives a smooth shared displacement; neighboring vertices stay connected.",
+      "references": [
+        {
+          "queryID": "tessellation",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.14086436364598726
+        },
+        {
+          "queryID": "tessellation",
+          "posterID": "220a20609d677ab8c4f7f11c-p0",
+          "similarity": 0.11218976819997946
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "folded-fan",
+      "name": "Pleated fan",
+      "group": "Solid forms",
+      "renderer": "motif-folded-fan",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Pleats",
+          "value": 10,
+          "min": 3,
+          "max": 24,
+          "step": 1
+        },
+        {
+          "id": "bend",
+          "label": "Bend",
+          "value": 0.4,
+          "min": 0.08,
+          "max": 0.85,
+          "step": 0.02
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        }
+      ],
+      "traits": {
+        "angularity": 1,
+        "curvature": 0.2,
+        "detail": 0.6,
+        "mass": 0.7,
+        "regularity": 0.9,
+        "counterform": 0.3,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "constructivist",
+        "expressive",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.75,
+        "width": 0.8,
+        "serif": 0.2,
+        "mono": 0,
+        "italic": 0.2
+      },
+      "idealAspect": 1.3,
+      "tags": [
+        "solid-forms",
+        "triangle-fan"
+      ],
+      "logic": "A common origin connects alternating inner and outer edges to form a pleated silhouette.",
+      "references": [
+        {
+          "queryID": "triangle-fan",
+          "posterID": "f9b20c749def6a4256f9106b-p0",
+          "similarity": 0.1295496628719626
+        },
+        {
+          "queryID": "triangle-fan",
+          "posterID": "a9d1a3290f10d8d56a0d9577-p0",
+          "similarity": 0.12872319046618927
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "voronoi-shards",
+      "name": "Clipped shard field",
+      "group": "Solid forms",
+      "renderer": "motif-voronoi-shards",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Cells",
+          "value": 13,
+          "min": 5,
+          "max": 26,
+          "step": 1
+        },
+        {
+          "id": "gutter",
+          "label": "Gutter",
+          "value": 0.04,
+          "min": 0.01,
+          "max": 0.14,
+          "step": 0.005
+        }
+      ],
+      "traits": {
+        "angularity": 1,
+        "curvature": 0.1,
+        "detail": 0.6,
+        "mass": 0.65,
+        "regularity": 0.3,
+        "counterform": 0.3,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "constructivist",
+        "brutalist",
+        "color-field"
+      ],
+      "fontTarget": {
+        "weight": 0.8,
+        "width": 0.9,
+        "serif": 0,
+        "mono": 0,
+        "italic": 0
+      },
+      "idealAspect": 1.2,
+      "tags": [
+        "solid-forms",
+        "interlocking-counterforms"
+      ],
+      "logic": "Seeded cells are clipped by pairwise half-planes, then inset about their centroids to create real gutters.",
+      "references": [
+        {
+          "queryID": "interlocking-counterforms",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.13478640271203163
+        },
+        {
+          "queryID": "interlocking-counterforms",
+          "posterID": "1cce5ac5d899453546c75146-p0",
+          "similarity": 0.12735948498496047
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "split-monolith",
+      "name": "Split monolith",
+      "group": "Counterforms",
+      "renderer": "motif-split-monolith",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Cuts",
+          "value": 4,
+          "min": 2,
+          "max": 9,
+          "step": 1
+        },
+        {
+          "id": "aperture",
+          "label": "Cut width",
+          "value": 0.07,
+          "min": 0.02,
+          "max": 0.18,
+          "step": 0.01
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        }
+      ],
+      "traits": {
+        "angularity": 1,
+        "curvature": 0.1,
+        "detail": 0.25,
+        "mass": 0.9,
+        "regularity": 0.9,
+        "counterform": 0.65,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "minimal",
+        "swiss",
+        "brutalist",
+        "bauhaus"
+      ],
+      "fontTarget": {
+        "weight": 0.85,
+        "width": 0.8,
+        "serif": 0,
+        "mono": 0.4,
+        "italic": 0
+      },
+      "idealAspect": 0.8,
+      "tags": [
+        "counterforms",
+        "interlocking-counterforms"
+      ],
+      "logic": "A solid block is cut by a repeated diagonal aperture schedule using even-odd fill.",
+      "references": [
+        {
+          "queryID": "interlocking-counterforms",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.13478640271203163
+        },
+        {
+          "queryID": "interlocking-counterforms",
+          "posterID": "1cce5ac5d899453546c75146-p0",
+          "similarity": 0.12735948498496047
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "moire-grid",
+      "name": "Crossed line screens",
+      "group": "Line fields",
+      "renderer": "motif-moire-grid",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Screen lines",
+          "value": 30,
+          "min": 10,
+          "max": 60,
+          "step": 1
+        },
+        {
+          "id": "angle",
+          "label": "Crossing angle",
+          "value": 0.22,
+          "min": 0.05,
+          "max": 0.65,
+          "step": 0.025
+        },
+        {
+          "id": "lineWidth",
+          "label": "Line weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.035,
+          "step": 0.001
+        }
+      ],
+      "traits": {
+        "angularity": 0.8,
+        "curvature": 0.3,
+        "detail": 1,
+        "mass": 0.3,
+        "regularity": 1,
+        "counterform": 0.4,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "optical",
+        "abstract",
+        "halftone"
+      ],
+      "fontTarget": {
+        "weight": 0.5,
+        "width": 1,
+        "serif": 0,
+        "mono": 0.4,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "line-fields",
+        "moire-lines"
+      ],
+      "logic": "Two clipped parallel line screens cross at a controlled angle to generate interference.",
+      "references": [
+        {
+          "queryID": "moire-lines",
+          "posterID": "12f8c6f637febe36ba66d7b6-p0",
+          "similarity": 0.1526972735761466
+        },
+        {
+          "queryID": "moire-lines",
+          "posterID": "fac44fee509db0d6c554dcbc-p0",
+          "similarity": 0.1503204353584901
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "orbital-paths",
+      "name": "Orbital ellipses",
+      "group": "Curves",
+      "renderer": "motif-orbital-paths",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Orbits",
+          "value": 7,
+          "min": 3,
+          "max": 15,
+          "step": 1
+        },
+        {
+          "id": "flatten",
+          "label": "Orbit flattening",
+          "value": 0.3,
+          "min": 0.12,
+          "max": 0.75,
+          "step": 0.025
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        },
+        {
+          "id": "lineWidth",
+          "label": "Line weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.035,
+          "step": 0.001
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.5,
+        "mass": 0.2,
+        "regularity": 1,
+        "counterform": 0.85,
+        "directionality": 0.4,
+        "volume": 0
+      },
+      "styles": [
+        "minimal",
+        "swiss",
+        "editorial",
+        "guilloche"
+      ],
+      "fontTarget": {
+        "weight": 0.35,
+        "width": 1,
+        "serif": 0.6,
+        "mono": 0,
+        "italic": 0.2
+      },
+      "idealAspect": 1,
+      "tags": [
+        "curves",
+        "radial-repeat"
+      ],
+      "logic": "Flattened ellipses rotate about a common center with equal angular steps.",
+      "references": [
+        {
+          "queryID": "radial-repeat",
+          "posterID": "b69b2f4d6b16fca5eba6efd4-p0",
+          "similarity": 0.11228562748208519
+        },
+        {
+          "queryID": "radial-repeat",
+          "posterID": "02f8efca35d0a69f7065e7e8-p0",
+          "similarity": 0.1116722483658348
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "leaf-ribbons",
+      "name": "Leaf ribbons",
+      "group": "Curves",
+      "renderer": "motif-leaf-ribbons",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Leaves",
+          "value": 5,
+          "min": 2,
+          "max": 12,
+          "step": 1
+        },
+        {
+          "id": "bend",
+          "label": "Bend",
+          "value": 0.4,
+          "min": 0.08,
+          "max": 0.85,
+          "step": 0.02
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.45,
+        "mass": 0.6,
+        "regularity": 0.6,
+        "counterform": 0.3,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "color-field",
+        "editorial",
+        "guilloche"
+      ],
+      "fontTarget": {
+        "weight": 0.5,
+        "width": 1,
+        "serif": 1,
+        "mono": 0,
+        "italic": 0.3
+      },
+      "idealAspect": 1.2,
+      "tags": [
+        "curves",
+        "organic-repeat"
+      ],
+      "logic": "Opposing cubic curves enclose leaf-like ribbons; a shared bend controls their directional flow.",
+      "references": [
+        {
+          "queryID": "organic-repeat",
+          "posterID": "8600d11110fd184fdfca0960-p0",
+          "similarity": 0.12796644918179617
+        },
+        {
+          "queryID": "organic-repeat",
+          "posterID": "5c50ca2e2e2fafd3036d2c56-p0",
+          "similarity": 0.12269091489897348
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "woven-strips",
+      "name": "Woven strip field",
+      "group": "Modular grids",
+      "renderer": "motif-woven-strips",
+      "parameters": [
+        {
+          "id": "rows",
+          "label": "Rows",
+          "value": 6,
+          "min": 2,
+          "max": 14,
+          "step": 1
+        },
+        {
+          "id": "columns",
+          "label": "Columns",
+          "value": 5,
+          "min": 2,
+          "max": 14,
+          "step": 1
+        },
+        {
+          "id": "gap",
+          "label": "Weave gap",
+          "value": 0.2,
+          "min": 0.08,
+          "max": 0.45,
+          "step": 0.025
+        }
+      ],
+      "traits": {
+        "angularity": 0.8,
+        "curvature": 0.1,
+        "detail": 0.65,
+        "mass": 0.7,
+        "regularity": 1,
+        "counterform": 0.3,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "constructivist",
+        "swiss",
+        "bauhaus"
+      ],
+      "fontTarget": {
+        "weight": 0.7,
+        "width": 0.8,
+        "serif": 0,
+        "mono": 0.7,
+        "italic": 0
+      },
+      "idealAspect": 1.2,
+      "tags": [
+        "modular-grids",
+        "tessellation"
+      ],
+      "logic": "Alternating short horizontal and vertical modules interlock over a shared lattice.",
+      "references": [
+        {
+          "queryID": "tessellation",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.14086436364598726
+        },
+        {
+          "queryID": "tessellation",
+          "posterID": "220a20609d677ab8c4f7f11c-p0",
+          "similarity": 0.11218976819997946
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "tone-sphere",
+      "name": "Shaded sphere",
+      "group": "Shaded volumes",
+      "renderer": "motif-tone-sphere",
+      "parameters": [
+        {
+          "id": "grid",
+          "label": "Dot resolution",
+          "value": 48,
+          "min": 28,
+          "max": 70,
+          "step": 1
+        },
+        {
+          "id": "light",
+          "label": "Light direction",
+          "value": -0.5,
+          "min": -1,
+          "max": 1,
+          "step": 0.1
+        },
+        {
+          "id": "roundness",
+          "label": "Roundness",
+          "value": 0.16,
+          "min": 0.04,
+          "max": 0.28,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0.1,
+        "curvature": 0.8,
+        "detail": 0.9,
+        "mass": 0.5,
+        "regularity": 0.8,
+        "counterform": 0,
+        "directionality": 0.5,
+        "volume": 1
+      },
+      "styles": [
+        "halftone",
+        "optical",
+        "abstract",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 0.9,
+        "serif": 0,
+        "mono": 0.3,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "shaded-volumes",
+        "halftone-field",
+        "scale-sequence"
+      ],
+      "logic": "A signed-distance solid is ray-marched; physical circular dot areas encode surface illumination. The result remains outlined vector dots.",
+      "references": [
+        {
+          "queryID": "halftone-field",
+          "posterID": "47270c8359ab8f719a1d48f0-p0",
+          "similarity": 0.12731763296447057
+        },
+        {
+          "queryID": "halftone-field",
+          "posterID": "a4399b25fc67c17496e15e30-p0",
+          "similarity": 0.11738626466462289
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "f70bb53f4658ac5997f897c2-p0",
+          "similarity": 0.13267347544681013
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.12978390323682218
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "tone-torus",
+      "name": "Shaded torus",
+      "group": "Shaded volumes",
+      "renderer": "motif-tone-torus",
+      "parameters": [
+        {
+          "id": "grid",
+          "label": "Dot resolution",
+          "value": 48,
+          "min": 28,
+          "max": 70,
+          "step": 1
+        },
+        {
+          "id": "tilt",
+          "label": "View angle",
+          "value": 0.8,
+          "min": 0.15,
+          "max": 1.45,
+          "step": 0.05
+        },
+        {
+          "id": "light",
+          "label": "Light direction",
+          "value": -0.5,
+          "min": -1,
+          "max": 1,
+          "step": 0.1
+        },
+        {
+          "id": "roundness",
+          "label": "Roundness",
+          "value": 0.16,
+          "min": 0.04,
+          "max": 0.28,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0.1,
+        "curvature": 0.8,
+        "detail": 0.9,
+        "mass": 0.5,
+        "regularity": 0.8,
+        "counterform": 0.6,
+        "directionality": 0.5,
+        "volume": 1
+      },
+      "styles": [
+        "halftone",
+        "optical",
+        "abstract",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 0.9,
+        "serif": 0,
+        "mono": 0.3,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "shaded-volumes",
+        "halftone-field",
+        "scale-sequence"
+      ],
+      "logic": "A signed-distance solid is ray-marched; physical circular dot areas encode surface illumination. The result remains outlined vector dots.",
+      "references": [
+        {
+          "queryID": "halftone-field",
+          "posterID": "47270c8359ab8f719a1d48f0-p0",
+          "similarity": 0.12731763296447057
+        },
+        {
+          "queryID": "halftone-field",
+          "posterID": "a4399b25fc67c17496e15e30-p0",
+          "similarity": 0.11738626466462289
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "f70bb53f4658ac5997f897c2-p0",
+          "similarity": 0.13267347544681013
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.12978390323682218
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "tone-capsule",
+      "name": "Shaded capsule",
+      "group": "Shaded volumes",
+      "renderer": "motif-tone-capsule",
+      "parameters": [
+        {
+          "id": "grid",
+          "label": "Dot resolution",
+          "value": 48,
+          "min": 28,
+          "max": 70,
+          "step": 1
+        },
+        {
+          "id": "tilt",
+          "label": "View angle",
+          "value": 0.8,
+          "min": 0.15,
+          "max": 1.45,
+          "step": 0.05
+        },
+        {
+          "id": "light",
+          "label": "Light direction",
+          "value": -0.5,
+          "min": -1,
+          "max": 1,
+          "step": 0.1
+        },
+        {
+          "id": "roundness",
+          "label": "Roundness",
+          "value": 0.16,
+          "min": 0.04,
+          "max": 0.28,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0.1,
+        "curvature": 0.8,
+        "detail": 0.9,
+        "mass": 0.5,
+        "regularity": 0.8,
+        "counterform": 0,
+        "directionality": 0.5,
+        "volume": 1
+      },
+      "styles": [
+        "halftone",
+        "optical",
+        "abstract",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 0.9,
+        "serif": 0,
+        "mono": 0.3,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "shaded-volumes",
+        "halftone-field",
+        "scale-sequence"
+      ],
+      "logic": "A signed-distance solid is ray-marched; physical circular dot areas encode surface illumination. The result remains outlined vector dots.",
+      "references": [
+        {
+          "queryID": "halftone-field",
+          "posterID": "47270c8359ab8f719a1d48f0-p0",
+          "similarity": 0.12731763296447057
+        },
+        {
+          "queryID": "halftone-field",
+          "posterID": "a4399b25fc67c17496e15e30-p0",
+          "similarity": 0.11738626466462289
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "f70bb53f4658ac5997f897c2-p0",
+          "similarity": 0.13267347544681013
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.12978390323682218
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "tone-cube",
+      "name": "Rounded cube",
+      "group": "Shaded volumes",
+      "renderer": "motif-tone-cube",
+      "parameters": [
+        {
+          "id": "grid",
+          "label": "Dot resolution",
+          "value": 48,
+          "min": 28,
+          "max": 70,
+          "step": 1
+        },
+        {
+          "id": "tilt",
+          "label": "View angle",
+          "value": 0.8,
+          "min": 0.15,
+          "max": 1.45,
+          "step": 0.05
+        },
+        {
+          "id": "light",
+          "label": "Light direction",
+          "value": -0.5,
+          "min": -1,
+          "max": 1,
+          "step": 0.1
+        },
+        {
+          "id": "roundness",
+          "label": "Roundness",
+          "value": 0.16,
+          "min": 0.04,
+          "max": 0.28,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0.5,
+        "curvature": 0.8,
+        "detail": 0.9,
+        "mass": 0.5,
+        "regularity": 0.8,
+        "counterform": 0,
+        "directionality": 0.5,
+        "volume": 1
+      },
+      "styles": [
+        "halftone",
+        "optical",
+        "abstract",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 0.9,
+        "serif": 0,
+        "mono": 0.3,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "shaded-volumes",
+        "halftone-field",
+        "scale-sequence"
+      ],
+      "logic": "A signed-distance solid is ray-marched; physical circular dot areas encode surface illumination. The result remains outlined vector dots.",
+      "references": [
+        {
+          "queryID": "halftone-field",
+          "posterID": "47270c8359ab8f719a1d48f0-p0",
+          "similarity": 0.12731763296447057
+        },
+        {
+          "queryID": "halftone-field",
+          "posterID": "a4399b25fc67c17496e15e30-p0",
+          "similarity": 0.11738626466462289
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "f70bb53f4658ac5997f897c2-p0",
+          "similarity": 0.13267347544681013
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.12978390323682218
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "tone-cone",
+      "name": "Shaded cone",
+      "group": "Shaded volumes",
+      "renderer": "motif-tone-cone",
+      "parameters": [
+        {
+          "id": "grid",
+          "label": "Dot resolution",
+          "value": 48,
+          "min": 28,
+          "max": 70,
+          "step": 1
+        },
+        {
+          "id": "tilt",
+          "label": "View angle",
+          "value": 0.8,
+          "min": 0.15,
+          "max": 1.45,
+          "step": 0.05
+        },
+        {
+          "id": "light",
+          "label": "Light direction",
+          "value": -0.5,
+          "min": -1,
+          "max": 1,
+          "step": 0.1
+        },
+        {
+          "id": "roundness",
+          "label": "Roundness",
+          "value": 0.16,
+          "min": 0.04,
+          "max": 0.28,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0.5,
+        "curvature": 0.8,
+        "detail": 0.9,
+        "mass": 0.5,
+        "regularity": 0.8,
+        "counterform": 0,
+        "directionality": 0.5,
+        "volume": 1
+      },
+      "styles": [
+        "halftone",
+        "optical",
+        "abstract",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 0.9,
+        "serif": 0,
+        "mono": 0.3,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "shaded-volumes",
+        "halftone-field",
+        "scale-sequence"
+      ],
+      "logic": "A signed-distance solid is ray-marched; physical circular dot areas encode surface illumination. The result remains outlined vector dots.",
+      "references": [
+        {
+          "queryID": "halftone-field",
+          "posterID": "47270c8359ab8f719a1d48f0-p0",
+          "similarity": 0.12731763296447057
+        },
+        {
+          "queryID": "halftone-field",
+          "posterID": "a4399b25fc67c17496e15e30-p0",
+          "similarity": 0.11738626466462289
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "f70bb53f4658ac5997f897c2-p0",
+          "similarity": 0.13267347544681013
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.12978390323682218
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "tone-ellipsoid",
+      "name": "Shaded ellipsoid",
+      "group": "Shaded volumes",
+      "renderer": "motif-tone-ellipsoid",
+      "parameters": [
+        {
+          "id": "grid",
+          "label": "Dot resolution",
+          "value": 48,
+          "min": 28,
+          "max": 70,
+          "step": 1
+        },
+        {
+          "id": "tilt",
+          "label": "View angle",
+          "value": 0.8,
+          "min": 0.15,
+          "max": 1.45,
+          "step": 0.05
+        },
+        {
+          "id": "light",
+          "label": "Light direction",
+          "value": -0.5,
+          "min": -1,
+          "max": 1,
+          "step": 0.1
+        },
+        {
+          "id": "roundness",
+          "label": "Roundness",
+          "value": 0.16,
+          "min": 0.04,
+          "max": 0.28,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0.1,
+        "curvature": 0.8,
+        "detail": 0.9,
+        "mass": 0.5,
+        "regularity": 0.8,
+        "counterform": 0,
+        "directionality": 0.5,
+        "volume": 1
+      },
+      "styles": [
+        "halftone",
+        "optical",
+        "abstract",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 0.9,
+        "serif": 0,
+        "mono": 0.3,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "shaded-volumes",
+        "halftone-field",
+        "scale-sequence"
+      ],
+      "logic": "A signed-distance solid is ray-marched; physical circular dot areas encode surface illumination. The result remains outlined vector dots.",
+      "references": [
+        {
+          "queryID": "halftone-field",
+          "posterID": "47270c8359ab8f719a1d48f0-p0",
+          "similarity": 0.12731763296447057
+        },
+        {
+          "queryID": "halftone-field",
+          "posterID": "a4399b25fc67c17496e15e30-p0",
+          "similarity": 0.11738626466462289
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "f70bb53f4658ac5997f897c2-p0",
+          "similarity": 0.13267347544681013
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.12978390323682218
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "tone-link",
+      "name": "Linked rings",
+      "group": "Shaded volumes",
+      "renderer": "motif-tone-link",
+      "parameters": [
+        {
+          "id": "grid",
+          "label": "Dot resolution",
+          "value": 48,
+          "min": 28,
+          "max": 70,
+          "step": 1
+        },
+        {
+          "id": "tilt",
+          "label": "View angle",
+          "value": 0.8,
+          "min": 0.15,
+          "max": 1.45,
+          "step": 0.05
+        },
+        {
+          "id": "light",
+          "label": "Light direction",
+          "value": -0.5,
+          "min": -1,
+          "max": 1,
+          "step": 0.1
+        },
+        {
+          "id": "roundness",
+          "label": "Roundness",
+          "value": 0.16,
+          "min": 0.04,
+          "max": 0.28,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0.1,
+        "curvature": 0.8,
+        "detail": 0.9,
+        "mass": 0.5,
+        "regularity": 0.8,
+        "counterform": 0.6,
+        "directionality": 0.5,
+        "volume": 1
+      },
+      "styles": [
+        "halftone",
+        "optical",
+        "abstract",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 0.9,
+        "serif": 0,
+        "mono": 0.3,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "shaded-volumes",
+        "halftone-field",
+        "scale-sequence"
+      ],
+      "logic": "A signed-distance solid is ray-marched; physical circular dot areas encode surface illumination. The result remains outlined vector dots.",
+      "references": [
+        {
+          "queryID": "halftone-field",
+          "posterID": "47270c8359ab8f719a1d48f0-p0",
+          "similarity": 0.12731763296447057
+        },
+        {
+          "queryID": "halftone-field",
+          "posterID": "a4399b25fc67c17496e15e30-p0",
+          "similarity": 0.11738626466462289
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "f70bb53f4658ac5997f897c2-p0",
+          "similarity": 0.13267347544681013
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.12978390323682218
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "tone-gyroid",
+      "name": "Gyroid fragment",
+      "group": "Shaded volumes",
+      "renderer": "motif-tone-gyroid",
+      "parameters": [
+        {
+          "id": "grid",
+          "label": "Dot resolution",
+          "value": 48,
+          "min": 28,
+          "max": 70,
+          "step": 1
+        },
+        {
+          "id": "tilt",
+          "label": "View angle",
+          "value": 0.8,
+          "min": 0.15,
+          "max": 1.45,
+          "step": 0.05
+        },
+        {
+          "id": "light",
+          "label": "Light direction",
+          "value": -0.5,
+          "min": -1,
+          "max": 1,
+          "step": 0.1
+        },
+        {
+          "id": "roundness",
+          "label": "Roundness",
+          "value": 0.16,
+          "min": 0.04,
+          "max": 0.28,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0.1,
+        "curvature": 0.8,
+        "detail": 0.9,
+        "mass": 0.5,
+        "regularity": 0.8,
+        "counterform": 0.6,
+        "directionality": 0.5,
+        "volume": 1
+      },
+      "styles": [
+        "halftone",
+        "optical",
+        "abstract",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 0.9,
+        "serif": 0,
+        "mono": 0.3,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "shaded-volumes",
+        "halftone-field",
+        "scale-sequence"
+      ],
+      "logic": "A signed-distance solid is ray-marched; physical circular dot areas encode surface illumination. The result remains outlined vector dots.",
+      "references": [
+        {
+          "queryID": "halftone-field",
+          "posterID": "47270c8359ab8f719a1d48f0-p0",
+          "similarity": 0.12731763296447057
+        },
+        {
+          "queryID": "halftone-field",
+          "posterID": "a4399b25fc67c17496e15e30-p0",
+          "similarity": 0.11738626466462289
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "f70bb53f4658ac5997f897c2-p0",
+          "similarity": 0.13267347544681013
+        },
+        {
+          "queryID": "scale-sequence",
+          "posterID": "16bb8eb313fff1a8d35d28d2-p0",
+          "similarity": 0.12978390323682218
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "organic-silhouette",
+      "name": "Organic silhouette",
+      "group": "Solid forms",
+      "renderer": "organic-blob",
+      "parameters": [
+        {
+          "id": "lobes",
+          "label": "Lobes",
+          "value": 4,
+          "min": 2,
+          "max": 7,
+          "step": 1
+        },
+        {
+          "id": "amplitude",
+          "label": "Edge modulation",
+          "value": 0.1,
+          "min": 0.02,
+          "max": 0.16,
+          "step": 0.01
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.2,
+        "mass": 0.8,
+        "regularity": 0.4,
+        "counterform": 0,
+        "directionality": 0.2,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "color-field",
+        "expressive"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 1,
+        "serif": 0,
+        "mono": 0,
+        "italic": 0
+      },
+      "idealAspect": 1,
+      "tags": [
+        "solid-forms",
+        "organic-repeat"
+      ],
+      "logic": "A periodic radial spline creates the familiar organic silhouette as one option among many.",
+      "references": [
+        {
+          "queryID": "organic-repeat",
+          "posterID": "8600d11110fd184fdfca0960-p0",
+          "similarity": 0.12796644918179617
+        },
+        {
+          "queryID": "organic-repeat",
+          "posterID": "5c50ca2e2e2fafd3036d2c56-p0",
+          "similarity": 0.12269091489897348
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "guilloche-loop",
+      "name": "Guilloche loop",
+      "group": "Curves",
+      "renderer": "guilloche",
+      "parameters": [
+        {
+          "id": "lobes",
+          "label": "Orbit ratio",
+          "value": 7,
+          "min": 5,
+          "max": 13,
+          "step": 1
+        },
+        {
+          "id": "layers",
+          "label": "Pen layers",
+          "value": 6,
+          "min": 2,
+          "max": 10,
+          "step": 1
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        },
+        {
+          "id": "lineWidth",
+          "label": "Pen width",
+          "value": 0.0011,
+          "min": 0.0006,
+          "max": 0.003,
+          "step": 0.0001
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 1,
+        "mass": 0.15,
+        "regularity": 1,
+        "counterform": 0.8,
+        "directionality": 0.3,
+        "volume": 0
+      },
+      "styles": [
+        "guilloche",
+        "editorial",
+        "optical"
+      ],
+      "fontTarget": {
+        "weight": 0.35,
+        "width": 1,
+        "serif": 1,
+        "mono": 0,
+        "italic": 0.5
+      },
+      "idealAspect": 1,
+      "tags": [
+        "curves",
+        "moire-lines"
+      ],
+      "logic": "Closed hypotrochoid pen paths repeat with controlled radial offsets.",
+      "references": [
+        {
+          "queryID": "moire-lines",
+          "posterID": "12f8c6f637febe36ba66d7b6-p0",
+          "similarity": 0.1526972735761466
+        },
+        {
+          "queryID": "moire-lines",
+          "posterID": "fac44fee509db0d6c554dcbc-p0",
+          "similarity": 0.1503204353584901
+        }
+      ],
+      "basis": "Authored procedural grammar; saved SigLIP retrieval is reference evidence, not an automatic geometric fit."
+    },
+    {
+      "id": "poster-helix",
+      "name": "Poster helix",
+      "group": "Poster gestures",
+      "renderer": "poster-helix",
+      "parameters": [
+        {
+          "id": "turns",
+          "label": "Turns",
+          "value": 2.4,
+          "min": 1,
+          "max": 4,
+          "step": 0.1
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0.2,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        },
+        {
+          "id": "bend",
+          "label": "Bend",
+          "value": 0.45,
+          "min": 0.1,
+          "max": 0.9,
+          "step": 0.05
+        },
+        {
+          "id": "lineWidth",
+          "label": "Tube width",
+          "value": 0.014,
+          "min": 0.006,
+          "max": 0.1,
+          "step": 0.002
+        }
+      ],
+      "traits": {
+        "angularity": 0.1,
+        "curvature": 1,
+        "detail": 0.55,
+        "mass": 0.4,
+        "regularity": 0.7,
+        "counterform": 0.7,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "editorial",
+        "guilloche",
+        "expressive"
+      ],
+      "fontTarget": {
+        "weight": 0.5,
+        "width": 1,
+        "serif": 0,
+        "mono": 1,
+        "italic": 0
+      },
+      "idealAspect": 1.4,
+      "tags": [
+        "continuous-curve",
+        "oversized-object",
+        "tube",
+        "foreground-background",
+        "whole-poster",
+        "zoom-crop",
+        "displacement"
+      ],
+      "logic": "Project one continuous tubular curve over a poster-sized envelope; preserve its exact path across background and clipped foreground passes.",
+      "references": [],
+      "basis": "Authored procedural grammar inspired by L Viscosi, source 6f0afba09e88052dee70c023-p0. Saved caption credits Studio Feixen; official project: https://www.studiofeixen.ch/luzerner-theater/"
+    },
+    {
+      "id": "poster-loop",
+      "name": "Poster loop",
+      "group": "Poster gestures",
+      "renderer": "poster-loop",
+      "parameters": [
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0.2,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        },
+        {
+          "id": "bend",
+          "label": "Bend",
+          "value": 0.45,
+          "min": 0.1,
+          "max": 0.9,
+          "step": 0.05
+        },
+        {
+          "id": "lineWidth",
+          "label": "Tube width",
+          "value": 0.024,
+          "min": 0.006,
+          "max": 0.1,
+          "step": 0.002
+        }
+      ],
+      "traits": {
+        "angularity": 0.1,
+        "curvature": 1,
+        "detail": 0.55,
+        "mass": 0.4,
+        "regularity": 0.7,
+        "counterform": 0.7,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "editorial",
+        "guilloche",
+        "expressive"
+      ],
+      "fontTarget": {
+        "weight": 0.65,
+        "width": 0.9,
+        "serif": 0,
+        "mono": 0,
+        "italic": 0
+      },
+      "idealAspect": 1.4,
+      "tags": [
+        "continuous-curve",
+        "oversized-object",
+        "tube",
+        "foreground-background",
+        "whole-poster",
+        "zoom-crop",
+        "displacement"
+      ],
+      "logic": "Project one continuous tubular curve over a poster-sized envelope; preserve its exact path across background and clipped foreground passes.",
+      "references": [],
+      "basis": "Authored procedural grammar inspired by L Viscosi, source 6f0afba09e88052dee70c023-p0. Saved caption credits Studio Feixen; official project: https://www.studiofeixen.ch/luzerner-theater/"
+    },
+    {
+      "id": "poster-ribbon",
+      "name": "Poster ribbon",
+      "group": "Poster gestures",
+      "renderer": "poster-ribbon",
+      "parameters": [
+        {
+          "id": "turns",
+          "label": "Turns",
+          "value": 2.4,
+          "min": 1,
+          "max": 4,
+          "step": 0.1
+        },
+        {
+          "id": "phase",
+          "label": "Phase",
+          "value": 0.2,
+          "min": -3.14,
+          "max": 3.14,
+          "step": 0.05
+        },
+        {
+          "id": "bend",
+          "label": "Bend",
+          "value": 0.45,
+          "min": 0.1,
+          "max": 0.9,
+          "step": 0.05
+        },
+        {
+          "id": "lineWidth",
+          "label": "Tube width",
+          "value": 0.065,
+          "min": 0.006,
+          "max": 0.1,
+          "step": 0.002
+        }
+      ],
+      "traits": {
+        "angularity": 0.1,
+        "curvature": 1,
+        "detail": 0.55,
+        "mass": 0.4,
+        "regularity": 0.7,
+        "counterform": 0.7,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "editorial",
+        "guilloche",
+        "expressive"
+      ],
+      "fontTarget": {
+        "weight": 0.35,
+        "width": 1,
+        "serif": 0,
+        "mono": 0,
+        "italic": 0
+      },
+      "idealAspect": 1.4,
+      "tags": [
+        "continuous-curve",
+        "oversized-object",
+        "tube",
+        "foreground-background",
+        "whole-poster",
+        "zoom-crop",
+        "displacement"
+      ],
+      "logic": "Project one continuous tubular curve over a poster-sized envelope; preserve its exact path across background and clipped foreground passes.",
+      "references": [],
+      "basis": "Authored procedural grammar inspired by L Viscosi, source 6f0afba09e88052dee70c023-p0. Saved caption credits Studio Feixen; official project: https://www.studiofeixen.ch/luzerner-theater/"
+    },
+    {
+      "id": "disc-wreath",
+      "name": "Disc wreath",
+      "group": "Radial systems",
+      "renderer": "motif-disc-wreath",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Discs",
+          "value": 8,
+          "min": 3,
+          "max": 24,
+          "step": 1
+        },
+        {
+          "id": "orbitRadius",
+          "label": "Orbit radius",
+          "value": 0.35,
+          "min": 0.12,
+          "max": 0.43,
+          "step": 0.01
+        },
+        {
+          "id": "discRadius",
+          "label": "Disc radius",
+          "value": 0.105,
+          "min": 0.015,
+          "max": 0.18,
+          "step": 0.005
+        },
+        {
+          "id": "flatten",
+          "label": "Orbit height",
+          "value": 1,
+          "min": 0.45,
+          "max": 1,
+          "step": 0.01
+        },
+        {
+          "id": "phase",
+          "label": "Angular phase",
+          "value": 0,
+          "min": -3,
+          "max": 3,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.35,
+        "mass": 0.45,
+        "regularity": 1,
+        "counterform": 0.8,
+        "directionality": 0,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "optical",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.48,
+        "width": 0.93,
+        "serif": 0.15,
+        "mono": 0.1,
+        "italic": 0.05
+      },
+      "idealAspect": 1,
+      "tags": [
+        "sam-reviewed",
+        "arrangement",
+        "disc-wreath"
+      ],
+      "logic": "Equal circular modules occupy an elliptical orbit at equal angular intervals. Radius is limited to keep neighboring discs separate and inside the field.",
+      "references": [
+        {
+          "queryID": "sam-visual-review",
+          "posterID": "a0527f92c47b62fa8918beb0-p0",
+          "similarity": null,
+          "sourceBounds": {
+            "x": 0.026415094339622643,
+            "y": 0.16,
+            "width": 0.949056603773585,
+            "height": 0.6758620689655171
+          },
+          "sourceImageSHA256": "e5f45cfe5c469ae569a8d8e77b97aa75fe3f78440ac487b6ef0eaac3cade97c5",
+          "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/disc-1/evidence.json"
+        }
+      ],
+      "basis": "SAM source mask and Codex visual review support this authored vector interpretation. Controls and topology are tested; photographic texture and the original authoring layers are not recovered."
+    },
+    {
+      "id": "segmented-ring",
+      "name": "Segmented ring",
+      "group": "Radial systems",
+      "renderer": "motif-segmented-ring",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Arc segments",
+          "value": 8,
+          "min": 2,
+          "max": 32,
+          "step": 1
+        },
+        {
+          "id": "duty",
+          "label": "Segment coverage",
+          "value": 0.64,
+          "min": 0.15,
+          "max": 0.88,
+          "step": 0.01
+        },
+        {
+          "id": "thickness",
+          "label": "Band thickness",
+          "value": 0.18,
+          "min": 0.06,
+          "max": 0.65,
+          "step": 0.01
+        },
+        {
+          "id": "phase",
+          "label": "Angular phase",
+          "value": 0,
+          "min": -3,
+          "max": 3,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0,
+        "curvature": 1,
+        "detail": 0.45,
+        "mass": 0.35,
+        "regularity": 1,
+        "counterform": 0.95,
+        "directionality": 0,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "optical",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.48,
+        "width": 0.93,
+        "serif": 0.15,
+        "mono": 0.1,
+        "italic": 0.05
+      },
+      "idealAspect": 1,
+      "tags": [
+        "sam-reviewed",
+        "arrangement",
+        "segmented-ring"
+      ],
+      "logic": "Disjoint annular sectors share inner and outer circles. Segment count, angular coverage and band thickness vary independently.",
+      "references": [
+        {
+          "queryID": "sam-visual-review",
+          "posterID": "02f8efca35d0a69f7065e7e8-p0",
+          "similarity": null,
+          "sourceBounds": {
+            "x": 0.2737226277372263,
+            "y": 0.5823451910408433,
+            "width": 0.22445255474452555,
+            "height": 0.15678524374176547
+          },
+          "sourceImageSHA256": "682913ee729ea58e01e7dcca9d4d5cd6b32012b479aefd16f2d99517af04c848",
+          "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/segmented-ring/evidence.json"
+        }
+      ],
+      "basis": "SAM source mask and Codex visual review support this authored vector interpretation. Controls and topology are tested; photographic texture and the original authoring layers are not recovered."
+    },
+    {
+      "id": "polygon-contours",
+      "name": "Polygon contours",
+      "group": "Angular contours",
+      "renderer": "motif-polygon-contours",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Nested contours",
+          "value": 9,
+          "min": 1,
+          "max": 28,
+          "step": 1
+        },
+        {
+          "id": "sides",
+          "label": "Polygon sides",
+          "value": 4,
+          "min": 3,
+          "max": 12,
+          "step": 1
+        },
+        {
+          "id": "inset",
+          "label": "Total inward shrink",
+          "value": 0.84,
+          "min": 0.15,
+          "max": 0.94,
+          "step": 0.01
+        },
+        {
+          "id": "lineWidth",
+          "label": "Stroke weight",
+          "value": 0.009,
+          "min": 0.002,
+          "max": 0.06,
+          "step": 0.001
+        },
+        {
+          "id": "phase",
+          "label": "Angular phase",
+          "value": 0.785398,
+          "min": -3,
+          "max": 3,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 1,
+        "curvature": 0,
+        "detail": 0.8,
+        "mass": 0.25,
+        "regularity": 1,
+        "counterform": 0.9,
+        "directionality": 0,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "optical",
+        "editorial",
+        "swiss"
+      ],
+      "fontTarget": {
+        "weight": 0.48,
+        "width": 0.93,
+        "serif": 0.15,
+        "mono": 0.1,
+        "italic": 0.05
+      },
+      "idealAspect": 1,
+      "tags": [
+        "sam-reviewed",
+        "primitive and contour system",
+        "polygon-contours"
+      ],
+      "logic": "A regular polygon supplies one frame or a family of concentric contours. Side count changes the primitive; equal radial steps and capped stroke width preserve nested gaps.",
+      "references": [
+        {
+          "queryID": "sam-visual-review",
+          "posterID": "02f8efca35d0a69f7065e7e8-p0",
+          "similarity": null,
+          "sourceBounds": {
+            "x": 0.2737226277372263,
+            "y": 0.761528326745718,
+            "width": 0.22262773722627738,
+            "height": 0.1383399209486166
+          },
+          "sourceImageSHA256": "682913ee729ea58e01e7dcca9d4d5cd6b32012b479aefd16f2d99517af04c848",
+          "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/polygon-frame/evidence.json"
+        },
+        {
+          "queryID": "sam-visual-review",
+          "posterID": "5d12dd24b7681dc52a39e57d-p0",
+          "similarity": null
+        }
+      ],
+      "basis": "SAM source mask and Codex visual review support this authored vector interpretation. Controls and topology are tested; photographic texture and the original authoring layers are not recovered."
+    },
+    {
+      "id": "star-frame",
+      "name": "Star frame",
+      "group": "Angular silhouettes",
+      "renderer": "motif-star-frame",
+      "parameters": [
+        {
+          "id": "count",
+          "label": "Star points",
+          "value": 12,
+          "min": 4,
+          "max": 24,
+          "step": 1
+        },
+        {
+          "id": "depth",
+          "label": "Point depth",
+          "value": 0.25,
+          "min": 0.08,
+          "max": 0.65,
+          "step": 0.01
+        },
+        {
+          "id": "aperture",
+          "label": "Inner star aperture",
+          "value": 0.58,
+          "min": 0,
+          "max": 0.82,
+          "step": 0.01
+        },
+        {
+          "id": "phase",
+          "label": "Angular phase",
+          "value": -1.570796,
+          "min": -3,
+          "max": 3,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 1,
+        "curvature": 0,
+        "detail": 0.5,
+        "mass": 0.6,
+        "regularity": 1,
+        "counterform": 0.75,
+        "directionality": 0,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "optical",
+        "brutalist"
+      ],
+      "fontTarget": {
+        "weight": 0.48,
+        "width": 0.93,
+        "serif": 0.15,
+        "mono": 0.1,
+        "italic": 0.05
+      },
+      "idealAspect": 1,
+      "tags": [
+        "sam-reviewed",
+        "primitive",
+        "star-frame"
+      ],
+      "logic": "Alternating tip and root radii define an even star. A concentric scaled star is subtracted with even-odd fill; zero aperture produces a solid star.",
+      "references": [
+        {
+          "queryID": "sam-visual-review",
+          "posterID": "02f8efca35d0a69f7065e7e8-p0",
+          "similarity": null,
+          "sourceBounds": {
+            "x": 0.7572992700729927,
+            "y": 0.2463768115942029,
+            "width": 0.2208029197080292,
+            "height": 0.15151515151515152
+          },
+          "sourceImageSHA256": "682913ee729ea58e01e7dcca9d4d5cd6b32012b479aefd16f2d99517af04c848",
+          "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/star-frame/evidence.json"
+        }
+      ],
+      "basis": "SAM source mask and Codex visual review support this authored vector interpretation. Controls and topology are tested; photographic texture and the original authoring layers are not recovered."
+    },
+    {
+      "id": "notched-disc",
+      "name": "Notched disc",
+      "group": "Cut silhouettes",
+      "renderer": "motif-notched-disc",
+      "parameters": [
+        {
+          "id": "opening",
+          "label": "Notch angle (radians)",
+          "value": 1.0472,
+          "min": 0.15,
+          "max": 2.8,
+          "step": 0.01
+        },
+        {
+          "id": "depth",
+          "label": "Notch depth",
+          "value": 1,
+          "min": 0.2,
+          "max": 1.3,
+          "step": 0.01
+        },
+        {
+          "id": "flatten",
+          "label": "Disc height",
+          "value": 1,
+          "min": 0.45,
+          "max": 1,
+          "step": 0.01
+        },
+        {
+          "id": "phase",
+          "label": "Orientation",
+          "value": 0,
+          "min": -3,
+          "max": 3,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0.4,
+        "curvature": 0.8,
+        "detail": 0.15,
+        "mass": 0.85,
+        "regularity": 1,
+        "counterform": 0.5,
+        "directionality": 1,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "editorial",
+        "brutalist"
+      ],
+      "fontTarget": {
+        "weight": 0.48,
+        "width": 0.93,
+        "serif": 0.15,
+        "mono": 0.1,
+        "italic": 0.05
+      },
+      "idealAspect": 1,
+      "tags": [
+        "sam-reviewed",
+        "primitive",
+        "notched-disc"
+      ],
+      "logic": "A triangular wedge removes part of a disc. The cut can reach its center or stop short; orientation and flattening transform the complete cut silhouette.",
+      "references": [
+        {
+          "queryID": "sam-visual-review",
+          "posterID": "7ca49ba438265fcaa618783d-p0",
+          "similarity": null,
+          "sourceBounds": {
+            "x": 0.530562347188264,
+            "y": 0.3368055555555556,
+            "width": 0.4058679706601467,
+            "height": 0.3072916666666667
+          },
+          "sourceImageSHA256": "5660b186b618060af67edb86ee2b19976fd384216bbc9601226e51b9ff96273c",
+          "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/notched-disc/evidence.json"
+        }
+      ],
+      "basis": "SAM source mask and Codex visual review support this authored vector interpretation. Controls and topology are tested; photographic texture and the original authoring layers are not recovered."
+    },
+    {
+      "id": "cellular-disc",
+      "name": "Radial cell mosaic",
+      "group": "Cellular systems",
+      "renderer": "motif-cellular-disc",
+      "parameters": [
+        {
+          "id": "rings",
+          "label": "Radial bands",
+          "value": 6,
+          "min": 2,
+          "max": 10,
+          "step": 1
+        },
+        {
+          "id": "count",
+          "label": "Outer band cells",
+          "value": 24,
+          "min": 8,
+          "max": 36,
+          "step": 1
+        },
+        {
+          "id": "gutter",
+          "label": "Cell separation",
+          "value": 0.09,
+          "min": 0.02,
+          "max": 0.22,
+          "step": 0.01
+        },
+        {
+          "id": "stagger",
+          "label": "Alternate-band stagger",
+          "value": 0.5,
+          "min": 0,
+          "max": 0.9,
+          "step": 0.01
+        },
+        {
+          "id": "irregularity",
+          "label": "Boundary irregularity",
+          "value": 0.4,
+          "min": 0,
+          "max": 0.8,
+          "step": 0.01
+        },
+        {
+          "id": "phase",
+          "label": "Angular phase",
+          "value": 0,
+          "min": -3,
+          "max": 3,
+          "step": 0.01
+        }
+      ],
+      "traits": {
+        "angularity": 0.5,
+        "curvature": 0.5,
+        "detail": 0.9,
+        "mass": 0.65,
+        "regularity": 0.6,
+        "counterform": 0.6,
+        "directionality": 0,
+        "volume": 0
+      },
+      "styles": [
+        "abstract",
+        "optical",
+        "editorial"
+      ],
+      "fontTarget": {
+        "weight": 0.48,
+        "width": 0.93,
+        "serif": 0.15,
+        "mono": 0.1,
+        "italic": 0.05
+      },
+      "idealAspect": 1,
+      "tags": [
+        "sam-reviewed",
+        "polar lattice system",
+        "cellular-disc"
+      ],
+      "logic": "Shared concentric band boundaries are partitioned into staggered curved cells. Cell count increases with radius; seeded seam and boundary variations retain the radial organization observed in the source.",
+      "references": [
+        {
+          "queryID": "sam-visual-review",
+          "posterID": "7a78e599fb143d5e5ca6f118-p0",
+          "similarity": null,
+          "sourceBounds": {
+            "x": 0.09805924412665985,
+            "y": 0.27872340425531916,
+            "width": 0.24923391215526047,
+            "height": 0.5
+          },
+          "sourceImageSHA256": "96b9fc0ff92d501c9fb3545cc581239f07d709875690aaea983e7eb8d0a85282",
+          "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/cellular-disc/evidence.json"
+        }
+      ],
+      "basis": "SAM source mask and Codex visual review support this authored vector interpretation. Controls and topology are tested; photographic texture and the original authoring layers are not recovered."
+    }
+  ]
+}

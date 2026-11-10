@@ -1,0 +1,72 @@
+{
+  "mincho": {
+    "file": "/System/Library/Fonts/ヒラギノ明朝 ProN.ttc",
+    "postscriptName": "HiraMinProN-W6",
+    "family": "Hiragino Mincho ProN W6",
+    "fullName": "HiraMinProN-W6",
+    "sha256": "36adcf3dcbec5880364487b380178c6388fcf518cec729ba18a855e71b69495c",
+    "licence": "macOS system font (Hiragino Mincho ProN W6); outlines used for a local study only",
+    "glyphs": 142,
+    "composedInEngine": "吕沝众砳䡛"
+  },
+  "gothic": {
+    "file": "/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc",
+    "postscriptName": "HiraKakuProN-W6",
+    "family": "Hiragino Kaku Gothic ProN W6",
+    "fullName": "Hiragino Kaku Gothic ProN W6",
+    "sha256": "790fe535987adc662e83489e162dc54c1e50be8de15169300082f6cc7a082e4e",
+    "licence": "macOS system fonts (Hiragino Kaku Gothic ProN W6; Hiragino Sans GB W6 for 吕沝众砳䡛); local study only",
+    "glyphs": 147,
+    "filledFrom": {
+      "file": "/System/Library/Fonts/Hiragino Sans GB.ttc",
+      "postscriptName": "HiraginoSansGB-W6",
+      "glyphs": "吕沝众砳䡛"
+    }
+  },
+  "maru": {
+    "file": "/System/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc",
+    "postscriptName": "HiraMaruProN-W4",
+    "family": "Hiragino Maru Gothic ProN W4",
+    "fullName": "HiraMaruProN-W4",
+    "sha256": "1129e740671eb79e89d820dfc9142adf647ee5e2594b59539cb9c243ae4ea1e0",
+    "licence": "macOS system font (Hiragino Maru Gothic ProN W4); local study only",
+    "glyphs": 142,
+    "composedInEngine": "吕沝众砳䡛"
+  },
+  "black": {
+    "file": "/PosterLab/geometry-bench/experiments/native-pretext-20261108/workspace/Sources/PosterCore/Resources/Fonts/archivoblack/ArchivoBlack-Regular.ttf",
+    "postscriptName": "ArchivoBlack-Regular",
+    "family": "Archivo Black",
+    "fullName": "Archivo Black Regular",
+    "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+    "licence": "SIL Open Font License 1.1 (Archivo Black, Omnibus-Type)",
+    "glyphs": 77
+  },
+  "condensed": {
+    "file": "/PosterLab/geometry-bench/experiments/native-pretext-20261108/workspace/Sources/PosterCore/Resources/Fonts/anton/Anton-Regular.ttf",
+    "postscriptName": "Anton-Regular",
+    "family": "Anton",
+    "fullName": "Anton Regular",
+    "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+    "licence": "SIL Open Font License 1.1 (Anton, Vernon Adams)",
+    "glyphs": 77
+  },
+  "heavy": {
+    "file": "/System/Library/Fonts/ヒラギノ角ゴシック W9.ttc",
+    "postscriptName": "HiraginoSans-W9",
+    "family": "Hiragino Sans W9",
+    "fullName": "Hiragino Sans W9",
+    "sha256": "eb2d294fdc4e833705bd8a629097e6f40e59a03da8f12929a2d03b03182c28f0",
+    "licence": "macOS system font (Hiragino Sans W9); local study only",
+    "glyphs": 209,
+    "composedInEngine": "吕焱沝众垚砳䡛"
+  },
+  "script": {
+    "file": "geometry-bench/node_modules/hersheytext/hersheytext.json",
+    "family": "Hershey Script 1-stroke",
+    "licence": "Hershey fonts (public, U.S. National Bureau of Standards); JSON port MIT (hersheytext 2.0.0)",
+    "sha256": "1aacce429fbf5eacb060b2cd3d9ad595fa820d28c9667b9ab1177de8de14bd8a",
+    "glyphs": 77,
+    "note": "Centreline strokes; the last field is stroke length, not ink area."
+  }
+}

@@ -1,0 +1,160 @@
+[
+  {
+    "id": "paper-relief-composition",
+    "name": "Paper-relief composition",
+    "group": "Paper constructions",
+    "renderer": "paper-relief",
+    "parameters": [
+      {
+        "id": "layout",
+        "label": "Neubad / terraces / collage",
+        "value": 0,
+        "min": 0,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "id": "lift",
+        "label": "Panel elevation",
+        "value": 0.025,
+        "min": 0,
+        "max": 0.08,
+        "step": 0.001
+      },
+      {
+        "id": "foldAngle",
+        "label": "Flap opening angle",
+        "value": 34,
+        "min": 0,
+        "max": 70,
+        "step": 1
+      },
+      {
+        "id": "recessDepth",
+        "label": "Recess depth",
+        "value": 0.025,
+        "min": 0.004,
+        "max": 0.08,
+        "step": 0.001
+      },
+      {
+        "id": "aperture",
+        "label": "Cutout size",
+        "value": 0.92,
+        "min": 0.4,
+        "max": 1.25,
+        "step": 0.001
+      },
+      {
+        "id": "overlap",
+        "label": "Panel overlap",
+        "value": 0.08,
+        "min": 0,
+        "max": 0.28,
+        "step": 0.001
+      },
+      {
+        "id": "thickness",
+        "label": "Paper edge",
+        "value": 0.002,
+        "min": 0.0005,
+        "max": 0.009,
+        "step": 0.0005
+      },
+      {
+        "id": "shadow",
+        "label": "Cast shadow",
+        "value": 0.65,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "lightAngle",
+        "label": "Light direction",
+        "value": 0.9,
+        "min": 0,
+        "max": 6.28,
+        "step": 0.01
+      },
+      {
+        "id": "labelDensity",
+        "label": "Label coverage",
+        "value": 0.78,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "id": "labelScale",
+        "label": "Surface type size",
+        "value": 0.94,
+        "min": 0.6,
+        "max": 1.8,
+        "step": 0.01
+      },
+      {
+        "id": "textFlow",
+        "label": "Source rotations / upright",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "colorMix",
+        "label": "Inherited ink tint",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      }
+    ],
+    "traits": {
+      "angularity": 0.8,
+      "curvature": 0.25,
+      "detail": 0.85,
+      "mass": 0.95,
+      "regularity": 0.65,
+      "counterform": 0.65,
+      "directionality": 0.35,
+      "volume": 0.75
+    },
+    "styles": [
+      "swiss",
+      "editorial",
+      "minimal",
+      "geometric",
+      "experimental",
+      "abstract"
+    ],
+    "fontTarget": {
+      "weight": 0.42,
+      "width": 1,
+      "serif": 0,
+      "mono": 0.1,
+      "italic": 0
+    },
+    "idealAspect": 0.7,
+    "tags": [
+      "paper-relief",
+      "hinged-flaps",
+      "recessed-panels",
+      "cut-through-holes",
+      "overlapping-panels",
+      "surface-bound-type",
+      "vector-shadows",
+      "irregular-modular-layout"
+    ],
+    "logic": "An irregular seven-by-ten source scaffold merges panels around a dark central recess. Raised slabs, triangular hinged flaps, circular cut-through openings and discs share a shallow orthographic paper space. Labels belong to identified surfaces and use the same projection and clipping as their paper. Higher panels occlude both lower geometry and its text. Terraces and seeded collages are explicit layout alternatives.",
+    "references": [
+      {
+        "queryID": "visually-reviewed-neubad-paper-relief-20261108",
+        "posterID": "60e58285cbf7dd129b712597-p0",
+        "sourceImageSHA256": "dd96602653fcb0a52180cdac07de9dc1315bcb4c3547bd3d5d7c6eb8d88ef781",
+        "evidenceURL": "file:///PosterLab/library/posters/60e58285cbf7dd129b712597-p0/poster.png"
+      }
+    ],
+    "basis": "Authored vector interpretation of the Neubad relief poster, calibrated to its merged panel sizes, central dark void, diagonal flaps, circular openings and attached rotated labels. Original construction and exact physical dimensions are unknown; no source pixels are copied."
+  }
+]

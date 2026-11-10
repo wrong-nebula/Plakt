@@ -1,0 +1,26 @@
+{
+  "serif": {
+    "name": "DM Serif Display",
+    "license": "SIL Open Font License 1.1",
+    "source": "arch-envelope-system/fonts.mjs (dmserif)",
+    "sourceSHA256": "bc5937335d29adba719c06adefe6f165322b467fe3e616cf665a57f6c61a269f",
+    "glyphs": 81,
+    "characters": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,:;!?'\"-&()+@#*%$ "
+  },
+  "mincho": {
+    "name": "Hiragino Mincho ProN W6",
+    "license": "macOS system font — outlines kept for local study only (not redistributable)",
+    "source": "compound-glyph-system/fonts.mjs (mincho)",
+    "sourceSHA256": "b2a0eb7376a907dd0710552037ab14a5399640c5173703f526c7a73a43e8e6f3",
+    "glyphs": 173,
+    "characters": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,:;!?-'&+*#@()木林森口品日昌晶火炎焱水淼人从土圭垚石磊車轟一二三山川月光心愛夢風海波花鳥雨星和平牛犇金鑫犬猋馬驫魚虫蟲耳聶子孖孨又双白皛田畾しつくへてのんそいこりうとらちすあおぬねめゆをむきキ·•●◉◎○ "
+  },
+  "gothic": {
+    "name": "Hiragino Kaku Gothic ProN W6",
+    "license": "macOS system font — outlines kept for local study only (not redistributable)",
+    "source": "compound-glyph-system/fonts.mjs (gothic)",
+    "sourceSHA256": "b2a0eb7376a907dd0710552037ab14a5399640c5173703f526c7a73a43e8e6f3",
+    "glyphs": 180,
+    "characters": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,:;!?-'&+*#@()木林森口吕品日昌晶火炎焱水沝淼人从众土圭垚石砳磊車䡛轟一二三山川月光心愛夢風海波花鳥雨星和平牛犇金鑫犬猋馬驫魚鱻虫蟲耳聶子孖孨又双叒白皛田畾しつくへてのんそいこりうとらちすあおぬねめゆをむきキ·•●◉◎○ "
+  }
+}

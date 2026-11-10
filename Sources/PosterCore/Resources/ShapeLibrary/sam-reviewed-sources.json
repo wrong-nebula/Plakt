@@ -1,0 +1,414 @@
+{
+  "reviewer": "Codex visual inspection of the 61 shape leads and refined source crops",
+  "sourceSelectionsSHA256": "f77f6d5638f6bce2c6eda929ba3986d33bcf5d69f42353475a6b3b8cffcd256a",
+  "families": [
+    {
+      "id": "disc-wreath",
+      "name": "Disc wreath",
+      "kind": "arrangement",
+      "source": {
+        "id": "disc-1",
+        "family": "disc-wreath",
+        "posterID": "a0527f92c47b62fa8918beb0-p0",
+        "imageURL": "file:///PosterLab/library/posters/a0527f92c47b62fa8918beb0-p0/poster.png",
+        "sourceImageSHA256": "e5f45cfe5c469ae569a8d8e77b97aa75fe3f78440ac487b6ef0eaac3cade97c5",
+        "samFingerprint": "b436bb0ee71c311dbcdef08aa077e9eda1d98ee7803db248b2f958f6d0580e43",
+        "computeUnits": "CPU_ONLY",
+        "prompts": [
+          {
+            "label": 2,
+            "x": 0.38139999999999996,
+            "y": 0.1421672627235214
+          },
+          {
+            "label": 3,
+            "x": 0.6214,
+            "y": 0.32216726272352136
+          }
+        ],
+        "maskID": 2,
+        "predictedIoU": 0.98583984375,
+        "stability": 0.9811320754716981,
+        "bounds": {
+          "x": 0.39433962264150946,
+          "y": 0.16,
+          "width": 0.21509433962264152,
+          "height": 0.15310344827586206
+        },
+        "imageWidth": 530,
+        "imageHeight": 725,
+        "centerX": 0.5027075500486524,
+        "centerY": 0.2373813306956531,
+        "refinement": {
+          "method": "RGB distance from median immediate exterior paper inside SAM support",
+          "threshold": 0.075,
+          "paperRGB": [
+            200.0,
+            184.0,
+            155.0
+          ],
+          "reviewRequired": true
+        },
+        "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/disc-1/evidence.json"
+      },
+      "bounds": {
+        "x": 0.026415094339622643,
+        "y": 0.16,
+        "width": 0.949056603773585,
+        "height": 0.6758620689655171
+      },
+      "invariants": [
+        "Centers share one orbit and equal angular spacing.",
+        "Module radius stays constant; a chord bound prevents collisions."
+      ],
+      "parameters": {
+        "count": 8,
+        "orbitRadius": 0.36251105517751736,
+        "discRadius": 0.10554245283018869,
+        "flatten": 1,
+        "phase": 0.0021152859291805196
+      },
+      "catalogID": "disc-wreath"
+    },
+    {
+      "id": "segmented-ring",
+      "name": "Segmented ring",
+      "kind": "arrangement",
+      "source": {
+        "id": "segmented-ring",
+        "family": "segmented-ring",
+        "posterID": "02f8efca35d0a69f7065e7e8-p0",
+        "imageURL": "file:///PosterLab/library/posters/02f8efca35d0a69f7065e7e8-p0/poster.jpg",
+        "sourceImageSHA256": "682913ee729ea58e01e7dcca9d4d5cd6b32012b479aefd16f2d99517af04c848",
+        "samFingerprint": "b436bb0ee71c311dbcdef08aa077e9eda1d98ee7803db248b2f958f6d0580e43",
+        "computeUnits": "CPU_ONLY",
+        "prompts": [
+          {
+            "label": 2,
+            "x": 0.255,
+            "y": 0.58
+          },
+          {
+            "label": 3,
+            "x": 0.505,
+            "y": 0.77
+          }
+        ],
+        "maskID": 2,
+        "predictedIoU": 0.92529296875,
+        "stability": 0.8793900184842883,
+        "bounds": {
+          "x": 0.2737226277372263,
+          "y": 0.5823451910408433,
+          "width": 0.22445255474452555,
+          "height": 0.15678524374176547
+        },
+        "imageWidth": 548,
+        "imageHeight": 759,
+        "centerX": 0.38590470059731347,
+        "centerY": 0.6603997051780351,
+        "refinement": {
+          "method": "RGB distance from median immediate exterior paper inside SAM support",
+          "threshold": 0.075,
+          "paperRGB": [
+            179.0,
+            183.0,
+            199.0
+          ],
+          "reviewRequired": true
+        },
+        "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/segmented-ring/evidence.json"
+      },
+      "bounds": {
+        "x": 0.2737226277372263,
+        "y": 0.5823451910408433,
+        "width": 0.22445255474452555,
+        "height": 0.15678524374176547
+      },
+      "invariants": [
+        "All sectors share the same two radii.",
+        "An angular gap separates every neighboring sector."
+      ],
+      "parameters": {
+        "count": 8,
+        "duty": 0.63,
+        "thickness": 0.18,
+        "phase": 0
+      },
+      "catalogID": "segmented-ring"
+    },
+    {
+      "id": "polygon-contours",
+      "name": "Polygon contours",
+      "kind": "primitive and contour system",
+      "source": {
+        "id": "polygon-frame",
+        "family": "polygon-contours",
+        "posterID": "02f8efca35d0a69f7065e7e8-p0",
+        "imageURL": "file:///PosterLab/library/posters/02f8efca35d0a69f7065e7e8-p0/poster.jpg",
+        "sourceImageSHA256": "682913ee729ea58e01e7dcca9d4d5cd6b32012b479aefd16f2d99517af04c848",
+        "samFingerprint": "b436bb0ee71c311dbcdef08aa077e9eda1d98ee7803db248b2f958f6d0580e43",
+        "computeUnits": "CPU_ONLY",
+        "prompts": [
+          {
+            "label": 2,
+            "x": 0.255,
+            "y": 0.765
+          },
+          {
+            "label": 3,
+            "x": 0.505,
+            "y": 0.9450000000000001
+          }
+        ],
+        "maskID": 1,
+        "predictedIoU": 0.93896484375,
+        "stability": 0.9263301500682128,
+        "bounds": {
+          "x": 0.2737226277372263,
+          "y": 0.761528326745718,
+          "width": 0.22262773722627738,
+          "height": 0.1383399209486166
+        },
+        "imageWidth": 548,
+        "imageHeight": 759,
+        "centerX": 0.38542885297449425,
+        "centerY": 0.8309890993958536,
+        "refinement": {
+          "method": "RGB distance from median immediate exterior paper inside SAM support",
+          "threshold": 0.075,
+          "paperRGB": [
+            175.0,
+            183.0,
+            198.0
+          ],
+          "reviewRequired": true
+        },
+        "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/polygon-frame/evidence.json"
+      },
+      "bounds": {
+        "x": 0.2737226277372263,
+        "y": 0.761528326745718,
+        "width": 0.22262773722627738,
+        "height": 0.1383399209486166
+      },
+      "invariants": [
+        "Every contour shares side count, center and orientation.",
+        "Stroke width is capped below the contour separation."
+      ],
+      "parameters": {
+        "count": 1,
+        "sides": 6,
+        "inset": 0.84,
+        "lineWidth": 0.055,
+        "phase": 0
+      },
+      "catalogID": "polygon-contours"
+    },
+    {
+      "id": "star-frame",
+      "name": "Star frame",
+      "kind": "primitive",
+      "source": {
+        "id": "star-frame",
+        "family": "star-frame",
+        "posterID": "02f8efca35d0a69f7065e7e8-p0",
+        "imageURL": "file:///PosterLab/library/posters/02f8efca35d0a69f7065e7e8-p0/poster.jpg",
+        "sourceImageSHA256": "682913ee729ea58e01e7dcca9d4d5cd6b32012b479aefd16f2d99517af04c848",
+        "samFingerprint": "b436bb0ee71c311dbcdef08aa077e9eda1d98ee7803db248b2f958f6d0580e43",
+        "computeUnits": "CPU_ONLY",
+        "prompts": [
+          {
+            "label": 2,
+            "x": 0.742,
+            "y": 0.235
+          },
+          {
+            "label": 3,
+            "x": 0.992,
+            "y": 0.425
+          }
+        ],
+        "maskID": 2,
+        "predictedIoU": 0.8876953125,
+        "stability": 0.9197231833910035,
+        "bounds": {
+          "x": 0.7572992700729927,
+          "y": 0.2463768115942029,
+          "width": 0.2208029197080292,
+          "height": 0.15151515151515152
+        },
+        "imageWidth": 548,
+        "imageHeight": 759,
+        "centerX": 0.8674181859373821,
+        "centerY": 0.3233992658910061,
+        "refinement": {
+          "method": "RGB distance from median immediate exterior paper inside SAM support",
+          "threshold": 0.075,
+          "paperRGB": [
+            185.0,
+            190.0,
+            204.0
+          ],
+          "reviewRequired": true
+        },
+        "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/star-frame/evidence.json"
+      },
+      "bounds": {
+        "x": 0.7572992700729927,
+        "y": 0.2463768115942029,
+        "width": 0.2208029197080292,
+        "height": 0.15151515151515152
+      },
+      "invariants": [
+        "Tips repeat at equal angular intervals.",
+        "The inner and outer stars are homothetic and never cross."
+      ],
+      "parameters": {
+        "count": 12,
+        "depth": 0.26,
+        "aperture": 0.58,
+        "phase": -1.570796
+      },
+      "catalogID": "star-frame"
+    },
+    {
+      "id": "notched-disc",
+      "name": "Notched disc",
+      "kind": "primitive",
+      "source": {
+        "id": "notched-disc",
+        "family": "notched-disc",
+        "posterID": "7ca49ba438265fcaa618783d-p0",
+        "imageURL": "file:///PosterLab/library/posters/7ca49ba438265fcaa618783d-p0/poster.jpg",
+        "sourceImageSHA256": "5660b186b618060af67edb86ee2b19976fd384216bbc9601226e51b9ff96273c",
+        "samFingerprint": "b436bb0ee71c311dbcdef08aa077e9eda1d98ee7803db248b2f958f6d0580e43",
+        "computeUnits": "CPU_ONLY",
+        "prompts": [
+          {
+            "label": 2,
+            "x": 0.515,
+            "y": 0.33
+          },
+          {
+            "label": 3,
+            "x": 0.995,
+            "y": 0.655
+          }
+        ],
+        "maskID": 2,
+        "predictedIoU": 0.9853515625,
+        "stability": 0.9593917112299465,
+        "bounds": {
+          "x": 0.530562347188264,
+          "y": 0.3368055555555556,
+          "width": 0.4058679706601467,
+          "height": 0.3072916666666667
+        },
+        "imageWidth": 409,
+        "imageHeight": 576,
+        "centerX": 0.7221020490825277,
+        "centerY": 0.4905648227809112,
+        "refinement": {
+          "method": "RGB distance from median immediate exterior paper inside SAM support",
+          "threshold": 0.075,
+          "paperRGB": [
+            189.0,
+            18.0,
+            20.0
+          ],
+          "reviewRequired": true
+        },
+        "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/notched-disc/evidence.json"
+      },
+      "bounds": {
+        "x": 0.530562347188264,
+        "y": 0.3368055555555556,
+        "width": 0.4058679706601467,
+        "height": 0.3072916666666667
+      },
+      "invariants": [
+        "One circular boundary and one wedge define the primitive.",
+        "Subtraction is clipped to the disc, so no wedge exterior is printed."
+      ],
+      "parameters": {
+        "opening": 1.0472,
+        "depth": 1,
+        "flatten": 1,
+        "phase": 0
+      },
+      "catalogID": "notched-disc"
+    },
+    {
+      "id": "cellular-disc",
+      "name": "Radial cell mosaic",
+      "kind": "polar lattice system",
+      "source": {
+        "id": "cellular-disc",
+        "family": "cellular-disc",
+        "posterID": "7a78e599fb143d5e5ca6f118-p0",
+        "imageURL": "file:///PosterLab/library/posters/7a78e599fb143d5e5ca6f118-p0/poster.png",
+        "sourceImageSHA256": "96b9fc0ff92d501c9fb3545cc581239f07d709875690aaea983e7eb8d0a85282",
+        "samFingerprint": "b436bb0ee71c311dbcdef08aa077e9eda1d98ee7803db248b2f958f6d0580e43",
+        "computeUnits": "CPU_ONLY",
+        "prompts": [
+          {
+            "label": 2,
+            "x": 0.1,
+            "y": 0.265
+          },
+          {
+            "label": 3,
+            "x": 0.35,
+            "y": 0.795
+          }
+        ],
+        "maskID": 2,
+        "predictedIoU": 0.98876953125,
+        "stability": 0.9829298572315333,
+        "bounds": {
+          "x": 0.09805924412665985,
+          "y": 0.27872340425531916,
+          "width": 0.24923391215526047,
+          "height": 0.5
+        },
+        "imageWidth": 979,
+        "imageHeight": 470,
+        "centerX": 0.22344172006232538,
+        "centerY": 0.526941211113117,
+        "refinement": {
+          "method": "RGB distance from median immediate exterior paper inside SAM support",
+          "threshold": 0.075,
+          "paperRGB": [
+            106.0,
+            109.0,
+            143.0
+          ],
+          "reviewRequired": true
+        },
+        "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/cellular-disc/evidence.json"
+      },
+      "bounds": {
+        "x": 0.09805924412665985,
+        "y": 0.27872340425531916,
+        "width": 0.24923391215526047,
+        "height": 0.5
+      },
+      "invariants": [
+        "Adjacent bands use the same boundary function.",
+        "Cell separation leaves real negative-space gutters.",
+        "The declared seed reproduces every irregular boundary."
+      ],
+      "parameters": {
+        "rings": 6,
+        "count": 24,
+        "gutter": 0.09,
+        "stagger": 0.5,
+        "irregularity": 0.4,
+        "phase": 0
+      },
+      "catalogID": "cellular-disc"
+    }
+  ],
+  "note": "The cellular source has concentric growth bands and radial seams. Its generator uses a polar lattice, rather than duplicating the existing random Voronoi recipe."
+}

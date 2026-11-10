@@ -1,0 +1,276 @@
+[
+  {
+    "id": "fallen-letters",
+    "name": "Fallen letters",
+    "group": "Physics",
+    "renderer": "gravity-type",
+    "parameters": [
+      {
+        "id": "arrangement",
+        "label": "Arrangement: collapse / pour / sign / stairs / garland / balance",
+        "value": 0,
+        "min": 0,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "id": "look",
+        "label": "Look: solid / outline / cast shadow / neon",
+        "value": 0,
+        "min": 0,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "id": "detach",
+        "label": "Letters that fall",
+        "value": 0.42,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "id": "hang",
+        "label": "Share left hanging from one pin",
+        "value": 0.18,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "id": "collapse",
+        "label": "Collapse from the bottom (vs. random)",
+        "value": 0.65,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "id": "scatter",
+        "label": "Pour spread",
+        "value": 0.4,
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "activeWhen": {
+          "arrangement": 1
+        }
+      },
+      {
+        "id": "steps",
+        "label": "Stair steps",
+        "value": 4,
+        "min": 2,
+        "max": 7,
+        "step": 1,
+        "activeWhen": {
+          "arrangement": 3
+        }
+      },
+      {
+        "id": "slack",
+        "label": "Garland slack",
+        "value": 0.28,
+        "min": 0.05,
+        "max": 0.6,
+        "step": 0.01,
+        "activeWhen": {
+          "arrangement": 4
+        }
+      },
+      {
+        "id": "pivot",
+        "label": "Balance pivot position",
+        "value": 0.42,
+        "min": 0.25,
+        "max": 0.75,
+        "step": 0.01,
+        "activeWhen": {
+          "arrangement": 5
+        }
+      },
+      {
+        "id": "shatter",
+        "label": "Glass letters: off / on",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "shards",
+        "label": "Shards per break",
+        "value": 6,
+        "min": 2,
+        "max": 12,
+        "step": 1,
+        "activeWhen": {
+          "shatter": 1
+        }
+      },
+      {
+        "id": "toughness",
+        "label": "Toughness (impact speed that breaks, m/s)",
+        "value": 6,
+        "min": 2,
+        "max": 16,
+        "step": 0.5,
+        "activeWhen": {
+          "shatter": 1
+        }
+      },
+      {
+        "id": "burst",
+        "label": "Shard burst",
+        "value": 0.5,
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "activeWhen": {
+          "shatter": 1
+        }
+      },
+      {
+        "id": "time",
+        "label": "Moment shown (seconds after release)",
+        "value": 8,
+        "min": 0,
+        "max": 8,
+        "step": 0.05
+      },
+      {
+        "id": "stagger",
+        "label": "Release spread (seconds)",
+        "value": 0.9,
+        "min": 0,
+        "max": 3,
+        "step": 0.05
+      },
+      {
+        "id": "kick",
+        "label": "Tumble",
+        "value": 0.35,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "id": "gravityAngle",
+        "label": "Gravity tilt (degrees)",
+        "value": 0,
+        "min": -40,
+        "max": 40,
+        "step": 1
+      },
+      {
+        "id": "bounce",
+        "label": "Bounce",
+        "value": 0.12,
+        "min": 0,
+        "max": 0.8,
+        "step": 0.01
+      },
+      {
+        "id": "friction",
+        "label": "Friction",
+        "value": 0.55,
+        "min": 0.05,
+        "max": 1.2,
+        "step": 0.01
+      },
+      {
+        "id": "floor",
+        "label": "Floor: paper edge / rule / open",
+        "value": 1,
+        "min": 0,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "id": "size",
+        "label": "Headline measure",
+        "value": 1,
+        "min": 0.4,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "id": "ghost",
+        "label": "Empty sockets",
+        "value": 0.45,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "id": "strobe",
+        "label": "Motion exposures",
+        "value": 0,
+        "min": 0,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "id": "accent",
+        "label": "Second ink for fallen letters",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "traits": {
+      "angularity": 0.5,
+      "curvature": 0.5,
+      "detail": 0.55,
+      "mass": 0.7,
+      "regularity": 0.2,
+      "counterform": 0.4,
+      "directionality": 0.85,
+      "volume": 0.25
+    },
+    "styles": [
+      "experimental",
+      "kinetic",
+      "brutalist",
+      "typographic-collage",
+      "swiss",
+      "expressive"
+    ],
+    "fontTarget": {
+      "weight": 0.85,
+      "width": 0.55,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.7071,
+    "tags": [
+      "rigid-body-physics",
+      "falling-type",
+      "gravity",
+      "piled-letters",
+      "hanging-letters",
+      "empty-sockets",
+      "motion-exposures",
+      "simulated-layout",
+      "poured-letters",
+      "nailed-sign",
+      "letter-stairs",
+      "letter-garland",
+      "balance-beam",
+      "neon-glow",
+      "cast-shadow",
+      "shattered-letters",
+      "voronoi-fracture"
+    ],
+    "logic": "Glyphs of the title become rigid bodies in a deterministic 2D world and collide by their own outlines, counters and crooks included. Six arrangements share that construction: collapse (the set headline loses letters from the bottom up), pour (the whole title drops into a heap), sign (letters nailed at both upper corners lose nails and swing or fall; the nails stay in the wall), stairs (letters tumble down tipped shelves), garland (letters linked by rings sag between two nails; released letters break the chain) and balance (letters land on a seesaw that tips). Glass letters break where they strike hard enough: Voronoi shards crowd the impact, keep the letter's motion and scatter, and each shard is the real outline clipped to its cells. Solid, outline, cast-shadow and neon looks render the same poses. Empty sockets keep each missing letter's outline, motion exposures repeat a letter along its path, and the chosen moment can catch letters mid-fall.",
+    "references": [],
+    "basis": "Authored system. Glyph outlines become convex collision pieces; a sequential-impulse solver with friction, restitution and resting-contact stabilisation produces the poses. The simulation runs once when the scene is made and every pose is saved, so renders and vector PDFs replay exactly.",
+    "inks": [
+      "#141414",
+      "#ff4a1c",
+      "#eeebe4"
+    ]
+  }
+]

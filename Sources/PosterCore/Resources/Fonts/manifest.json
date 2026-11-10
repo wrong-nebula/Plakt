@@ -1,0 +1,626 @@
+{
+  "version": 1,
+  "provider": "Google Fonts / official google/fonts repository",
+  "revision": "86aced91de05cd4f96a06838124cca45be337b2b",
+  "families": [
+    {
+      "id": "archivo",
+      "family": "Archivo",
+      "category": "sans-serif",
+      "designer": "Omnibus-Type",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/archivo",
+      "license": "OFL-1.1",
+      "licenseFile": "archivo/OFL.txt",
+      "faces": [
+        {
+          "filename": "archivo/Archivo[wdth,wght].ttf",
+          "postscriptName": "Archivo-SemiBold",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053"
+        },
+        {
+          "filename": "archivo/Archivo-Italic[wdth,wght].ttf",
+          "postscriptName": "Archivo-SemiBoldItalic",
+          "style": "italic",
+          "weight": 400,
+          "sha256": "305d13b4eb80e62f7d517f78d7c045250d977552a420f2dbed906f314e761305"
+        }
+      ]
+    },
+    {
+      "id": "archivoblack",
+      "family": "Archivo Black",
+      "category": "sans-serif",
+      "designer": "Omnibus-Type",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/archivoblack",
+      "license": "OFL-1.1",
+      "licenseFile": "archivoblack/OFL.txt",
+      "faces": [
+        {
+          "filename": "archivoblack/ArchivoBlack-Regular.ttf",
+          "postscriptName": "ArchivoBlack-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180"
+        }
+      ]
+    },
+    {
+      "id": "anton",
+      "family": "Anton",
+      "category": "display",
+      "designer": "Vernon Adams",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/anton",
+      "license": "OFL-1.1",
+      "licenseFile": "anton/OFL.txt",
+      "faces": [
+        {
+          "filename": "anton/Anton-Regular.ttf",
+          "postscriptName": "Anton-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab"
+        }
+      ]
+    },
+    {
+      "id": "barlowcondensed",
+      "family": "Barlow Condensed",
+      "category": "sans-serif",
+      "designer": "Jeremy Tribby",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/barlowcondensed",
+      "license": "OFL-1.1",
+      "licenseFile": "barlowcondensed/OFL.txt",
+      "faces": [
+        {
+          "filename": "barlowcondensed/BarlowCondensed-Thin.ttf",
+          "postscriptName": "BarlowCondensed-Thin",
+          "style": "normal",
+          "weight": 100,
+          "sha256": "68afe339b8503a9d74b2c3b5b0c521ea5333461f29aeaf7c680141482114d85a"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-ThinItalic.ttf",
+          "postscriptName": "BarlowCondensed-ThinItalic",
+          "style": "italic",
+          "weight": 100,
+          "sha256": "5b0ff874e3ae64e2b3dc2c761d8ba2eb3eae324d269441f6de0062e8fbff0b8e"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-ExtraLight.ttf",
+          "postscriptName": "BarlowCondensed-ExtraLight",
+          "style": "normal",
+          "weight": 200,
+          "sha256": "19e3c4a81dc7fcee8c38ab6be3819fcc45d3f3822f011ac7b4bd550e6502b80f"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-ExtraLightItalic.ttf",
+          "postscriptName": "BarlowCondensed-ExtraLightItalic",
+          "style": "italic",
+          "weight": 200,
+          "sha256": "a58c17c59c226eb0ef411b73696f79374d170f2708acc6d72d8db8c07f333286"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-Light.ttf",
+          "postscriptName": "BarlowCondensed-Light",
+          "style": "normal",
+          "weight": 300,
+          "sha256": "2c37e1e6b5feb71d38a42e6180d2e2f4ca1aad22cfecbd017430f3863deba67d"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-LightItalic.ttf",
+          "postscriptName": "BarlowCondensed-LightItalic",
+          "style": "italic",
+          "weight": 300,
+          "sha256": "14aabc4936c54a3aae666abccbc4be612e4a33501c9483f7e4ebb249359d0171"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-Regular.ttf",
+          "postscriptName": "BarlowCondensed-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "583cec5da3b84bc4dc7c9c72e2a565c94d34e431518b19d7e250b7830ad5f996"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-Italic.ttf",
+          "postscriptName": "BarlowCondensed-Italic",
+          "style": "italic",
+          "weight": 400,
+          "sha256": "063615da0a64f318397de2afac330dfbfbbf4cdb562a9987cb72bfdcbd37ba7c"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-Medium.ttf",
+          "postscriptName": "BarlowCondensed-Medium",
+          "style": "normal",
+          "weight": 500,
+          "sha256": "262bd143292ce479ee0cd09a42b47ab173fca8e9c6eb5ed0b5c8a845bc371d17"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-MediumItalic.ttf",
+          "postscriptName": "BarlowCondensed-MediumItalic",
+          "style": "italic",
+          "weight": 500,
+          "sha256": "e036488bfe3ea1e9f39f006b1237c2931e7cfea7d9ecdccdf17507a5986f73d9"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-SemiBold.ttf",
+          "postscriptName": "BarlowCondensed-SemiBold",
+          "style": "normal",
+          "weight": 600,
+          "sha256": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-SemiBoldItalic.ttf",
+          "postscriptName": "BarlowCondensed-SemiBoldItalic",
+          "style": "italic",
+          "weight": 600,
+          "sha256": "dc83cbbb7545a117ab9e4c10ed07d35eef6f563b77621a1d357f25a3194987d1"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-Bold.ttf",
+          "postscriptName": "BarlowCondensed-Bold",
+          "style": "normal",
+          "weight": 700,
+          "sha256": "e476562ec9c1e16cf16475895b511f08c804f438cc9a9f80a44ea50a0eeb5b65"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-BoldItalic.ttf",
+          "postscriptName": "BarlowCondensed-BoldItalic",
+          "style": "italic",
+          "weight": 700,
+          "sha256": "d8694f65cd70c3e5e600ead37657aab0adb5f63b275d0c1f6f4a7046de222145"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-ExtraBold.ttf",
+          "postscriptName": "BarlowCondensed-ExtraBold",
+          "style": "normal",
+          "weight": 800,
+          "sha256": "724c9c25952d5f4a2d87185d9767aa006144c5f0d944dc05bf7d5d603551c260"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-ExtraBoldItalic.ttf",
+          "postscriptName": "BarlowCondensed-ExtraBoldItalic",
+          "style": "italic",
+          "weight": 800,
+          "sha256": "331783dae9ec0c398f4d32c9fd5a56d4c602caa0c1628c2b9cbfe93f48eb68c9"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-Black.ttf",
+          "postscriptName": "BarlowCondensed-Black",
+          "style": "normal",
+          "weight": 900,
+          "sha256": "e74b750df582c608f35db467b711b2b60d2217618e85e60b72b42dfd00446cab"
+        },
+        {
+          "filename": "barlowcondensed/BarlowCondensed-BlackItalic.ttf",
+          "postscriptName": "BarlowCondensed-BlackItalic",
+          "style": "italic",
+          "weight": 900,
+          "sha256": "e1ed5d7e50c6a4498454d40509ce2362384a2c7870df3418fdbd010f81dffad3"
+        }
+      ]
+    },
+    {
+      "id": "bebasneue",
+      "family": "Bebas Neue",
+      "category": "display",
+      "designer": "Ryoichi Tsunekawa",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/bebasneue",
+      "license": "OFL-1.1",
+      "licenseFile": "bebasneue/OFL.txt",
+      "faces": [
+        {
+          "filename": "bebasneue/BebasNeue-Regular.ttf",
+          "postscriptName": "BebasNeue-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73"
+        }
+      ]
+    },
+    {
+      "id": "bodonimoda",
+      "family": "Bodoni Moda",
+      "category": "serif",
+      "designer": "Owen Earl",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/bodonimoda",
+      "license": "OFL-1.1",
+      "licenseFile": "bodonimoda/OFL.txt",
+      "faces": [
+        {
+          "filename": "bodonimoda/BodoniModa[opsz,wght].ttf",
+          "postscriptName": "BodoniModa-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "550f5e34ee0a828d7941b1fe9bc58b34e5260d3f33a61532e6d0a0114e79a5cf"
+        },
+        {
+          "filename": "bodonimoda/BodoniModa-Italic[opsz,wght].ttf",
+          "postscriptName": "BodoniModa-Italic",
+          "style": "italic",
+          "weight": 400,
+          "sha256": "dfff1619f8f6871c6372f8855b67211f9a73b4e93d45aca868cd8f46a48622de"
+        }
+      ]
+    },
+    {
+      "id": "cormorantgaramond",
+      "family": "Cormorant Garamond",
+      "category": "serif",
+      "designer": "Christian Thalmann",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/cormorantgaramond",
+      "license": "OFL-1.1",
+      "licenseFile": "cormorantgaramond/OFL.txt",
+      "faces": [
+        {
+          "filename": "cormorantgaramond/CormorantGaramond[wght].ttf",
+          "postscriptName": "CormorantGaramond-Light",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0"
+        },
+        {
+          "filename": "cormorantgaramond/CormorantGaramond-Italic[wght].ttf",
+          "postscriptName": "CormorantGaramond-LightItalic",
+          "style": "italic",
+          "weight": 400,
+          "sha256": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d"
+        }
+      ]
+    },
+    {
+      "id": "dmserifdisplay",
+      "family": "DM Serif Display",
+      "category": "serif",
+      "designer": "Colophon Foundry",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/dmserifdisplay",
+      "license": "OFL-1.1",
+      "licenseFile": "dmserifdisplay/OFL.txt",
+      "faces": [
+        {
+          "filename": "dmserifdisplay/DMSerifDisplay-Regular.ttf",
+          "postscriptName": "DMSerifDisplay-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616"
+        },
+        {
+          "filename": "dmserifdisplay/DMSerifDisplay-Italic.ttf",
+          "postscriptName": "DMSerifDisplay-Italic",
+          "style": "italic",
+          "weight": 400,
+          "sha256": "df74c0ac387baeaeb0fe4f2324e1668e6a3ed8c09cd9796fe162c71753e19e45"
+        }
+      ]
+    },
+    {
+      "id": "spacegrotesk",
+      "family": "Space Grotesk",
+      "category": "sans-serif",
+      "designer": "Florian Karsten",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/spacegrotesk",
+      "license": "OFL-1.1",
+      "licenseFile": "spacegrotesk/OFL.txt",
+      "faces": [
+        {
+          "filename": "spacegrotesk/SpaceGrotesk[wght].ttf",
+          "postscriptName": "SpaceGrotesk-Light",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72"
+        }
+      ]
+    },
+    {
+      "id": "syne",
+      "family": "Syne",
+      "category": "display",
+      "designer": "Bonjour Monde, Lucas Descroix, George Triantafyllakos",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/syne",
+      "license": "OFL-1.1",
+      "licenseFile": "syne/OFL.txt",
+      "faces": [
+        {
+          "filename": "syne/Syne[wght].ttf",
+          "postscriptName": "Syne-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "ce5ac77142a65cab2248a1a2ebb740b1d4d9c20b52488877d3ff664d1356104a"
+        }
+      ]
+    },
+    {
+      "id": "fraunces",
+      "family": "Fraunces",
+      "category": "serif",
+      "designer": "Undercase Type, Phaedra Charles, Flavia Zimbardi",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/fraunces",
+      "license": "OFL-1.1",
+      "licenseFile": "fraunces/OFL.txt",
+      "faces": [
+        {
+          "filename": "fraunces/Fraunces[SOFT,WONK,opsz,wght].ttf",
+          "postscriptName": "Fraunces-9ptBlack",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb"
+        },
+        {
+          "filename": "fraunces/Fraunces-Italic[SOFT,WONK,opsz,wght].ttf",
+          "postscriptName": "Fraunces-9ptBlackItalic",
+          "style": "italic",
+          "weight": 400,
+          "sha256": "b24448c43702fac4ee856781d461a0dfba8d8e594b6e8e190234b75fed2c0e01"
+        }
+      ]
+    },
+    {
+      "id": "unbounded",
+      "family": "Unbounded",
+      "category": "sans-serif",
+      "designer": "NaN",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/unbounded",
+      "license": "OFL-1.1",
+      "licenseFile": "unbounded/OFL.txt",
+      "faces": [
+        {
+          "filename": "unbounded/Unbounded[wght].ttf",
+          "postscriptName": "Unbounded-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "323b511be380c8d474ef030686b71aedde501f8d9cd46da558b7c40454372c3f"
+        }
+      ]
+    },
+    {
+      "id": "bricolagegrotesque",
+      "family": "Bricolage Grotesque",
+      "category": "sans-serif",
+      "designer": "Mathieu Triay",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/bricolagegrotesque",
+      "license": "OFL-1.1",
+      "licenseFile": "bricolagegrotesque/OFL.txt",
+      "faces": [
+        {
+          "filename": "bricolagegrotesque/BricolageGrotesque[opsz,wdth,wght].ttf",
+          "postscriptName": "BricolageGrotesque-96ptExtraBold",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "413e7357809ddd12fd80a96a8a396de0e401638d4acd3cb3e37532f0472ac682"
+        }
+      ]
+    },
+    {
+      "id": "robotoflex",
+      "family": "Roboto Flex",
+      "category": "sans-serif",
+      "designer": "Font Bureau, David Berlow, Santiago Orozco, Irene Vlachou, Ilya Ruderman, Yury Ostromentsky, Mikhail Strukov",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/robotoflex",
+      "license": "OFL-1.1",
+      "licenseFile": "robotoflex/OFL.txt",
+      "faces": [
+        {
+          "filename": "robotoflex/RobotoFlex[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght].ttf",
+          "postscriptName": "RobotoFlex-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "9b523f7d82593df0107173849ebb8c817471a1df4b4fb2c3cbf40cfd810c8281"
+        }
+      ]
+    },
+    {
+      "id": "monoton",
+      "family": "Monoton",
+      "category": "display",
+      "designer": "Vernon Adams",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/monoton",
+      "license": "OFL-1.1",
+      "licenseFile": "monoton/OFL.txt",
+      "faces": [
+        {
+          "filename": "monoton/Monoton-Regular.ttf",
+          "postscriptName": "Monoton-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "951c4cea65ffede784a7c9672feec5d329a7e1e12216c42d53ecf36c90d04dea"
+        }
+      ]
+    },
+    {
+      "id": "chivo",
+      "family": "Chivo",
+      "category": "sans-serif",
+      "designer": "Omnibus-Type",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/chivo",
+      "license": "OFL-1.1",
+      "licenseFile": "chivo/OFL.txt",
+      "faces": [
+        {
+          "filename": "chivo/Chivo[wght].ttf",
+          "postscriptName": "Chivo-Medium",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "801674cbeff749011a0186b2c932dc9158187a8ca4ca6598db2a1f5c7c4342d1"
+        },
+        {
+          "filename": "chivo/Chivo-Italic[wght].ttf",
+          "postscriptName": "Chivo-MediumItalic",
+          "style": "italic",
+          "weight": 400,
+          "sha256": "502339e1cda77e24b5cd46a1a875e4c5e6f20ea019c248f57f23423527030ff3"
+        }
+      ]
+    },
+    {
+      "id": "rubikmonoone",
+      "family": "Rubik Mono One",
+      "category": "sans-serif",
+      "designer": "Hubert and Fischer",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/rubikmonoone",
+      "license": "OFL-1.1",
+      "licenseFile": "rubikmonoone/OFL.txt",
+      "faces": [
+        {
+          "filename": "rubikmonoone/RubikMonoOne-Regular.ttf",
+          "postscriptName": "RubikMonoOne-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "b22624b6a36e543e942106edfccd198c50b57b65b924bfe02a6f0a5699429e6b"
+        }
+      ]
+    },
+    {
+      "id": "ibmplexmono",
+      "family": "IBM Plex Mono",
+      "category": "monospace",
+      "designer": "Mike Abbink, Bold Monday",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/ibmplexmono",
+      "license": "OFL-1.1",
+      "licenseFile": "ibmplexmono/OFL.txt",
+      "faces": [
+        {
+          "filename": "ibmplexmono/IBMPlexMono-Thin.ttf",
+          "postscriptName": "IBMPlexMono-Thin",
+          "style": "normal",
+          "weight": 100,
+          "sha256": "c44c820c14b4f1b818344e5f5dc189cee98b1d5e56b4e80055496c228f3cc7ea"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-ThinItalic.ttf",
+          "postscriptName": "IBMPlexMono-ThinItalic",
+          "style": "italic",
+          "weight": 100,
+          "sha256": "3782f01f12b444c62be712676646c552fc23443e8fd02d5b5619c6c4b975516d"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-ExtraLight.ttf",
+          "postscriptName": "IBMPlexMono-ExtraLight",
+          "style": "normal",
+          "weight": 200,
+          "sha256": "826b765bd5173b97d521053330a66277edc224f8cc5f1e0035df1d995d5f003c"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-ExtraLightItalic.ttf",
+          "postscriptName": "IBMPlexMono-ExtraLightItalic",
+          "style": "italic",
+          "weight": 200,
+          "sha256": "8ae22766094bd04c2808a3c9dec812dcf061786c26ebd25eea211ae685eb2c39"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-Light.ttf",
+          "postscriptName": "IBMPlexMono-Light",
+          "style": "normal",
+          "weight": 300,
+          "sha256": "780bcf65509d72a35ec114b57bcbe220dc6b77d8ea2e9b25e294be3c570c5025"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-LightItalic.ttf",
+          "postscriptName": "IBMPlexMono-LightItalic",
+          "style": "italic",
+          "weight": 300,
+          "sha256": "2bb4dd18abb03cb8a0a1ae69a0a10b194e02027b817c7b13126ef4724a7f5c73"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-Regular.ttf",
+          "postscriptName": "IBMPlexMono-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-Italic.ttf",
+          "postscriptName": "IBMPlexMono-Italic",
+          "style": "italic",
+          "weight": 400,
+          "sha256": "3362fc791b0652193328b862c1c5f23a789bc7288b1617fa63302f88689a2a34"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-Medium.ttf",
+          "postscriptName": "IBMPlexMono-Medium",
+          "style": "normal",
+          "weight": 500,
+          "sha256": "a9b4c49bb299e05b5f6c481e7fb5e78943d2793249a0c8874ab574a2d1ea6755"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-MediumItalic.ttf",
+          "postscriptName": "IBMPlexMono-MediumItalic",
+          "style": "italic",
+          "weight": 500,
+          "sha256": "de6e0f805a15a2a1538be5d1074741298a07ffcba6fa1f4cd93983ff73155a7d"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-SemiBold.ttf",
+          "postscriptName": "IBMPlexMono-SemiBold",
+          "style": "normal",
+          "weight": 600,
+          "sha256": "d3c38e55c78f5b0f28009fddba4834ec503278936a5986032424c9bd2d23aa46"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-SemiBoldItalic.ttf",
+          "postscriptName": "IBMPlexMono-SemiBoldItalic",
+          "style": "italic",
+          "weight": 600,
+          "sha256": "391ef0e273eb52571eccaab6a6dbddeec48e1d282cb7bf153043512b797ed6f0"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-Bold.ttf",
+          "postscriptName": "IBMPlexMono-Bold",
+          "style": "normal",
+          "weight": 700,
+          "sha256": "ac27abd6450a64dd94467580a02fe6235156d5b92f2926ebbc8e7489df64e0be"
+        },
+        {
+          "filename": "ibmplexmono/IBMPlexMono-BoldItalic.ttf",
+          "postscriptName": "IBMPlexMono-BoldItalic",
+          "style": "italic",
+          "weight": 700,
+          "sha256": "af4e05a761e98c1adf064c48a6352c9bec1a6ad70982cd2a544149323391f98e"
+        }
+      ]
+    },
+    {
+      "id": "newsreader",
+      "family": "Newsreader",
+      "category": "serif",
+      "designer": "Production Type",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/newsreader",
+      "license": "OFL-1.1",
+      "licenseFile": "newsreader/OFL.txt",
+      "faces": [
+        {
+          "filename": "newsreader/Newsreader[opsz,wght].ttf",
+          "postscriptName": "Newsreader16pt-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "8a08d13f8a6c0d51be379a60af84f945f65369a67e509ee3c3bdcc421254d7c1"
+        },
+        {
+          "filename": "newsreader/Newsreader-Italic[opsz,wght].ttf",
+          "postscriptName": "Newsreader16pt-Italic",
+          "style": "italic",
+          "weight": 400,
+          "sha256": "796668611f80b64d5adf182fde3b6f29ed83b4e7cbec7b96937e84ac01364792"
+        }
+      ]
+    },
+    {
+      "id": "librecaslondisplay",
+      "family": "Libre Caslon Display",
+      "category": "serif",
+      "designer": "Impallari Type",
+      "sourceURL": "https://github.com/google/fonts/tree/86aced91de05cd4f96a06838124cca45be337b2b/ofl/librecaslondisplay",
+      "license": "OFL-1.1",
+      "licenseFile": "librecaslondisplay/OFL.txt",
+      "faces": [
+        {
+          "filename": "librecaslondisplay/LibreCaslonDisplay-Regular.ttf",
+          "postscriptName": "LibreCaslonDisplay-Regular",
+          "style": "normal",
+          "weight": 400,
+          "sha256": "2340c497181e9446fcbb235e1c3780558dc62879ffe0ef47906d3f7f35cf5f35"
+        }
+      ]
+    }
+  ]
+}

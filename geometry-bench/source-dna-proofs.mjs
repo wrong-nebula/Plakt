@@ -1,0 +1,9 @@
+import fs from 'node:fs/promises';import path from 'node:path';import {fileURLToPath} from 'node:url';import {execFileSync} from 'node:child_process';import {Resvg} from '@resvg/resvg-js';
+const root=process.argv[2]||'output/proofs/source-dna-v11',rows=JSON.parse(await fs.readFile('output/layout-inheritance-audit/ranked-sources.json','utf8'));
+const pairs=[[3,7,'kinetic'],[7,16,'editorial'],[13,40,'swiss'],[18,41,'brutalist'],[19,27,'minimal'],[20,9,'swiss'],[23,26,'guilloche'],[27,44,'typographic-collage'],[33,21,'optical'],[37,47,'editorial'],[40,13,'editorial'],[47,37,'expressive']];await fs.mkdir(root,{recursive:true});
+let svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="${Math.ceil(pairs.length/4)*660}"><rect width="100%" height="100%" fill="#dedbd1"/>`;
+for(const [i,[ai,bi,style]]of pairs.entries()){
+ const out=path.join(root,String(i).padStart(2,'0')+'-'+style),a=rows[ai],b=rows[bi];if(!await fs.stat(path.join(out,'poster.png')).catch(()=>false))console.log(execFileSync('./dist/poster',['library','layout','--poster',a.id,'--donor',b.id,'--style',style,'--seed',String(817+i*31),'--out',out],{encoding:'utf8'}).trim());
+ const src=await fs.readFile(fileURLToPath(a.image)),made=await fs.readFile(path.join(out,'poster.png'));svg+=`<g transform="translate(${i%4*400},${Math.floor(i/4)*660})"><image href="data:image/jpeg;base64,${src.toString('base64')}" x="8" y="8" width="180" height="280"/><image href="data:image/png;base64,${made.toString('base64')}" x="198" y="8" width="194" height="620"/><text x="8" y="315" font-size="13" font-family="Helvetica">${i}: ${style}</text><text x="8" y="335" font-size="11" font-family="Helvetica">Source ${ai}: ${a.id.slice(0,12)}</text></g>`;
+}
+await fs.writeFile(path.join(root,'comparison.png'),new Resvg(svg+'</svg>').render().asPng());console.log(root+'/comparison.png');

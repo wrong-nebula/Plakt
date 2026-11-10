@@ -1,0 +1,112 @@
+{
+  "version": "type-system-curation-v1",
+  "modelFingerprint": "ff6a95d07b2ca695d2b9f5ce4bd0dfbe0cbe7bbf577e102b334e22ecb263adb1",
+  "sourceSystems": 459,
+  "distinctSystems": 448,
+  "aliases": {
+    "69732696278715c76b334fea-p0-repeat-field-abd949b9c9c2": "69732696278715c76b334fea-p0-repeat-field-212a3c329586",
+    "c378baef69fa3adcb1090300-p0-repeat-field-53d2f084e6cf": "c378baef69fa3adcb1090300-p0-repeat-field-480bf9576b4c",
+    "59f97f0ffd955e328a911fca-p0-repeat-field-d0ce45da0ec0": "59f97f0ffd955e328a911fca-p0-repeat-field-1967cad037fc",
+    "f4fa8b76f53fde1cbbf7ca74-p0-repeat-field-9e730fb8ee2f": "f4fa8b76f53fde1cbbf7ca74-p0-repeat-field-bfa382ed4d20",
+    "f4fa8b76f53fde1cbbf7ca74-p0-repeat-field-35695d3d97d7": "f4fa8b76f53fde1cbbf7ca74-p0-repeat-field-cfce19ff253a",
+    "ad4c1f758f995d6a3643def4-p0-repeat-field-004e443f5821": "ad4c1f758f995d6a3643def4-p0-repeat-field-ec93a6ca5897",
+    "8e4a5abdd62e1bfe9c31c53c-p0-repeat-field-6552069fa2ae": "8e4a5abdd62e1bfe9c31c53c-p0-repeat-field-4eaf6e2464e4",
+    "081f8cbdcaabb4558ce1d94f-p0-repeat-field-e22ae0a1426a": "081f8cbdcaabb4558ce1d94f-p0-repeat-field-abefad621533",
+    "ef9d169666a4e86a432adc8e-p0-repeat-field-2f73b6a7182b": "ef9d169666a4e86a432adc8e-p0-repeat-field-6bf8b835f619",
+    "dae5d499bddd937118de7988-p0-repeat-field-24db7a7a1e00": "dae5d499bddd937118de7988-p0-repeat-field-a7a93b63753a",
+    "73703315142af519a17a49dc-p0-repeat-field-2dae236864e4": "73703315142af519a17a49dc-p0-repeat-field-03da98015c9c"
+  },
+  "groups": [
+    {
+      "canonicalID": "69732696278715c76b334fea-p0-repeat-field-212a3c329586",
+      "memberIDs": [
+        "69732696278715c76b334fea-p0-repeat-field-212a3c329586",
+        "69732696278715c76b334fea-p0-repeat-field-abd949b9c9c2"
+      ],
+      "basis": "Visually reviewed near-duplicate transfer kernels from the same source poster; matching symbolic trace on two fixed-copy probes, minimum SigLIP cosine 0.98 and maximum normalized layout delta 0.04. Complete-link grouping prevents transitive chains."
+    },
+    {
+      "canonicalID": "c378baef69fa3adcb1090300-p0-repeat-field-480bf9576b4c",
+      "memberIDs": [
+        "c378baef69fa3adcb1090300-p0-repeat-field-480bf9576b4c",
+        "c378baef69fa3adcb1090300-p0-repeat-field-53d2f084e6cf"
+      ],
+      "basis": "Visually reviewed near-duplicate transfer kernels from the same source poster; matching symbolic trace on two fixed-copy probes, minimum SigLIP cosine 0.98 and maximum normalized layout delta 0.04. Complete-link grouping prevents transitive chains."
+    },
+    {
+      "canonicalID": "59f97f0ffd955e328a911fca-p0-repeat-field-1967cad037fc",
+      "memberIDs": [
+        "59f97f0ffd955e328a911fca-p0-repeat-field-1967cad037fc",
+        "59f97f0ffd955e328a911fca-p0-repeat-field-d0ce45da0ec0"
+      ],
+      "basis": "Visually reviewed near-duplicate transfer kernels from the same source poster; matching symbolic trace on two fixed-copy probes, minimum SigLIP cosine 0.98 and maximum normalized layout delta 0.04. Complete-link grouping prevents transitive chains."
+    },
+    {
+      "canonicalID": "f4fa8b76f53fde1cbbf7ca74-p0-repeat-field-bfa382ed4d20",
+      "memberIDs": [
+        "f4fa8b76f53fde1cbbf7ca74-p0-repeat-field-bfa382ed4d20",
+        "f4fa8b76f53fde1cbbf7ca74-p0-repeat-field-9e730fb8ee2f"
+      ],
+      "basis": "Visually reviewed near-duplicate transfer kernels from the same source poster; matching symbolic trace on two fixed-copy probes, minimum SigLIP cosine 0.98 and maximum normalized layout delta 0.04. Complete-link grouping prevents transitive chains."
+    },
+    {
+      "canonicalID": "f4fa8b76f53fde1cbbf7ca74-p0-repeat-field-cfce19ff253a",
+      "memberIDs": [
+        "f4fa8b76f53fde1cbbf7ca74-p0-repeat-field-cfce19ff253a",
+        "f4fa8b76f53fde1cbbf7ca74-p0-repeat-field-35695d3d97d7"
+      ],
+      "basis": "Visually reviewed near-duplicate transfer kernels from the same source poster; matching symbolic trace on two fixed-copy probes, minimum SigLIP cosine 0.98 and maximum normalized layout delta 0.04. Complete-link grouping prevents transitive chains."
+    },
+    {
+      "canonicalID": "ad4c1f758f995d6a3643def4-p0-repeat-field-ec93a6ca5897",
+      "memberIDs": [
+        "ad4c1f758f995d6a3643def4-p0-repeat-field-ec93a6ca5897",
+        "ad4c1f758f995d6a3643def4-p0-repeat-field-004e443f5821"
+      ],
+      "basis": "Visually reviewed near-duplicate transfer kernels from the same source poster; matching symbolic trace on two fixed-copy probes, minimum SigLIP cosine 0.98 and maximum normalized layout delta 0.04. Complete-link grouping prevents transitive chains."
+    },
+    {
+      "canonicalID": "8e4a5abdd62e1bfe9c31c53c-p0-repeat-field-4eaf6e2464e4",
+      "memberIDs": [
+        "8e4a5abdd62e1bfe9c31c53c-p0-repeat-field-4eaf6e2464e4",
+        "8e4a5abdd62e1bfe9c31c53c-p0-repeat-field-6552069fa2ae"
+      ],
+      "basis": "Visually reviewed near-duplicate transfer kernels from the same source poster; matching symbolic trace on two fixed-copy probes, minimum SigLIP cosine 0.98 and maximum normalized layout delta 0.04. Complete-link grouping prevents transitive chains."
+    },
+    {
+      "canonicalID": "081f8cbdcaabb4558ce1d94f-p0-repeat-field-abefad621533",
+      "memberIDs": [
+        "081f8cbdcaabb4558ce1d94f-p0-repeat-field-abefad621533",
+        "081f8cbdcaabb4558ce1d94f-p0-repeat-field-e22ae0a1426a"
+      ],
+      "basis": "Visually reviewed near-duplicate transfer kernels from the same source poster; matching symbolic trace on two fixed-copy probes, minimum SigLIP cosine 0.98 and maximum normalized layout delta 0.04. Complete-link grouping prevents transitive chains."
+    },
+    {
+      "canonicalID": "ef9d169666a4e86a432adc8e-p0-repeat-field-6bf8b835f619",
+      "memberIDs": [
+        "ef9d169666a4e86a432adc8e-p0-repeat-field-6bf8b835f619",
+        "ef9d169666a4e86a432adc8e-p0-repeat-field-2f73b6a7182b"
+      ],
+      "basis": "Visually reviewed near-duplicate transfer kernels from the same source poster; matching symbolic trace on two fixed-copy probes, minimum SigLIP cosine 0.98 and maximum normalized layout delta 0.04. Complete-link grouping prevents transitive chains."
+    },
+    {
+      "canonicalID": "dae5d499bddd937118de7988-p0-repeat-field-a7a93b63753a",
+      "memberIDs": [
+        "dae5d499bddd937118de7988-p0-repeat-field-a7a93b63753a",
+        "dae5d499bddd937118de7988-p0-repeat-field-24db7a7a1e00"
+      ],
+      "basis": "Visually reviewed near-duplicate transfer kernels from the same source poster; matching symbolic trace on two fixed-copy probes, minimum SigLIP cosine 0.98 and maximum normalized layout delta 0.04. Complete-link grouping prevents transitive chains."
+    },
+    {
+      "canonicalID": "73703315142af519a17a49dc-p0-repeat-field-03da98015c9c",
+      "memberIDs": [
+        "73703315142af519a17a49dc-p0-repeat-field-03da98015c9c",
+        "73703315142af519a17a49dc-p0-repeat-field-2dae236864e4"
+      ],
+      "basis": "Visually reviewed near-duplicate transfer kernels from the same source poster; matching symbolic trace on two fixed-copy probes, minimum SigLIP cosine 0.98 and maximum normalized layout delta 0.04. Complete-link grouping prevents transitive chains."
+    }
+  ],
+  "exactProbeDuplicates": 0,
+  "reviewer": "coding agent; no independent human validation",
+  "note": "Consolidation affects browsing and neighbor retrieval. Every original genome, source membership and stable ID remains available for reproduction and inheritance. Cross-operation and cross-poster matches remain separate."
+}

@@ -1,0 +1,117 @@
+{
+  "note": "Outlines extracted from fonts installed with macOS for a local type-system study only; not for redistribution.",
+  "em": {
+    "unitsPerEm": 1000,
+    "ascent": 880,
+    "descent": -120,
+    "box": "ideographic em box x 0–1000, y −120–880"
+  },
+  "charset": {
+    "kanji": 1273,
+    "kana": 180,
+    "punctuation": 81,
+    "latin": 140
+  },
+  "faces": {
+    "mincho": {
+      "label": "Mincho",
+      "name": "Hiragino Mincho ProN W3",
+      "file": "ヒラギノ明朝 ProN.ttc",
+      "ps": "HiraMinProN-W3",
+      "path": "/System/Library/Fonts/ヒラギノ明朝 ProN.ttc",
+      "postscriptName": "HiraMinProN-W3",
+      "family": "Hiragino Mincho ProN W3",
+      "version": "17.0d1e2",
+      "unitsPerEm": 1000,
+      "ascent": 880,
+      "descent": -120,
+      "fileSHA256": "36adcf3dcbec5880364487b380178c6388fcf518cec729ba18a855e71b69495c",
+      "glyphs": 1674,
+      "verticalAlternates": 60,
+      "features": [
+        "vert (vertical forms)",
+        "hwid (half-width digits for tate-chū-yoko)"
+      ]
+    },
+    "mincho-bold": {
+      "label": "Mincho bold",
+      "name": "Hiragino Mincho ProN W6",
+      "file": "ヒラギノ明朝 ProN.ttc",
+      "ps": "HiraMinProN-W6",
+      "path": "/System/Library/Fonts/ヒラギノ明朝 ProN.ttc",
+      "postscriptName": "HiraMinProN-W6",
+      "family": "Hiragino Mincho ProN W6",
+      "version": "17.0d1e2",
+      "unitsPerEm": 1000,
+      "ascent": 880,
+      "descent": -120,
+      "fileSHA256": "36adcf3dcbec5880364487b380178c6388fcf518cec729ba18a855e71b69495c",
+      "glyphs": 1674,
+      "verticalAlternates": 60,
+      "features": [
+        "vert (vertical forms)",
+        "hwid (half-width digits for tate-chū-yoko)"
+      ]
+    },
+    "gothic": {
+      "label": "Gothic",
+      "name": "Hiragino Kaku Gothic ProN W6",
+      "file": "ヒラギノ角ゴシック W6.ttc",
+      "ps": "HiraKakuProN-W6",
+      "path": "/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc",
+      "postscriptName": "HiraKakuProN-W6",
+      "family": "Hiragino Kaku Gothic ProN W6",
+      "version": "20.0d1e1",
+      "unitsPerEm": 1000,
+      "ascent": 880,
+      "descent": -120,
+      "fileSHA256": "790fe535987adc662e83489e162dc54c1e50be8de15169300082f6cc7a082e4e",
+      "glyphs": 1674,
+      "verticalAlternates": 60,
+      "features": [
+        "vert (vertical forms)",
+        "hwid (half-width digits for tate-chū-yoko)"
+      ]
+    },
+    "gothic-heavy": {
+      "label": "Gothic heavy",
+      "name": "Hiragino Kaku Gothic StdN W8",
+      "file": "ヒラギノ角ゴシック W8.ttc",
+      "ps": "HiraKakuStdN-W8",
+      "path": "/System/Library/Fonts/ヒラギノ角ゴシック W8.ttc",
+      "postscriptName": "HiraKakuStdN-W8",
+      "family": "Hiragino Kaku Gothic StdN W8",
+      "version": "20.0d1e1",
+      "unitsPerEm": 1000,
+      "ascent": 880,
+      "descent": -120,
+      "fileSHA256": "a304348b075d4383d2d5aa7a67be10688883b5189f7a1e3efe804c749b20339c",
+      "glyphs": 1674,
+      "verticalAlternates": 63,
+      "features": [
+        "vert (vertical forms)",
+        "hwid (half-width digits for tate-chū-yoko)"
+      ]
+    },
+    "maru": {
+      "label": "Maru (rounded)",
+      "name": "Hiragino Maru Gothic ProN W4",
+      "file": "ヒラギノ丸ゴ ProN W4.ttc",
+      "ps": "HiraMaruProN-W4",
+      "path": "/System/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc",
+      "postscriptName": "HiraMaruProN-W4",
+      "family": "Hiragino Maru Gothic ProN W4",
+      "version": "17.0d1e2",
+      "unitsPerEm": 1000,
+      "ascent": 880,
+      "descent": -120,
+      "fileSHA256": "1129e740671eb79e89d820dfc9142adf647ee5e2594b59539cb9c243ae4ea1e0",
+      "glyphs": 1674,
+      "verticalAlternates": 60,
+      "features": [
+        "vert (vertical forms)",
+        "hwid (half-width digits for tate-chū-yoko)"
+      ]
+    }
+  }
+}

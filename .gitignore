@@ -1,0 +1,72 @@
+# Build products
+.build/
+dist/
+*.app/
+*.xcuserstate
+node_modules/
+.npm-cache/
+.venv/
+__pycache__/
+*.pyc
+benchmark-build/
+
+# OS and tool scratch
+.DS_Store
+.playwright-mcp/
+
+# Generated studies and renders
+output/
+geometry-bench/browser-bundle.js
+
+# Poster library: 4 GB of source images and derived analysis.
+# Anchored on purpose: a bare "library/" also matches Sources/PosterCore/Library
+# on a case-insensitive disk. Backed up by scripts/backup-data.sh instead.
+/library/
+/workspaces/*/library/
+
+# Downloaded model packs (SigLIP, SAM 2.1)
+/models/
+/workspaces/*/models/
+
+# Taste: votes (taste.json) and the voted images are tracked.
+# The trained models are rebuilt from them.
+/taste/models/
+/workspaces/*/taste/models/
+
+# Print workspace: third-party repositories with their own history, and renders
+/workspaces/print/libraries/
+/workspaces/print/libraries-improved/
+/workspaces/print/library-harness/out/
+
+# A separate project that happens to live here
+/workspaces/pixel-arcade/
+
+# Experiment build folders
+_build/
+.build-*/
+
+# Built binary and derived training data (rebuilt by workspaces/surrogate/python/extract.py)
+/workspaces/print/poster
+/workspaces/surrogate/python/data.jsonl
+
+# Jury surrogate training tables (rebuilt by scripts/jury-surrogate/extract.py)
+/scripts/jury-surrogate/data.jsonl
+/scripts/jury-surrogate/live.jsonl
+
+# Personal taste votes and voted images stay on your Mac
+/taste/
+
+# Tool caches and local launch settings
+.impeccable/
+.claude/launch.json
+
+# Outline data generated from fonts installed with macOS (Hiragino, Arial, Times New Roman).
+# Those fonts may not be redistributed, so each study builds its own copy locally:
+# run the prepare script in its folder (see geometry-bench/README.md, "Fonts that are not here").
+geometry-bench/tategaki-system/fonts.mjs
+geometry-bench/spectral-echo-system/fonts.mjs
+geometry-bench/plot-slice-system/type.mjs
+geometry-bench/compound-glyph-system/fonts.mjs
+geometry-bench/compound-glyph-system/v1/fonts.mjs
+geometry-bench/glow-aperture-system/fonts.mjs
+geometry-bench/pages-atlas-system/fonts.mjs

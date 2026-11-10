@@ -1,0 +1,753 @@
+{
+  "version": 1,
+  "verifiedAt": "2026-11-07",
+  "note": "Inspired concept briefs with real locations. Titles, programmes and dates are newly authored, not copied announcements. The original factual references are preserved separately in content-references.json. Source posters and official references supply inspiration and place verification.",
+  "briefs": [
+    {
+      "id": "concept-dance-first-2020",
+      "name": "BODIES IN MOTION · Le Commun",
+      "kind": "Performance",
+      "title": "BODIES\nIN MOTION",
+      "subtitle": "An encounter between dance, images and sound",
+      "institution": "Le Commun · Bâtiment d’art contemporain · Genève",
+      "footer": "08–31.10.2027 · Opening 08.10, 18:00",
+      "startDate": "2027-10-08",
+      "endDate": "2027-10-31",
+      "dateLabel": "08 Oct 2027 – 31 Oct 2027",
+      "city": "Genève",
+      "displayPhrases": [
+        "BODIES",
+        "IN MOTION",
+        "DANCE",
+        "IMAGES",
+        "SOUND"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.e-flux.com/announcements/335736/dance-first-think-later-an-encounter-between-dance-and-visual-arts",
+          "evidence": "Inspiration/place reference. Organizer announcement confirms title, venue and dates. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "sourcePosterID": "6abd02b84e990567adfe94bd-p0",
+      "posterEvidence": "The full title, encounter subtitle, Le Commun / Genève venue, date range and organizer URL are readable on the poster. Reference design: Schaffter Sahli.",
+      "isConcept": true,
+      "inspiredByID": "dance-first-2020",
+      "inspirationTitle": "Dance First Think Later · 2020",
+      "referenceStartDate": "2020-08-21",
+      "referenceEndDate": "2020-09-13"
+    },
+    {
+      "id": "concept-positions-2022",
+      "name": "IN BETWEEN · EPFL Archizoom",
+      "kind": "Architecture",
+      "title": "IN\nBETWEEN",
+      "subtitle": "Architecture, public space and the ways we live",
+      "institution": "EPFL Archizoom · Lausanne",
+      "footer": "15.04–30.05.2027 · Opening 15.04, 18:30",
+      "startDate": "2027-04-15",
+      "endDate": "2027-05-30",
+      "dateLabel": "15 Apr 2027 – 30 May 2027",
+      "city": "Lausanne",
+      "displayPhrases": [
+        "IN BETWEEN",
+        "BETWEEN",
+        "ARCHITECTURE",
+        "PUBLIC SPACE",
+        "ARCHIZOOM"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://memento.epfl.ch/public/upload/files/EPFLPositions.pdf",
+          "evidence": "Inspiration/place reference. Original EPFL programme poster confirms dates, exhibition, curation and launch time. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "sourcePosterID": "733ff863ad3f2edcc05ca7a6-p0",
+      "posterEvidence": "Printed title, date range, EPFL Archizoom, TEXAS Lab and 1 June 2022 6:30 p.m. launch are legible.",
+      "isConcept": true,
+      "inspiredByID": "positions-2022",
+      "inspirationTitle": "Positions · EPFL Archizoom",
+      "referenceStartDate": "2022-05-30",
+      "referenceEndDate": "2022-07-21"
+    },
+    {
+      "id": "concept-horizons-2018",
+      "name": "COMMON GROUND · Villa Bernasconi",
+      "kind": "Exhibition",
+      "title": "COMMON\nGROUND",
+      "subtitle": "Landscapes, images and shifting perspectives",
+      "institution": "Villa Bernasconi · Lancy / Genève",
+      "footer": "18.03–16.05.2027 · Opening 18.03, 18:00",
+      "startDate": "2027-03-18",
+      "endDate": "2027-05-16",
+      "dateLabel": "18 Mar 2027 – 16 May 2027",
+      "city": "Lancy / Genève",
+      "displayPhrases": [
+        "COMMON GROUND",
+        "COMMON",
+        "GROUND",
+        "LANDSCAPES",
+        "PERSPECTIVES"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://benoitbillotte.com/wp-content/uploads/2020/04/Horizons_VillaBernasconi.pdf",
+          "evidence": "Inspiration/place reference. Artist’s exhibition press dossier confirms artists, venue and date range. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "sourcePosterID": "b45a978d6dbfc12afd7eccab-p0",
+      "posterEvidence": "All artist names, title, venue, Lancy and both dates are legible. Reference design: Schaffter Sahli.",
+      "isConcept": true,
+      "inspiredByID": "horizons-2018",
+      "inspirationTitle": "Horizons · Villa Bernasconi",
+      "referenceStartDate": "2018-12-05",
+      "referenceEndDate": "2019-02-10"
+    },
+    {
+      "id": "concept-museum-neu-2018",
+      "name": "OFFENE FORMEN · Museum für Gestaltung Zürich",
+      "kind": "Design",
+      "title": "OFFENE\nFORMEN",
+      "subtitle": "Design, Objekte und neue Perspektiven",
+      "institution": "Museum für Gestaltung Zürich · Ausstellungsstrasse 60",
+      "footer": "05.03–13.06.2027",
+      "startDate": "2027-03-05",
+      "endDate": "2027-06-13",
+      "dateLabel": "05 Mar 2027 – 13 Jun 2027",
+      "city": "Zürich",
+      "displayPhrases": [
+        "OFFENE FORMEN",
+        "OFFENE",
+        "FORMEN",
+        "DESIGN",
+        "ZÜRICH"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "sourcePosterID": "c4f7b71da2cc08a51451189c-p0",
+      "posterEvidence": "Museum name, reopening, address and 2./3. März 2018 are legible. Reference design attributed to Norm Zürich in the indexed caption.",
+      "isConcept": true,
+      "inspiredByID": "museum-neu-2018",
+      "inspirationTitle": "Neu · Museum für Gestaltung reopening",
+      "referenceStartDate": "2018-03-02",
+      "referenceEndDate": "2018-03-03"
+    },
+    {
+      "id": "concept-osr-affinites-2025",
+      "name": "NIGHT COLOURS · Victoria Hall",
+      "kind": "Concert",
+      "title": "NIGHT\nCOLOURS",
+      "subtitle": "Orchestral evening / Ravel, Debussy and Fauré",
+      "institution": "Victoria Hall · Genève",
+      "footer": "21.10.2027 · 19:30",
+      "startDate": "2027-10-21",
+      "endDate": "2027-10-21",
+      "dateLabel": "21 Oct 2027",
+      "city": "Genève / Lausanne",
+      "displayPhrases": [
+        "NIGHT COLOURS",
+        "NIGHT",
+        "COLOURS",
+        "RAVEL",
+        "DEBUSSY",
+        "FAURÉ"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.osr.ch/fileadmin/Personnes/Presse/Saison_2024-25/Communiques/Communique_de_Presse_-_Concert_Heras-Casado_-_Volodin_-_09-10.04.2025.pdf",
+          "evidence": "Inspiration/place reference. OSR press release confirms both performances, times, venues, performers and programme. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "sourcePosterID": "6f6c093ac56d6e16c89cc8c6-p0",
+      "posterEvidence": "Composer names, conductor, pianist, OSR and both performance dates/times/venues checked visually against the poster and the OSR release.",
+      "isConcept": true,
+      "inspiredByID": "osr-affinites-2025",
+      "inspirationTitle": "Wagner / Liszt / Mendelssohn · OSR",
+      "referenceStartDate": "2025-04-09",
+      "referenceEndDate": "2025-04-10"
+    },
+    {
+      "id": "concept-das-wort-2018",
+      "name": "ZWISCHEN DEN ZEILEN · Strauhof",
+      "kind": "Literature",
+      "title": "ZWISCHEN\nDEN ZEILEN",
+      "subtitle": "Literatur, Stimmen und Typografie",
+      "institution": "Strauhof · Augustinergasse 9 · Zürich",
+      "footer": "05.03–30.05.2027",
+      "startDate": "2027-03-05",
+      "endDate": "2027-05-30",
+      "dateLabel": "05 Mar 2027 – 30 May 2027",
+      "city": "Zürich",
+      "displayPhrases": [
+        "ZWISCHEN",
+        "DEN ZEILEN",
+        "STIMMEN",
+        "LITERATUR",
+        "TYPOGRAFIE"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "sourcePosterID": "bd68de5542606e6c062b5877-p0",
+      "posterEvidence": "Title, Strauhof, address and 8/2–27/5/18 date range are legible. No artist or programme details inferred from the cropped URL.",
+      "isConcept": true,
+      "inspiredByID": "das-wort-2018",
+      "inspirationTitle": "Das Wort · Strauhof",
+      "referenceStartDate": "2018-02-08",
+      "referenceEndDate": "2018-05-27"
+    },
+    {
+      "id": "concept-bibliotopia-2024",
+      "name": "VOICES IN TRANSIT · Fondation Jan Michalski",
+      "kind": "Literature",
+      "title": "VOICES\nIN TRANSIT",
+      "subtitle": "A weekend of readings, translation and stories",
+      "institution": "Fondation Jan Michalski",
+      "footer": "21–23.05.2027",
+      "startDate": "2027-05-21",
+      "endDate": "2027-05-23",
+      "dateLabel": "21 May 2027 – 23 May 2027",
+      "city": "",
+      "displayPhrases": [
+        "VOICES",
+        "IN TRANSIT",
+        "READING THE WORLD",
+        "TRANSLATION",
+        "STORIES"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "sourcePosterID": "69124eff2f134d359b4fc764-p0",
+      "posterEvidence": "Title, literature-weekend wording, love theme, foundation name and 22/23/24 March 2024 dates are legible. City is left unset rather than inferred.",
+      "isConcept": true,
+      "inspiredByID": "bibliotopia-2024",
+      "inspirationTitle": "Bibliotopia · Autour de l’amour",
+      "referenceStartDate": "2024-03-22",
+      "referenceEndDate": "2024-03-24"
+    },
+    {
+      "id": "concept-nuit-photo-2022",
+      "name": "AFTER DARK · Musée des beaux-arts",
+      "kind": "Photography",
+      "title": "AFTER\nDARK",
+      "subtitle": "A night of photography and projected images",
+      "institution": "Musée des beaux-arts · La Chaux-de-Fonds",
+      "footer": "20.02.2027 · 19:00–23:00",
+      "startDate": "2027-02-20",
+      "endDate": "2027-02-20",
+      "dateLabel": "20 Feb 2027",
+      "city": "La Chaux-de-Fonds",
+      "displayPhrases": [
+        "AFTER DARK",
+        "AFTER",
+        "DARK",
+        "PHOTOGRAPHY",
+        "IMAGES"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "sourcePosterID": "7f611ce95f3efd413a9f2066-p0",
+      "posterEvidence": "Only the clearly printed 10e Nuit de la Photo / 19.02.2022 / La Chaux-de-Fonds event is extracted. Separate exhibition dates and partly legible photographer names are not merged into this brief.",
+      "isConcept": true,
+      "inspiredByID": "nuit-photo-2022",
+      "inspirationTitle": "10e Nuit de la Photo",
+      "referenceStartDate": "2022-02-19",
+      "referenceEndDate": "2022-02-19"
+    },
+    {
+      "id": "concept-asawa-beyeler-2026",
+      "name": "LINE AND SPACE · Fondation Beyeler",
+      "kind": "Exhibition",
+      "title": "LINE\nAND SPACE",
+      "subtitle": "Sculpture, drawing and woven forms",
+      "institution": "Fondation Beyeler · Riehen / Basel",
+      "footer": "19.09.2027–09.01.2028",
+      "startDate": "2027-09-19",
+      "endDate": "2028-01-09",
+      "dateLabel": "19 Sep 2027 – 09 Jan 2028",
+      "city": "Riehen / Basel",
+      "displayPhrases": [
+        "LINE AND SPACE",
+        "LINE",
+        "SPACE",
+        "SCULPTURE",
+        "DRAWING"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.fondationbeyeler.ch/en/exhibitions?cHash=f5cf2d2d055409e9db4326e8a35538d6&l=0",
+          "evidence": "Inspiration/place reference. Current exhibition list confirms 18 October 2026–10 January 2027. The new title, programme and dates are imagined."
+        },
+        {
+          "url": "https://www.fondationbeyeler.ch/de/medien/ruth-asawa",
+          "evidence": "Inspiration/place reference. Museum media page confirms dates and Riehen/Basel venue. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "asawa-beyeler-2026",
+      "inspirationTitle": "Ruth Asawa · Fondation Beyeler",
+      "referenceStartDate": "2026-10-18",
+      "referenceEndDate": "2027-01-10"
+    },
+    {
+      "id": "concept-cezanne-beyeler-2026",
+      "name": "COLOUR AND LIGHT · Fondation Beyeler",
+      "kind": "Exhibition",
+      "title": "COLOUR\nAND LIGHT",
+      "subtitle": "Landscapes, still lifes and changing perception",
+      "institution": "Fondation Beyeler · Riehen / Basel",
+      "footer": "07.02–09.05.2027",
+      "startDate": "2027-02-07",
+      "endDate": "2027-05-09",
+      "dateLabel": "07 Feb 2027 – 09 May 2027",
+      "city": "Riehen / Basel",
+      "displayPhrases": [
+        "COLOUR AND LIGHT",
+        "COLOUR",
+        "LIGHT",
+        "LANDSCAPES",
+        "PERCEPTION"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.fondationbeyeler.ch/fileadmin/user_upload/Presse/Medienmitteilungen_E/en2026/EN_Press_Kit_Cezanne.pdf",
+          "evidence": "Inspiration/place reference. Museum press kit confirms exhibition title and date range. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "cezanne-beyeler-2026",
+      "inspirationTitle": "Cezanne · Fondation Beyeler",
+      "referenceStartDate": "2026-01-25",
+      "referenceEndDate": "2026-05-25"
+    },
+    {
+      "id": "concept-kusama-beyeler-2025",
+      "name": "INFINITE PATTERNS · Fondation Beyeler",
+      "kind": "Exhibition",
+      "title": "INFINITE\nPATTERNS",
+      "subtitle": "Repetition, rhythm and the spaces between",
+      "institution": "Fondation Beyeler · Riehen / Basel",
+      "footer": "13.06–05.09.2027",
+      "startDate": "2027-06-13",
+      "endDate": "2027-09-05",
+      "dateLabel": "13 Jun 2027 – 05 Sep 2027",
+      "city": "Riehen / Basel",
+      "displayPhrases": [
+        "INFINITE PATTERNS",
+        "INFINITE",
+        "PATTERNS",
+        "REPETITION",
+        "RHYTHM"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.fondationbeyeler.ch/en/exhibitions?cHash=f5cf2d2d055409e9db4326e8a35538d6&l=0",
+          "evidence": "Inspiration/place reference. Museum archive lists the exhibition and exact dates. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "kusama-beyeler-2025",
+      "inspirationTitle": "Yayoi Kusama · Fondation Beyeler",
+      "referenceStartDate": "2025-10-12",
+      "referenceEndDate": "2026-01-25"
+    },
+    {
+      "id": "concept-raye-montreux-2026",
+      "name": "AFTER HOURS · Auditorium Stravinski",
+      "kind": "Concert",
+      "title": "AFTER\nHOURS",
+      "subtitle": "A live evening of soul, jazz and contemporary voices",
+      "institution": "Auditorium Stravinski · Montreux",
+      "footer": "09.07.2027 · 20:30",
+      "startDate": "2027-07-09",
+      "endDate": "2027-07-09",
+      "dateLabel": "09 Jul 2027",
+      "city": "Montreux",
+      "displayPhrases": [
+        "AFTER HOURS",
+        "AFTER",
+        "HOURS",
+        "SOUL",
+        "JAZZ",
+        "LIVE"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.montreuxjazzfestival.com/en/programme/",
+          "evidence": "Inspiration/place reference. Official 2026 programme lists RAYE & Special Guests on 3 July at 20:30 in Auditorium Stravinski. The new title, programme and dates are imagined."
+        },
+        {
+          "url": "https://www.montreuxjazzfestival.com/en/artist/raye/",
+          "evidence": "Inspiration/place reference. Official artist page confirms billing. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "raye-montreux-2026",
+      "inspirationTitle": "RAYE & Special Guests · Montreux",
+      "referenceStartDate": "2026-07-03",
+      "referenceEndDate": "2026-07-03"
+    },
+    {
+      "id": "concept-nick-cave-montreux-2026",
+      "name": "DARK CURRENTS · Auditorium Stravinski",
+      "kind": "Concert",
+      "title": "DARK\nCURRENTS",
+      "subtitle": "Electric songs and spoken stories",
+      "institution": "Auditorium Stravinski · Montreux",
+      "footer": "10.07.2027 · 21:00",
+      "startDate": "2027-07-10",
+      "endDate": "2027-07-10",
+      "dateLabel": "10 Jul 2027",
+      "city": "Montreux",
+      "displayPhrases": [
+        "DARK CURRENTS",
+        "DARK",
+        "CURRENTS",
+        "ELECTRIC",
+        "STORIES"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.montreuxjazzfestival.com/wp-content/uploads/2026/03/Programme_2026.pdf",
+          "evidence": "Inspiration/place reference. Official programme puts both artists on the 5 July Auditorium Stravinski bill. No set time is inferred. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "nick-cave-montreux-2026",
+      "inspirationTitle": "Nick Cave & the Bad Seeds · Montreux",
+      "referenceStartDate": "2026-07-05",
+      "referenceEndDate": "2026-07-05"
+    },
+    {
+      "id": "concept-lso-ades-2026",
+      "name": "SEA CHANGES · Barbican Hall",
+      "kind": "Concert",
+      "title": "SEA\nCHANGES",
+      "subtitle": "Orchestral concert / Sibelius, Debussy and Britten",
+      "institution": "Barbican Hall · Silk Street, London EC2Y 8DS",
+      "footer": "07.11.2027 · 19:00",
+      "startDate": "2027-11-07",
+      "endDate": "2027-11-07",
+      "dateLabel": "07 Nov 2027",
+      "city": "London",
+      "displayPhrases": [
+        "SEA CHANGES",
+        "SEA",
+        "CHANGES",
+        "SIBELIUS",
+        "DEBUSSY",
+        "BRITTEN"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.barbican.org.uk/whats-on/2026/event/london-symphony-orchestrathomas-ades-0",
+          "evidence": "Inspiration/place reference. Venue listing confirms performers, composers, date, 19:00 start, hall and address. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "lso-ades-2026",
+      "inspirationTitle": "Thomas Adès & LSO · Barbican",
+      "referenceStartDate": "2026-11-08",
+      "referenceEndDate": "2026-11-08"
+    },
+    {
+      "id": "concept-montreux-2026",
+      "name": "LAKE SESSIONS · Montreux Jazz Lab",
+      "kind": "Music festival",
+      "title": "LAKE\nSESSIONS",
+      "subtitle": "Three evenings of jazz, improvisation and new sounds",
+      "institution": "Montreux Jazz Lab · Montreux",
+      "footer": "16–18.07.2027 · From 19:00",
+      "startDate": "2027-07-16",
+      "endDate": "2027-07-18",
+      "dateLabel": "16 Jul 2027 – 18 Jul 2027",
+      "city": "Montreux",
+      "displayPhrases": [
+        "LAKE SESSIONS",
+        "LAKE",
+        "SESSIONS",
+        "JAZZ",
+        "IMPROVISATION"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.montreuxjazzfestival.com/en/news/programme-2026/",
+          "evidence": "Inspiration/place reference. Organizer release confirms 60th edition, date range and venues. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "montreux-2026",
+      "inspirationTitle": "60th Montreux Jazz Festival",
+      "referenceStartDate": "2026-07-03",
+      "referenceEndDate": "2026-07-18"
+    },
+    {
+      "id": "concept-art-basel-2026",
+      "name": "OPEN EDITIONS · Messe Basel",
+      "kind": "Art fair",
+      "title": "OPEN\nEDITIONS",
+      "subtitle": "Prints, editions and artists’ books",
+      "institution": "Messe Basel · Basel",
+      "footer": "17–20.06.2027",
+      "startDate": "2027-06-17",
+      "endDate": "2027-06-20",
+      "dateLabel": "17 Jun 2027 – 20 Jun 2027",
+      "city": "Basel",
+      "displayPhrases": [
+        "OPEN EDITIONS",
+        "OPEN",
+        "EDITIONS",
+        "PRINTS",
+        "ARTISTS’ BOOKS"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.artbasel.com/stories/art-basel-unveils-leading-galleries-and-first-highlights-for-its-2026-flagship-show-in-basel?lang=en",
+          "evidence": "Inspiration/place reference. Organizer announcement confirms public dates and Messe Basel venue. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "art-basel-2026",
+      "inspirationTitle": "Art Basel · Basel 2026",
+      "referenceStartDate": "2026-06-18",
+      "referenceEndDate": "2026-06-21"
+    },
+    {
+      "id": "concept-locarno-2026",
+      "name": "NIGHTS ON SCREEN · Piazza Grande",
+      "kind": "Cinema",
+      "title": "NIGHTS\nON SCREEN",
+      "subtitle": "An outdoor film programme and conversations",
+      "institution": "Piazza Grande · Locarno",
+      "footer": "12–14.08.2027 · Screenings from 21:00",
+      "startDate": "2027-08-12",
+      "endDate": "2027-08-14",
+      "dateLabel": "12 Aug 2027 – 14 Aug 2027",
+      "city": "Locarno",
+      "displayPhrases": [
+        "NIGHTS ON SCREEN",
+        "NIGHTS",
+        "SCREEN",
+        "CINEMA",
+        "LOCARNO"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www4.ti.ch/decs/dcsu/osservatorio/agenda-culturale/cerca-evento/dettaglio/105498/locarno_film_festival",
+          "evidence": "Inspiration/place reference. Canton Ticino public cultural calendar confirms dates, Piazza Grande and organizer. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "locarno-2026",
+      "inspirationTitle": "Locarno Film Festival · 2026",
+      "referenceStartDate": "2026-08-05",
+      "referenceEndDate": "2026-08-15"
+    },
+    {
+      "id": "concept-avignon-off-2026",
+      "name": "UNE VILLE EN SCÈNE · Avignon",
+      "kind": "Theatre",
+      "title": "UNE VILLE\nEN SCÈNE",
+      "subtitle": "Théâtre, récits et petites formes",
+      "institution": "Avignon · France",
+      "footer": "10–25.07.2027",
+      "startDate": "2027-07-10",
+      "endDate": "2027-07-25",
+      "dateLabel": "10 Jul 2027 – 25 Jul 2027",
+      "city": "Avignon",
+      "displayPhrases": [
+        "UNE VILLE",
+        "EN SCÈNE",
+        "THÉÂTRE",
+        "RÉCITS",
+        "AVIGNON"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.festivaloffavignon.com/page/edition-2026",
+          "evidence": "Inspiration/place reference. Organizer edition page confirms event and date range. This is the Off festival, not a merged main-festival programme. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "avignon-off-2026",
+      "inspirationTitle": "Festival Off Avignon · 2026",
+      "referenceStartDate": "2026-07-04",
+      "referenceEndDate": "2026-07-25"
+    },
+    {
+      "id": "concept-ldf-2026",
+      "name": "DESIGN COMMONS · Barbican Centre",
+      "kind": "Design",
+      "title": "DESIGN\nCOMMONS",
+      "subtitle": "Objects, spaces and ideas in public",
+      "institution": "Barbican Centre · London",
+      "footer": "11–19.09.2027",
+      "startDate": "2027-09-11",
+      "endDate": "2027-09-19",
+      "dateLabel": "11 Sep 2027 – 19 Sep 2027",
+      "city": "London",
+      "displayPhrases": [
+        "DESIGN COMMONS",
+        "DESIGN",
+        "COMMONS",
+        "OBJECTS",
+        "SPACES",
+        "IDEAS"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://londondesignfestival.com/stories/a-first-look-at-ldf26",
+          "evidence": "Inspiration/place reference. Organizer announcement confirms edition, city and dates. The new title, programme and dates are imagined."
+        },
+        {
+          "url": "https://www.barbican.org.uk/whats-on/2026/event/london-symphony-orchestrathomas-ades-0",
+          "evidence": "Venue listing confirms Barbican Centre and London address, not the imagined design event."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "ldf-2026",
+      "inspirationTitle": "London Design Festival · 2026",
+      "referenceStartDate": "2026-09-12",
+      "referenceEndDate": "2026-09-20"
+    },
+    {
+      "id": "concept-salone-2026",
+      "name": "MATERIAL FUTURES · Fiera Milano Rho",
+      "kind": "Design fair",
+      "title": "MATERIAL\nFUTURES",
+      "subtitle": "Exhibitions and conversations on craft and making",
+      "institution": "Fiera Milano Rho · Milano",
+      "footer": "23–25.04.2027",
+      "startDate": "2027-04-23",
+      "endDate": "2027-04-25",
+      "dateLabel": "23 Apr 2027 – 25 Apr 2027",
+      "city": "Milano",
+      "displayPhrases": [
+        "MATERIAL FUTURES",
+        "MATERIAL",
+        "FUTURES",
+        "CRAFT",
+        "MAKING"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.salonemilano.it/en/articles/salone-del-mobile-2026",
+          "evidence": "Inspiration/place reference. Organizer article confirms 64th edition, dates and Fiera Milano Rho venue. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "salone-2026",
+      "inspirationTitle": "Salone del Mobile.Milano · 2026",
+      "referenceStartDate": "2026-04-21",
+      "referenceEndDate": "2026-04-26"
+    },
+    {
+      "id": "concept-edinburgh-2026",
+      "name": "CITY OF VOICES · The Hub",
+      "kind": "Performing arts",
+      "title": "CITY\nOF VOICES",
+      "subtitle": "Music, theatre and live performance",
+      "institution": "The Hub · Edinburgh",
+      "footer": "06–22.08.2027",
+      "startDate": "2027-08-06",
+      "endDate": "2027-08-22",
+      "dateLabel": "06 Aug 2027 – 22 Aug 2027",
+      "city": "Edinburgh",
+      "displayPhrases": [
+        "CITY OF VOICES",
+        "CITY",
+        "VOICES",
+        "MUSIC",
+        "THEATRE"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.eif.co.uk/my-festival",
+          "evidence": "Inspiration/place reference. Organizer’s 2026 festival page confirms dates and programme disciplines. The new title, programme and dates are imagined."
+        },
+        {
+          "url": "https://www.eif.co.uk/venues",
+          "evidence": "Official venue list confirms The Hub, Edinburgh, not the imagined event."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "edinburgh-2026",
+      "inspirationTitle": "Edinburgh International Festival · 2026",
+      "referenceStartDate": "2026-08-07",
+      "referenceEndDate": "2026-08-30"
+    },
+    {
+      "id": "concept-berlinale-2026",
+      "name": "FRAME BY FRAME · Berlin",
+      "kind": "Cinema",
+      "title": "FRAME\nBY FRAME",
+      "subtitle": "Independent cinema, short films and conversations",
+      "institution": "Berlin · Germany",
+      "footer": "11–21.02.2027",
+      "startDate": "2027-02-11",
+      "endDate": "2027-02-21",
+      "dateLabel": "11 Feb 2027 – 21 Feb 2027",
+      "city": "Berlin",
+      "displayPhrases": [
+        "FRAME BY FRAME",
+        "FRAME",
+        "CINEMA",
+        "SHORT FILMS",
+        "BERLIN"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.berliner-kuenstlerprogramm.de/en/events/berlinale-2026/",
+          "evidence": "Inspiration/place reference. DAAD artists’ programme confirms 76th edition and exact dates. The new title, programme and dates are imagined."
+        },
+        {
+          "url": "https://www.berlinale.de/en/2027/news-press-releases/278428.html",
+          "evidence": "Inspiration/place reference. Organizer’s post-event release confirms 76th edition concluded 22 February 2026. The new title, programme and dates are imagined."
+        }
+      ],
+      "basis": "Inspired concept brief: title, programme and dates are newly authored; named places are real. References document the inspiration/place, not an announced event.",
+      "isConcept": true,
+      "inspiredByID": "berlinale-2026",
+      "inspirationTitle": "76th Berlinale · 2026",
+      "referenceStartDate": "2026-02-12",
+      "referenceEndDate": "2026-02-22"
+    }
+  ]
+}

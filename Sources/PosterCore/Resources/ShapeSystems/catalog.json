@@ -1,0 +1,450 @@
+{
+  "version": "shape-system-catalog-v2",
+  "systems": [
+    {
+      "id": "shape-spiral-stack",
+      "name": "Progressively flattened spiral stack",
+      "operation": "spiral-stack",
+      "sourcePosterID": "c5bef00fcaecfda9090e6b66-p0",
+      "sourceImageURL": "file:///PosterLab/output/siglip-collection-snapshot-v1/posters/c5bef00fcaecfda9090e6b66-p0.jpg",
+      "sourceBounds": {
+        "x": 0.03,
+        "y": 0.0,
+        "width": 0.9,
+        "height": 0.91
+      },
+      "promptID": "concentric-rings",
+      "retrievalSimilarity": 0.10436136561691034,
+      "status": "visually-confirmed pattern; procedural interpretation; source bounds proposed",
+      "explanation": "A shared spiral contour repeats down a column; vertical extent and pitch grow together.",
+      "invariants": [
+        "Spiral topology remains constant.",
+        "Row extents follow a declared geometric progression."
+      ],
+      "parameters": {
+        "count": 5,
+        "turns": 1.7,
+        "growth": 0.65,
+        "lineWidth": 0.035,
+        "phase": 0
+      },
+      "aspect": 1.4,
+      "foreground": "#151515",
+      "background": "#f4f2eb"
+    },
+    {
+      "id": "shape-wave-lines",
+      "name": "Ordered wave-line field",
+      "operation": "wave-lines",
+      "sourcePosterID": "12f8c6f637febe36ba66d7b6-p0",
+      "sourceImageURL": "file:///PosterLab/output/siglip-collection-snapshot-v1/posters/12f8c6f637febe36ba66d7b6-p0.jpg",
+      "sourceBounds": {
+        "x": 0.11,
+        "y": 0.17,
+        "width": 0.77,
+        "height": 0.63
+      },
+      "promptID": "moire-lines",
+      "retrievalSimilarity": 0.1526972735761466,
+      "status": "visually-confirmed pattern; procedural interpretation; source bounds proposed",
+      "explanation": "The ECAL source bends an ordered family of lines into a flow field. This prototype preserves shared phase and row order; its printed arrows and exact local flow are not recovered.",
+      "invariants": [
+        "Every row samples the same smooth displacement field.",
+        "Stroke width scales in physical canvas units."
+      ],
+      "parameters": {
+        "count": 24,
+        "amplitude": 0.18,
+        "frequency": 0.8,
+        "phase": 0.4,
+        "lineWidth": 0.008
+      },
+      "aspect": 1.25,
+      "foreground": "#151515",
+      "background": "#f6f5ef"
+    },
+    {
+      "id": "shape-mirror-arcs",
+      "name": "Four-way reflected arc bundles",
+      "operation": "mirror-arcs",
+      "sourcePosterID": "fac44fee509db0d6c554dcbc-p0",
+      "sourceImageURL": "file:///PosterLab/output/siglip-collection-snapshot-v1/posters/fac44fee509db0d6c554dcbc-p0.jpg",
+      "sourceBounds": {
+        "x": 0.15,
+        "y": 0.12,
+        "width": 0.7,
+        "height": 0.76
+      },
+      "promptID": "radial-repeat",
+      "retrievalSimilarity": 0.10087914142094467,
+      "status": "visually-confirmed pattern; procedural interpretation; source bounds proposed",
+      "explanation": "The VOLUMES reference reflects curved stroke bundles across both axes, producing a central counterform. Smooth opposing arc bundles are a declared interpretation.",
+      "invariants": [
+        "Four quadrants share one generating curve family.",
+        "Horizontal and vertical reflection and bundle count remain explicit."
+      ],
+      "parameters": {
+        "count": 6,
+        "bend": 0.5,
+        "lineWidth": 0.015
+      },
+      "aspect": 1.15,
+      "foreground": "#162b38",
+      "background": "#d9e9ee"
+    },
+    {
+      "id": "shape-folded-tiles",
+      "name": "Affine zigzag tile field",
+      "operation": "folded-tiles",
+      "sourcePosterID": "39c209ac67411dd6f8561caf-p0",
+      "sourceImageURL": "file:///PosterLab/output/siglip-collection-snapshot-v1/posters/39c209ac67411dd6f8561caf-p0.jpg",
+      "sourceBounds": {
+        "x": 0.04,
+        "y": 0.03,
+        "width": 0.92,
+        "height": 0.93
+      },
+      "promptID": "tessellation",
+      "retrievalSimilarity": 0.11074398658068375,
+      "status": "visually-confirmed pattern; procedural interpretation; source bounds proposed",
+      "explanation": "The red-and-black source repeats a slanted tile on a regular lattice. The prototype isolates the affine repeat from photographed shading and wall context.",
+      "invariants": [
+        "All tiles share a polygon and lattice spacing.",
+        "Row and column counts control density independently."
+      ],
+      "parameters": {
+        "rows": 8,
+        "columns": 5,
+        "slant": 0.42
+      },
+      "aspect": 1.3,
+      "foreground": "#141414",
+      "background": "#e84c3e"
+    },
+    {
+      "id": "shape-circle-clusters",
+      "name": "Repeated satellite-circle clusters",
+      "operation": "circle-clusters",
+      "sourcePosterID": "eb707e2c926e561009f29469-p0",
+      "sourceImageURL": "file:///PosterLab/output/siglip-collection-snapshot-v1/posters/eb707e2c926e561009f29469-p0.png",
+      "sourceBounds": {
+        "x": 0.1,
+        "y": 0.08,
+        "width": 0.8,
+        "height": 0.8
+      },
+      "promptID": "organic-repeat",
+      "retrievalSimilarity": 0.114583679084825,
+      "status": "visually-confirmed pattern; procedural interpretation; source bounds proposed",
+      "explanation": "The Cully source distributes small circle clusters across a repeated field. This interpretation shares one cluster construction and cycles its orientation.",
+      "invariants": [
+        "Each cluster contains one body and two attached satellite circles.",
+        "Cluster orientation follows a repeatable index cycle."
+      ],
+      "parameters": {
+        "rows": 6,
+        "columns": 4,
+        "radius": 0.29,
+        "satellite": 0.48,
+        "phase": 0.2
+      },
+      "aspect": 1.4,
+      "foreground": "#27212a",
+      "background": "#eb67b7"
+    },
+    {
+      "id": "shape-perforated-grid",
+      "name": "Perforated rounded-tile lattice",
+      "operation": "perforated-grid",
+      "sourcePosterID": "f3ec7fffbeecd97a1d3bf632-p0",
+      "sourceImageURL": "file:///PosterLab/output/siglip-collection-snapshot-v1/posters/f3ec7fffbeecd97a1d3bf632-p0.jpg",
+      "sourceBounds": {
+        "x": 0.22,
+        "y": 0.21,
+        "width": 0.6,
+        "height": 0.66
+      },
+      "promptID": "concentric-rings",
+      "retrievalSimilarity": 0.1082844242406012,
+      "status": "visually-confirmed pattern; procedural interpretation; source bounds proposed",
+      "explanation": "The Festival de la Cité source combines rounded masses and circular counters on a repeated lattice. The prototype isolates that topology; the full multicolor composition is not reconstructed.",
+      "invariants": [
+        "Counters remain negative space inside each tile.",
+        "Hole count and lattice density are independent controls."
+      ],
+      "parameters": {
+        "rows": 4,
+        "columns": 3,
+        "holes": 4
+      },
+      "aspect": 1.4,
+      "foreground": "#4d4d54",
+      "background": "#edb5df"
+    },
+    {
+      "id": "shape-radial-spokes",
+      "name": "Equal-angle radial spokes",
+      "operation": "radial-spokes",
+      "sourcePosterID": "02f8efca35d0a69f7065e7e8-p0",
+      "sourceImageURL": "file:///PosterLab/output/siglip-collection-snapshot-v1/posters/02f8efca35d0a69f7065e7e8-p0.jpg",
+      "sourceBounds": {
+        "x": 0.51,
+        "y": 0.07,
+        "width": 0.24,
+        "height": 0.18
+      },
+      "promptID": "radial-repeat",
+      "retrievalSimilarity": 0.1116722483658348,
+      "status": "visually-confirmed pattern; procedural interpretation; source bounds proposed",
+      "explanation": "The FOCUS icon sheet contains a radial line motif. The prototype explicitly repeats a segment at equal angular intervals.",
+      "invariants": [
+        "Angular increments equal 360 degrees divided by spoke count.",
+        "Inner and outer radii remain common to every spoke."
+      ],
+      "parameters": {
+        "count": 36,
+        "innerRadius": 0.025,
+        "outerRadius": 0.46,
+        "lineWidth": 0.008,
+        "phase": 0
+      },
+      "aspect": 1,
+      "foreground": "#292733",
+      "background": "#f1eee6"
+    },
+    {
+      "id": "shape-petal-rosette",
+      "name": "Shared-petal rotational rosette",
+      "operation": "petal-rosette",
+      "sourcePosterID": "02f8efca35d0a69f7065e7e8-p0",
+      "sourceImageURL": "file:///PosterLab/output/siglip-collection-snapshot-v1/posters/02f8efca35d0a69f7065e7e8-p0.jpg",
+      "sourceBounds": {
+        "x": 0.51,
+        "y": 0.58,
+        "width": 0.24,
+        "height": 0.18
+      },
+      "promptID": "radial-repeat",
+      "retrievalSimilarity": 0.1116722483658348,
+      "status": "visually-confirmed pattern; procedural interpretation; source bounds proposed",
+      "explanation": "The FOCUS icon sheet repeats four pointed oval petals about one center. A shared closed Bézier petal supplies an editable rotational rule.",
+      "invariants": [
+        "Every petal is a rigid rotation of one closed path.",
+        "Petal count, width and phase remain independent parameters."
+      ],
+      "parameters": {
+        "count": 4,
+        "outerRadius": 0.46,
+        "petalWidth": 0.34,
+        "phase": 0.785398
+      },
+      "aspect": 1,
+      "foreground": "#c65d39",
+      "background": "#f1eee6"
+    },
+    {
+      "id": "shape-disc-wreath",
+      "name": "Disc wreath",
+      "operation": "disc-wreath",
+      "sourcePosterID": "a0527f92c47b62fa8918beb0-p0",
+      "sourceImageURL": "file:///PosterLab/library/posters/a0527f92c47b62fa8918beb0-p0/poster.png",
+      "sourceBounds": {
+        "x": 0.026415094339622643,
+        "y": 0.16,
+        "width": 0.949056603773585,
+        "height": 0.6758620689655171
+      },
+      "promptID": "sam-visual-review",
+      "retrievalSimilarity": null,
+      "seed": 817,
+      "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/disc-1/evidence.json",
+      "sourceImageSHA256": "e5f45cfe5c469ae569a8d8e77b97aa75fe3f78440ac487b6ef0eaac3cade97c5",
+      "status": "SAM-refined source; visually reviewed vector interpretation",
+      "explanation": "Equal circular modules occupy an elliptical orbit at equal angular intervals. Radius is limited to keep neighboring discs separate and inside the field.",
+      "invariants": [
+        "Centers share one orbit and equal angular spacing.",
+        "Module radius stays constant; a chord bound prevents collisions."
+      ],
+      "parameters": {
+        "count": 8,
+        "orbitRadius": 0.36251105517751736,
+        "discRadius": 0.10554245283018869,
+        "flatten": 1,
+        "phase": 0.0021152859291805196
+      },
+      "aspect": 1,
+      "foreground": "#253031",
+      "background": "#eeeee8"
+    },
+    {
+      "id": "shape-segmented-ring",
+      "name": "Segmented ring",
+      "operation": "segmented-ring",
+      "sourcePosterID": "02f8efca35d0a69f7065e7e8-p0",
+      "sourceImageURL": "file:///PosterLab/library/posters/02f8efca35d0a69f7065e7e8-p0/poster.jpg",
+      "sourceBounds": {
+        "x": 0.2737226277372263,
+        "y": 0.5823451910408433,
+        "width": 0.22445255474452555,
+        "height": 0.15678524374176547
+      },
+      "promptID": "sam-visual-review",
+      "retrievalSimilarity": null,
+      "seed": 817,
+      "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/segmented-ring/evidence.json",
+      "sourceImageSHA256": "682913ee729ea58e01e7dcca9d4d5cd6b32012b479aefd16f2d99517af04c848",
+      "status": "SAM-refined source; visually reviewed vector interpretation",
+      "explanation": "Disjoint annular sectors share inner and outer circles. Segment count, angular coverage and band thickness vary independently.",
+      "invariants": [
+        "All sectors share the same two radii.",
+        "An angular gap separates every neighboring sector."
+      ],
+      "parameters": {
+        "count": 8,
+        "duty": 0.63,
+        "thickness": 0.18,
+        "phase": 0
+      },
+      "aspect": 1,
+      "foreground": "#253031",
+      "background": "#eeeee8"
+    },
+    {
+      "id": "shape-polygon-contours",
+      "name": "Polygon contours",
+      "operation": "polygon-contours",
+      "sourcePosterID": "02f8efca35d0a69f7065e7e8-p0",
+      "sourceImageURL": "file:///PosterLab/library/posters/02f8efca35d0a69f7065e7e8-p0/poster.jpg",
+      "sourceBounds": {
+        "x": 0.2737226277372263,
+        "y": 0.761528326745718,
+        "width": 0.22262773722627738,
+        "height": 0.1383399209486166
+      },
+      "promptID": "sam-visual-review",
+      "retrievalSimilarity": null,
+      "seed": 817,
+      "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/polygon-frame/evidence.json",
+      "sourceImageSHA256": "682913ee729ea58e01e7dcca9d4d5cd6b32012b479aefd16f2d99517af04c848",
+      "status": "SAM-refined source; visually reviewed vector interpretation",
+      "explanation": "A regular polygon supplies one frame or a family of concentric contours. Side count changes the primitive; equal radial steps and capped stroke width preserve nested gaps.",
+      "invariants": [
+        "Every contour shares side count, center and orientation.",
+        "Stroke width is capped below the contour separation."
+      ],
+      "parameters": {
+        "count": 1,
+        "sides": 6,
+        "inset": 0.84,
+        "lineWidth": 0.055,
+        "phase": 0
+      },
+      "aspect": 1,
+      "foreground": "#253031",
+      "background": "#eeeee8"
+    },
+    {
+      "id": "shape-star-frame",
+      "name": "Star frame",
+      "operation": "star-frame",
+      "sourcePosterID": "02f8efca35d0a69f7065e7e8-p0",
+      "sourceImageURL": "file:///PosterLab/library/posters/02f8efca35d0a69f7065e7e8-p0/poster.jpg",
+      "sourceBounds": {
+        "x": 0.7572992700729927,
+        "y": 0.2463768115942029,
+        "width": 0.2208029197080292,
+        "height": 0.15151515151515152
+      },
+      "promptID": "sam-visual-review",
+      "retrievalSimilarity": null,
+      "seed": 817,
+      "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/star-frame/evidence.json",
+      "sourceImageSHA256": "682913ee729ea58e01e7dcca9d4d5cd6b32012b479aefd16f2d99517af04c848",
+      "status": "SAM-refined source; visually reviewed vector interpretation",
+      "explanation": "Alternating tip and root radii define an even star. A concentric scaled star is subtracted with even-odd fill; zero aperture produces a solid star.",
+      "invariants": [
+        "Tips repeat at equal angular intervals.",
+        "The inner and outer stars are homothetic and never cross."
+      ],
+      "parameters": {
+        "count": 12,
+        "depth": 0.26,
+        "aperture": 0.58,
+        "phase": -1.570796
+      },
+      "aspect": 1,
+      "foreground": "#253031",
+      "background": "#eeeee8"
+    },
+    {
+      "id": "shape-notched-disc",
+      "name": "Notched disc",
+      "operation": "notched-disc",
+      "sourcePosterID": "7ca49ba438265fcaa618783d-p0",
+      "sourceImageURL": "file:///PosterLab/library/posters/7ca49ba438265fcaa618783d-p0/poster.jpg",
+      "sourceBounds": {
+        "x": 0.530562347188264,
+        "y": 0.3368055555555556,
+        "width": 0.4058679706601467,
+        "height": 0.3072916666666667
+      },
+      "promptID": "sam-visual-review",
+      "retrievalSimilarity": null,
+      "seed": 817,
+      "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/notched-disc/evidence.json",
+      "sourceImageSHA256": "5660b186b618060af67edb86ee2b19976fd384216bbc9601226e51b9ff96273c",
+      "status": "SAM-refined source; visually reviewed vector interpretation",
+      "explanation": "A triangular wedge removes part of a disc. The cut can reach its center or stop short; orientation and flattening transform the complete cut silhouette.",
+      "invariants": [
+        "One circular boundary and one wedge define the primitive.",
+        "Subtraction is clipped to the disc, so no wedge exterior is printed."
+      ],
+      "parameters": {
+        "opening": 1.0472,
+        "depth": 1,
+        "flatten": 1,
+        "phase": 0
+      },
+      "aspect": 1,
+      "foreground": "#253031",
+      "background": "#eeeee8"
+    },
+    {
+      "id": "shape-cellular-disc",
+      "name": "Radial cell mosaic",
+      "operation": "cellular-disc",
+      "sourcePosterID": "7a78e599fb143d5e5ca6f118-p0",
+      "sourceImageURL": "file:///PosterLab/library/posters/7a78e599fb143d5e5ca6f118-p0/poster.png",
+      "sourceBounds": {
+        "x": 0.09805924412665985,
+        "y": 0.27872340425531916,
+        "width": 0.24923391215526047,
+        "height": 0.5
+      },
+      "promptID": "sam-visual-review",
+      "retrievalSimilarity": null,
+      "seed": 817,
+      "evidenceURL": "file:///PosterLab/output/sam-shape-expansion-v1/sources/cellular-disc/evidence.json",
+      "sourceImageSHA256": "96b9fc0ff92d501c9fb3545cc581239f07d709875690aaea983e7eb8d0a85282",
+      "status": "SAM-refined source; visually reviewed vector interpretation",
+      "explanation": "Shared concentric band boundaries are partitioned into staggered curved cells. Cell count increases with radius; seeded seam and boundary variations retain the radial organization observed in the source.",
+      "invariants": [
+        "Adjacent bands use the same boundary function.",
+        "Cell separation leaves real negative-space gutters.",
+        "The declared seed reproduces every irregular boundary."
+      ],
+      "parameters": {
+        "rings": 6,
+        "count": 24,
+        "gutter": 0.09,
+        "stagger": 0.5,
+        "irregularity": 0.4,
+        "phase": 0
+      },
+      "aspect": 1,
+      "foreground": "#253031",
+      "background": "#eeeee8"
+    }
+  ],
+  "note": "SigLIP shortlisted sources across 1,130 frozen posters. A coding-agent visual review selected eight transferable shape relationships. These are editable vector interpretations, not automatic layer recovery, calibrated detections or exact source reconstructions. No type geometry is used. Six SAM-refined source interpretations share the shape-library vector renderers. SAM model estimates are not detection-accuracy probabilities."
+}

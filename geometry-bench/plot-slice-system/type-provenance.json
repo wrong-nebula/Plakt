@@ -1,0 +1,17 @@
+{
+  "fonts": {
+    "serif": {
+      "file": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+      "family": "Times New Roman",
+      "fullName": "Times New Roman",
+      "postscriptName": "TimesNewRomanPSMT"
+    },
+    "sans": {
+      "file": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "family": "Arial",
+      "fullName": "Arial",
+      "postscriptName": "ArialMT"
+    }
+  },
+  "note": "Only fixed supporting phrases are converted into the poster. Primary P/l/o/t and extension glyphs are authored separately."
+}

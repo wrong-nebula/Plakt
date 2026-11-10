@@ -1,0 +1,306 @@
+[
+  {
+    "id": "contour-letter-channels",
+    "name": "Contour-built letter channels",
+    "group": "Contour typography",
+    "renderer": "contour-type",
+    "parameters": [
+      {
+        "id": "count",
+        "label": "Channels requested",
+        "value": 10,
+        "min": 2,
+        "max": 18,
+        "step": 1
+      },
+      {
+        "id": "spacing",
+        "label": "Channel pitch",
+        "value": 0.0095,
+        "min": 0.003,
+        "max": 0.025,
+        "step": 0.001
+      },
+      {
+        "id": "duty",
+        "label": "Band / pitch ratio",
+        "value": 0.65,
+        "min": 0.2,
+        "max": 0.85,
+        "step": 0.001
+      },
+      {
+        "id": "expansion",
+        "label": "Outward expansion",
+        "value": 0,
+        "min": -0.04,
+        "max": 0.22,
+        "step": 0.001
+      },
+      {
+        "id": "rounded",
+        "label": "Miter / round joins",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "preserveCounters",
+        "label": "Protect original counters",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "construction",
+        "label": "Font glyphs / reference RKC",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "layout",
+        "label": "Source / word / letter grid",
+        "value": 0,
+        "min": 0,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "id": "tracking",
+        "label": "Cell separation",
+        "value": 0.035,
+        "min": 0.005,
+        "max": 0.1,
+        "step": 0.001
+      },
+      {
+        "id": "stretch",
+        "label": "Glyph proportions / fill cell",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      }
+    ],
+    "traits": {
+      "angularity": 1,
+      "curvature": 0.15,
+      "detail": 0.95,
+      "mass": 0.5,
+      "regularity": 1,
+      "counterform": 0.95,
+      "directionality": 0.55,
+      "volume": 0
+    },
+    "styles": [
+      "optical",
+      "swiss",
+      "experimental",
+      "abstract",
+      "typographic-collage"
+    ],
+    "fontTarget": {
+      "weight": 0.85,
+      "width": 1,
+      "serif": 0,
+      "mono": 0.3,
+      "italic": 0
+    },
+    "idealAspect": 0.78,
+    "tags": [
+      "glyph-contours",
+      "parallel-channels",
+      "counter-preserving",
+      "contour-expansion",
+      "routed-letterforms",
+      "editable-text"
+    ],
+    "logic": "Route nested vector bands through editable letterforms. The RKC reference default uses a wide R above K and C, constructed rectilinear source-style glyphs, miter joins and inward channels. Other titles, including other three-letter words, use complete word lines by default; the bespoke blocks and arrangement apply only to RKC. Single-line and individual-letter grids are explicit alternatives, and glyphs can keep their font proportions instead of filling each cell. Font outlines fill nonzero, so overlapping variable-font contours never become false counters. All letters share one distance field: outward expansion merges neighbouring channels instead of overprinting them, and the layout gives way so outer channels stay on the paper. Protected counters keep their size and their own rings while the exterior expands.",
+    "references": [
+      {
+        "queryID": "source-reviewed-contour-systems-20261108",
+        "posterID": "abbf7875c4af641d432a1f71-p0",
+        "sourceImageSHA256": "76924e33bbf07a69bcc011fb59b2deb5dd54bc6f0c9f8a9643cb2c85b7d9bf9e",
+        "evidenceURL": "file:///PosterLab/library/posters/abbf7875c4af641d432a1f71-p0/poster.jpg"
+      }
+    ],
+    "basis": "Visually calibrated construction from the RKC poster. The source-style R/K/C glyphs are authored vector interpretations, not an identified or recovered original font."
+  },
+  {
+    "id": "contour-profile-channels",
+    "name": "Nested profile contour field",
+    "group": "Contour silhouettes",
+    "renderer": "contour-profile",
+    "parameters": [
+      {
+        "id": "count",
+        "label": "Nested contours",
+        "value": 24,
+        "min": 3,
+        "max": 28,
+        "step": 1
+      },
+      {
+        "id": "mode",
+        "label": "Parallel offsets / source scaling",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "spacing",
+        "label": "Parallel channel pitch",
+        "value": 0.012,
+        "min": 0.004,
+        "max": 0.04,
+        "step": 0.001,
+        "activeWhen": {
+          "mode": 0
+        }
+      },
+      {
+        "id": "duty",
+        "label": "Band / pitch ratio",
+        "value": 0.5,
+        "min": 0.2,
+        "max": 0.85,
+        "step": 0.001,
+        "activeWhen": {
+          "mode": 0
+        }
+      },
+      {
+        "id": "openEdge",
+        "label": "Open cut edge",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "activeWhen": {
+          "mode": 0
+        }
+      },
+      {
+        "id": "expansion",
+        "label": "Outer expansion",
+        "value": 0,
+        "min": -0.025,
+        "max": 0.2,
+        "step": 0.001
+      },
+      {
+        "id": "shrink",
+        "label": "Successive scale",
+        "value": 0.86,
+        "min": 0.7,
+        "max": 0.95,
+        "step": 0.001,
+        "activeWhen": {
+          "mode": 1
+        }
+      },
+      {
+        "id": "anchorY",
+        "label": "Convergence height",
+        "value": 0.58,
+        "min": 0.45,
+        "max": 0.99,
+        "step": 0.001,
+        "activeWhen": {
+          "mode": 1
+        }
+      },
+      {
+        "id": "anchorX",
+        "label": "Convergence offset",
+        "value": 0.5,
+        "min": 0.25,
+        "max": 0.75,
+        "step": 0.001,
+        "activeWhen": {
+          "mode": 1
+        }
+      },
+      {
+        "id": "copies",
+        "label": "Large silhouettes",
+        "value": 2,
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "id": "satellites",
+        "label": "Border silhouettes",
+        "value": 8,
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "id": "facing",
+        "label": "Same direction / facing pairs",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "lean",
+        "label": "Neck lean",
+        "value": 0.02,
+        "min": -0.12,
+        "max": 0.12,
+        "step": 0.001
+      }
+    ],
+    "traits": {
+      "angularity": 0.15,
+      "curvature": 0.95,
+      "detail": 0.95,
+      "mass": 0.65,
+      "regularity": 0.8,
+      "counterform": 0.6,
+      "directionality": 0.9,
+      "volume": 0.1
+    },
+    "styles": [
+      "optical",
+      "expressive",
+      "abstract",
+      "experimental"
+    ],
+    "fontTarget": {
+      "weight": 0.7,
+      "width": 0.9,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.82,
+    "tags": [
+      "silhouette-contours",
+      "recursive-profile",
+      "eccentric-scaling",
+      "parallel-offsets",
+      "negative-space",
+      "contour-expansion",
+      "open-cut-edges"
+    ],
+    "logic": "Repeat a head profile toward an eccentric point inside the lower face, with two large silhouettes facing each other and smaller border copies facing inward, following the Expérience Collective reference. Source mode uses successive affine scales about a convergence point; copies are clipped to their parent wherever an outline is not star-shaped around that point, so layers never cross. Parallel mode draws true constant-distance vector offsets; a straight cut edge stays open, so channels run off the neck instead of turning along it. Imported SVG or saved M/L/Q/C/Z outlines replace the profile inside the same composition.",
+    "references": [
+      {
+        "queryID": "source-reviewed-contour-systems-20261108",
+        "posterID": "84541c22bb689bd5b72ad0fb-p0",
+        "sourceImageSHA256": "1def7463ff867ea0c73e5f8e5fd61f9847c2e9ed2a597588cf280a83d358845d",
+        "evidenceURL": "file:///PosterLab/library/posters/84541c22bb689bd5b72ad0fb-p0/poster.png"
+      }
+    ],
+    "basis": "Visually calibrated profile and arrangement from Expérience Collective. Exact original profile vectors and transform values are unknown; affine source repetition and constant-distance channels remain distinct modes."
+  }
+]

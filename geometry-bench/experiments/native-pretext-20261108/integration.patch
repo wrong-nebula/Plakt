@@ -1,0 +1,476 @@
+--- /dev/null
++++ b/Sources/PosterCore/TextWrappingMethod.swift
+@@ -0,0 +1,5 @@
++/// Both methods retain the original whitespace, grapheme and glyph-height rules.
++public enum TextWrappingMethod: String, Codable, Sendable {
++    case pretext
++    case previous
++}
+--- /dev/null
++++ b/Sources/PosterCore/TextWrappingPreferences.swift
+@@ -0,0 +1,11 @@
++import Foundation
++
++public enum TextWrappingPreferences {
++    public static let pretextEnabledKey = "posterlab-pretext-enabled"
++
++    /// An absent setting enables caching. An explicit false must remain false.
++    public static func method(in defaults: UserDefaults = .standard) -> TextWrappingMethod {
++        let enabled = defaults.object(forKey: pretextEnabledKey) as? Bool ?? true
++        return enabled ? .pretext : .previous
++    }
++}
+--- /dev/null
++++ b/Sources/PosterCore/TextWrapping.swift
+@@ -0,0 +1,12 @@
++public enum TextWrapping {
++    /// The uncached route is the original production function, without a cache lookup.
++    public static func lines(_ text: String, width: Double, height: Double, aspect: Double,
++                             font: String, method: TextWrappingMethod = TextWrappingPreferences.method()) -> [String] {
++        switch method {
++        case .pretext:
++            CoreTextWrappingCache.shared.lines(text, width: width, height: height, aspect: aspect, font: font)
++        case .previous:
++            PreviousTextWrapping.lines(text, width: width, height: height, aspect: aspect, font: font)
++        }
++    }
++}
+--- /dev/null
++++ b/Sources/PosterCore/PreviousTextWrapping.swift
+@@ -0,0 +1,28 @@
++import AppKit
++import Foundation
++import CoreText
++
++/// Original production implementation, retained unchanged as the fallback.
++public enum PreviousTextWrapping {
++    public static func lines(_ text:String,width:Double,height:Double,aspect:Double,font:String)->[String] {
++        let face=CTFontCreateWithName(font as CFString,100,nil)
++        func fits(_ s:String)->Bool {
++            let line=CTLineCreateWithAttributedString(NSAttributedString(string:s,attributes:[.font:face]))
++            let r=CTLineGetBoundsWithOptions(line,[.useGlyphPathBounds])
++            return r.height<=0 || r.width/r.height*height*aspect<=width
++        }
++        var result:[String]=[],current=""
++        for word in text.split(whereSeparator:{$0.isWhitespace}).map(String.init) {
++            let next=current.isEmpty ? word:current+" "+word
++            if fits(next){current=next}else{
++                if !current.isEmpty{result.append(current);current=""}
++                for character in word {
++                    if !fits(current+String(character)),!current.isEmpty{result.append(current);current=""}
++                    current.append(character)
++                }
++            }
++        }
++        if !current.isEmpty{result.append(current)}
++        return result
++    }
++}
+--- /dev/null
++++ b/Sources/PosterCore/CoreTextWrappingCache.swift
+@@ -0,0 +1,178 @@
++import AppKit
++import CoreText
++import Foundation
++
++/// Native implementation of Pretext's reuse strategy, with the existing wrap rules.
++/// Measurements are exact Core Text ink bounds, not additive character estimates:
++/// kerning, ligatures, fallback fonts and each candidate line's ink height matter.
++public final class CoreTextWrappingCache: @unchecked Sendable {
++    public static let shared = CoreTextWrappingCache()
++
++    public struct Statistics: Sendable {
++        public var paragraphs: Int = 0
++        public var measurements: Int = 0
++        public var measurementHits: Int = 0
++        public var layoutHits: Int = 0
++        public var layouts: Int = 0
++        public var estimatedMeasurementBytes: Int = 0
++    }
++
++    private struct Key: Hashable {
++        let text: String
++        let font: String
++    }
++
++    private let lock = NSLock()
++    private var paragraphs: [Key: Paragraph] = [:]
++    private var insertionOrder: [Key] = []
++    private let paragraphLimit: Int
++    private let measurementBudget: Int
++    private let layoutLimit: Int
++
++    public init(paragraphLimit: Int = 32, measurementBudget: Int = 262_144, layoutLimit: Int = 32) {
++        self.paragraphLimit = max(1, paragraphLimit)
++        self.measurementBudget = max(0, measurementBudget)
++        self.layoutLimit = max(1, layoutLimit)
++    }
++
++    public func lines(_ text: String, width: Double, height: Double, aspect: Double, font: String) -> [String] {
++        // Avoid retaining oversized user copy, invalid floating-point keys, or unusual
++        // degenerate dimensions. The previous method defines their existing behavior.
++        guard width.isFinite, height.isFinite, aspect.isFinite,
++              width > 0, height > 0, aspect > 0, text.utf16.count <= 8_192 else {
++            return PreviousTextWrapping.lines(text, width: width, height: height, aspect: aspect, font: font)
++        }
++        let key = Key(text: text, font: font)
++        let paragraph = lock.withLock {
++            if let known = paragraphs[key] { return known }
++            if paragraphs.count >= paragraphLimit {
++                paragraphs.removeValue(forKey: insertionOrder.removeFirst())
++            }
++            let new = Paragraph(text: text, font: font, measurementBudget: measurementBudget, layoutLimit: layoutLimit)
++            paragraphs[key] = new
++            insertionOrder.append(key)
++            return new
++        }
++        // Different paragraphs can shape concurrently. A paragraph owns its lock,
++        // immutable font/tokens, measurement dictionary and completed layouts.
++        return paragraph.lines(width: width, height: height, aspect: aspect)
++    }
++
++    /// Call after changing registered fonts. Existing active requests finish safely.
++    public func removeAll() {
++        lock.withLock {
++            paragraphs.removeAll()
++            insertionOrder.removeAll()
++        }
++    }
++
++    /// Counters describe resident entries, and reset when those entries are evicted.
++    public var statistics: Statistics {
++        let resident = lock.withLock { Array(paragraphs.values) }
++        var total = Statistics()
++        total.paragraphs = resident.count
++        for paragraph in resident {
++            let s = paragraph.statistics
++            total.measurements += s.measurements
++            total.measurementHits += s.measurementHits
++            total.layoutHits += s.layoutHits
++            total.layouts += s.layouts
++            total.estimatedMeasurementBytes += s.estimatedMeasurementBytes
++        }
++        return total
++    }
++
++    // Every mutable member is protected by this instance's lock. Core Text fonts
++    // are immutable; this object never exposes its font or mutable storage.
++    private final class Paragraph: @unchecked Sendable {
++        private struct Dimensions: Hashable {
++            let width: Double
++            let height: Double
++            let aspect: Double
++        }
++        private struct Word {
++            let text: String
++            let characters: [Character]
++        }
++        private struct Measurement {
++            let ratio: Double
++            let emptyHeight: Bool
++        }
++
++        private let lock = NSLock()
++        private let face: CTFont
++        private let words: [Word]
++        private let measurementBudget: Int
++        private let layoutLimit: Int
++        private var measured: [String: Measurement] = [:]
++        private var completed: [Dimensions: [String]] = [:]
++        private var layoutOrder: [Dimensions] = []
++        private var counters = Statistics()
++
++        init(text: String, font: String, measurementBudget: Int, layoutLimit: Int) {
++            face = CTFontCreateWithName(font as CFString, 100, nil)
++            words = text.split(whereSeparator: { $0.isWhitespace }).map {
++                Word(text: String($0), characters: Array($0))
++            }
++            self.measurementBudget = measurementBudget
++            self.layoutLimit = layoutLimit
++        }
++
++        var statistics: Statistics { lock.withLock { counters } }
++
++        func lines(width: Double, height: Double, aspect: Double) -> [String] {
++            lock.withLock {
++                let dimensions = Dimensions(width: width, height: height, aspect: aspect)
++                if let known = completed[dimensions] {
++                    counters.layoutHits += 1
++                    return known
++                }
++                func fits(_ text: String) -> Bool {
++                    let m: Measurement
++                    if let known = measured[text] {
++                        counters.measurementHits += 1
++                        m = known
++                    } else {
++                        let line = CTLineCreateWithAttributedString(NSAttributedString(string: text, attributes: [.font: face]))
++                        let bounds = CTLineGetBoundsWithOptions(line, [.useGlyphPathBounds])
++                        m = Measurement(ratio: bounds.height <= 0 ? 0 : bounds.width / bounds.height, emptyHeight: bounds.height <= 0)
++                        counters.measurements += 1
++                        let cost = text.utf16.count * 2 + 64
++                        if cost <= measurementBudget {
++                            if counters.estimatedMeasurementBytes + cost > measurementBudget {
++                                measured.removeAll(keepingCapacity: true)
++                                counters.estimatedMeasurementBytes = 0
++                            }
++                            measured[text] = m
++                            counters.estimatedMeasurementBytes += cost
++                        }
++                    }
++                    // Preserve the original operation order at exact wrap thresholds.
++                    return m.emptyHeight || m.ratio * height * aspect <= width
++                }
++                var result: [String] = [], current = ""
++                for word in words {
++                    let next = current.isEmpty ? word.text : current + " " + word.text
++                    if fits(next) { current = next }
++                    else {
++                        if !current.isEmpty { result.append(current); current = "" }
++                        for character in word.characters {
++                            if !fits(current + String(character)), !current.isEmpty {
++                                result.append(current); current = ""
++                            }
++                            current.append(character)
++                        }
++                    }
++                }
++                if !current.isEmpty { result.append(current) }
++                if completed.count >= layoutLimit {
++                    completed.removeValue(forKey: layoutOrder.removeFirst())
++                }
++                completed[dimensions] = result
++                layoutOrder.append(dimensions)
++                counters.layouts = completed.count
++                return result
++            }
++        }
++    }
++}
+--- /dev/null
++++ b/Sources/PosterStudio/PosterSettingsView.swift
+@@ -0,0 +1,23 @@
++import PosterCore
++import SwiftUI
++
++struct PosterSettingsView: View {
++    @AppStorage(TextWrappingPreferences.pretextEnabledKey) private var pretextEnabled = true
++
++    var body: some View {
++        Form {
++            Section("Text layout") {
++                Toggle("Pretext", isOn: $pretextEnabled)
++                    .help("Reuse text measurements for faster layout. Turn off to use the previous wrapping method.")
++                Text("Speed up text layout by reusing measurements. Turn off to use the previous wrapping method.")
++                    .foregroundStyle(.secondary)
++                Text("Applies to newly generated posters.")
++                    .font(.callout)
++                    .foregroundStyle(.secondary)
++            }
++        }
++        .formStyle(.grouped)
++        .frame(minWidth: 400, idealWidth: 440, maxWidth: 520, minHeight: 200)
++        .fixedSize(horizontal: false, vertical: true)
++    }
++}
+--- /dev/null
++++ b/Sources/PosterChecks/TextWrappingChecks.swift
+@@ -0,0 +1,98 @@
++import Foundation
++import PosterCore
++
++extension PosterChecks {
++    static func checkTextWrapping() async throws {
++        let cache = CoreTextWrappingCache()
++        let texts = [
++            "NEW PERSPECTIVES ON THE FUTURE OF VISUAL COMMUNICATION AND PUBLIC SPACE",
++            "Saturday 21 November, 10:00–19:30. Talks, screenings and workshops. Tickets ¥2,500 / students ¥1,200. Booking: designforum.example/reservations.",
++            "文字と都市のあいだ——視覚表現の未来を考える。\n東京デザインフォーラム2026「公共空間とコミュニケーション」\n11月21日（土）10:00〜19:30。お問い合わせ：info@designforum.example",
++            "", " \n\t ", "A\tB\r\nC  D", "👩🏽‍🚀 e\u{301} 👨‍👩‍👧‍👦 🇯🇵", "مرحبا بالعالم العربية English", "ภาษาไทยไม่มีช่องว่าง", "AVATAR office affinity ffi WAVE"
++        ]
++        let fonts = ["HelveticaNeue-Bold", "HelveticaNeue-Medium", "HiraginoSans-W3"]
++        var comparisons = 0
++        for text in texts {
++            for font in fonts {
++                for aspect in [1.0, 1.414] {
++                    for width in [1.0, 18, 75, 180, 260, 410, 540] {
++                        let previous = PreviousTextWrapping.lines(text, width: width, height: 18, aspect: aspect, font: font)
++                        let cached = cache.lines(text, width: width, height: 18, aspect: aspect, font: font)
++                        try require(previous == cached, "Cached wrap changed content or line breaks at \(width), \(font), \(aspect)")
++                        try require(cached == cache.lines(text, width: width, height: 18, aspect: aspect, font: font), "Cached replay changed")
++                        comparisons += 1
++                    }
++                }
++            }
++        }
++        // Probe either side of an exact native wrap threshold; arithmetic reordering
++        // or width rounding must not move a character to another line.
++        for width in stride(from: 100.0, through: 102.0, by: 0.03125) {
++            try require(cache.lines("AVATAR office affinity ffi", width: width, height: 17.675, aspect: 1.414, font: fonts[0]) == PreviousTextWrapping.lines("AVATAR office affinity ffi", width: width, height: 17.675, aspect: 1.414, font: fonts[0]), "Fractional-width threshold drifted")
++        }
++        for (width, height, aspect) in [(0.0,18.0,1.0),(-1,18,1),(Double.nan,18,1),(100,0,1),(100,18,Double.infinity)] {
++            try require(cache.lines("A B C", width: width, height: height, aspect: aspect, font: fonts[0]) == PreviousTextWrapping.lines("A B C", width: width, height: height, aspect: aspect, font: fonts[0]), "Degenerate-input fallback changed")
++        }
++        let bounded = CoreTextWrappingCache(paragraphLimit: 2, measurementBudget: 512, layoutLimit: 2)
++        for i in 0..<10 {
++            for width in [30.0,60,90] {
++                _ = bounded.lines("\(i) alphabet typography WORD", width: width, height: 18, aspect: 1, font: fonts[0])
++            }
++        }
++        try require(bounded.statistics.paragraphs <= 2 && bounded.statistics.layouts <= 4 && bounded.statistics.estimatedMeasurementBytes <= 1_024, "Cache capacity exceeded")
++        bounded.removeAll()
++        try require(bounded.statistics.paragraphs == 0, "Font-change invalidation did not clear the cache")
++
++        let concurrent = CoreTextWrappingCache()
++        try await withThrowingTaskGroup(of: Void.self) { group in
++            for i in 0..<96 {
++                group.addTask {
++                    let text = texts[i % texts.count], font = fonts[i % fonts.count]
++                    let width = Double(180 + i % 16 * 13)
++                    let expected = PreviousTextWrapping.lines(text, width: width, height: 18, aspect: 1.414, font: font)
++                    for _ in 0..<4 {
++                        try require(concurrent.lines(text, width: width, height: 18, aspect: 1.414, font: font) == expected, "Concurrent cache contamination")
++                    }
++                }
++            }
++            try await group.waitForAll()
++        }
++        let suite = "posterlab-pretext-checks-\(UUID().uuidString)"
++        guard let defaults = UserDefaults(suiteName: suite) else { throw CheckFailure("Cannot create isolated preference suite") }
++        defer { defaults.removePersistentDomain(forName: suite) }
++        try require(TextWrappingPreferences.method(in: defaults) == .pretext, "Pretext default is disabled")
++        defaults.set(false, forKey: TextWrappingPreferences.pretextEnabledKey)
++        try require(TextWrappingPreferences.method(in: defaults) == .previous, "Explicit disabled preference was lost")
++        let measurementsBefore = CoreTextWrappingCache.shared.statistics.measurements
++        _ = TextWrapping.lines("Fallback must bypass cache", width: 100, height: 18, aspect: 1, font: fonts[0], method: TextWrappingPreferences.method(in: defaults))
++        try require(CoreTextWrappingCache.shared.statistics.measurements == measurementsBefore, "Disabled Pretext still used the cache")
++        defaults.set(true, forKey: TextWrappingPreferences.pretextEnabledKey)
++        try require(TextWrappingPreferences.method(in: defaults) == .pretext, "Re-enabling Pretext failed")
++        print("PASS: \(comparisons) native wrap comparisons; fractional thresholds, Unicode, bounded storage, concurrent calls and preference fallback")
++        try checkTextWrappingSceneEquivalence()
++    }
++
++    static func checkTextWrappingSceneEquivalence() throws {
++        let embedding: [String: Any] = ["model":"test","revision":1,"dimensions":0,"scalar":"float32-le","data":"","preprocessing":"test"]
++        let statistics: [String: Any] = ["meanLuminance":0.5,"contrast":0.5,"saturation":0,"edgeDensity":0.1,"palette":[["hex":"#17191d","proportion":1]]]
++        let image = "file:///private/tmp/posterlab-pretext-fixture.png"
++        let anchors = [[0.04,0.06,0.82,0.16],[0.24,0.32,0.72,0.19],[0.04,0.65,0.87,0.22]]
++        let elements: [[String: Any]] = anchors.enumerated().map { i,b in
++            ["id":"anchor-\(i)","parentID":"fixture","kind":"text-line","bounds":["x":b[0],"y":b[1],"width":b[2],"height":b[3]],"rotation":0,"text":["SOURCE","WORD","STACK"][i],"confidence":1,"reviewStatus":"proposed","imageURL":image,"embedding":embedding,"statistics":statistics,"tags":[],"relatedIDs":[]]
++        }
++        let json: [String: Any] = ["id":"fixture","sourceID":"fixture","source":["sourceURL":image,"account":"fixture","postID":"fixture","caption":"","contentHash":"fixture"],"surfaceIndex":0,"sourceQuad":[[0,0],[1,0],[1,1],[0,1]],"surfaceConfidence":1,"reviewStatus":"proposed","warnings":[],"imageURL":image,"width":1000,"height":1414,"embedding":embedding,"textIndex":"SOURCE WORD STACK","statistics":statistics,"tags":[],"elements":elements,"genome":["version":"layout-genome-v1","posterID":"fixture","aspect":1.414,"background":"#f5f3e9","font":"HelveticaNeue-Bold","textScale":1,"tracking":0,"elements":[],"fittingStatus":"fixture","sourceEmbeddingModel":"test"]]
++        let record = try JSONDecoder().decode(PosterRecord.self, from: JSONSerialization.data(withJSONObject: json))
++        let encoder = JSONEncoder(); encoder.outputFormatting = [.sortedKeys]
++        for seed: UInt64 in [1,7,71] {
++            let copy = PosterCopy()
++            let previous = SourceLayoutDNA.make(record,record,category:"swiss",seed:seed,copy:copy,id:"cache-check",wrappingMethod:.previous)
++            let cached = SourceLayoutDNA.make(record,record,category:"swiss",seed:seed,copy:copy,id:"cache-check",wrappingMethod:.pretext)
++            let previousJSON = try encoder.encode(previous), cachedJSON = try encoder.encode(cached)
++            try require(previousJSON == cachedJSON, "Pretext changed source geometry or genome")
++            let before = try rgba(LibrarySceneRenderer.render(previous,width:320))
++            let after = try rgba(LibrarySceneRenderer.render(cached,width:320))
++            try require(before == after, "Pretext changed rendered poster pixels")
++        }
++        print("PASS: cached and previous source layouts produce identical genomes and pixels (3 seeds)")
++    }
++}
+--- a/Sources/PosterCore/Library/SourceLayoutDNA.swift
++++ b/Sources/PosterCore/Library/SourceLayoutDNA.swift
+@@ -101,13 +101,13 @@
+         return rgb[0]*0.2126+rgb[1]*0.7152+rgb[2]*0.0722
+     }
+     private static func contrast(_ a:String,_ b:String)->Double {let x=luminance(a),y=luminance(b);return(max(x,y)+0.05)/(min(x,y)+0.05)}
+-    static func informationZone(_ slots:[Slot],record:PosterRecord,fields:[String])->UnitBox {
++    static func informationZone(_ slots:[Slot],record:PosterRecord,fields:[String],wrappingMethod:TextWrappingMethod)->UnitBox {
+         // Search actual source whitespace; if dense, place a paper island at the least
+         // occupied observed information location. No shared top/bottom template.
+         var best=UnitBox(x:0.04,y:0.4,width:0.52,height:0.18),score = -Double.infinity
+         let sourceSmall=record.elements.filter{$0.kind=="text-line" && $0.reviewStatus != "rejected" && $0.bounds.height<0.035}.map(\.bounds)
+         for w in [0.24,0.32,0.42,0.54,0.66] {
+-            let lineCount=fields.reduce(0){$0+wrapped($1,width:w-0.018,height:0.0125,aspect:record.genome.aspect,font:"HelveticaNeue-Medium").count}
++            let lineCount=fields.reduce(0){$0+TextWrapping.lines($1,width:w-0.018,height:0.0125,aspect:record.genome.aspect,font:"HelveticaNeue-Medium",method:wrappingMethod).count}
+             let h=Double(lineCount)*0.0155+Double(fields.count)*0.003+0.018
+             guard h<0.88 else{continue}
+             for iy in 0..<27 {for ix in 0..<23 {
+@@ -121,28 +121,9 @@
+         }
+         return best
+     }
+-    private static func wrapped(_ text:String,width:Double,height:Double,aspect:Double,font:String)->[String] {
+-        let face=CTFontCreateWithName(font as CFString,100,nil)
+-        func fits(_ s:String)->Bool {
+-            let line=CTLineCreateWithAttributedString(NSAttributedString(string:s,attributes:[.font:face]))
+-            let r=CTLineGetBoundsWithOptions(line,[.useGlyphPathBounds])
+-            return r.height<=0 || r.width/r.height*height*aspect<=width
+-        }
+-        var result:[String]=[],current=""
+-        for word in text.split(whereSeparator:{$0.isWhitespace}).map(String.init) {
+-            let next=current.isEmpty ? word:current+" "+word
+-            if fits(next){current=next}else{
+-                if !current.isEmpty{result.append(current);current=""}
+-                for character in word {
+-                    if !fits(current+String(character)),!current.isEmpty{result.append(current);current=""}
+-                    current.append(character)
+-                }
+-            }
+-        }
+-        if !current.isEmpty{result.append(current)}
+-        return result
+-    }
+-    public static func make(_ a:PosterRecord,_ b:PosterRecord,category:String,seed:UInt64,copy:PosterCopy,id:String,fontProfileID:String?=nil,typeSystem:TypeSystemVariant?=nil,shapePreset:PosterShapePreset?=nil)->StyleGenome {
++
++    public static func make(_ a:PosterRecord,_ b:PosterRecord,category:String,seed:UInt64,copy:PosterCopy,id:String,fontProfileID:String?=nil,typeSystem:TypeSystemVariant?=nil,shapePreset:PosterShapePreset?=nil,wrappingMethod:TextWrappingMethod?=nil)->StyleGenome {
++        let wrappingMethod=wrappingMethod ?? TextWrappingPreferences.method()
+         var rng=SeededRandom(seed:seed),items:[SceneElement]=[],operations:[String]=[]
+         let original=slots(a),other=slots(b)
+         var (display,transferred)=clusterTransfer(original,other,rng:&rng)
+@@ -261,13 +242,13 @@
+         let titleInDisplay=displayed.contains(compact.filter(\.isLetter))
+         let fields=(titleInDisplay ? []:[copy.title.replacingOccurrences(of:"\n",with:" ")])+[copy.subtitle,copy.institution,copy.footer]
+         let occupied=display+typeApplications.map{application in Slot(id:application.genomeID,posterID:a.id,observed:application.field,local:application.field,rotation:0,original:"",aspect:aspect)}
+-        let info=informationZone(occupied,record:a,fields:fields)
++        let info=informationZone(occupied,record:a,fields:fields,wrappingMethod:wrappingMethod)
+         var island=SceneElement(sourceElementID:"art:information-paper",kind:"shape",bounds:info,rotation:0,text:nil,color:background,shape:"rectangle",outline:false,shadow:false,offsetX:0,offsetY:0,copies:1)
+         island.zIndex=60;island.minimumStage=3;items.append(island)
+         let inset=0.009,w=info.width-inset*2,bodyFace="HelveticaNeue-Medium",lineHeight=0.0125,gap=0.003
+         var y=info.y+inset
+         for (fieldIndex,field) in fields.enumerated() {
+-            let lines=wrapped(field,width:w,height:lineHeight,aspect:aspect,font:bodyFace)
++            let lines=TextWrapping.lines(field,width:w,height:lineHeight,aspect:aspect,font:bodyFace,method:wrappingMethod)
+             for (lineIndex,line) in lines.enumerated() {
+                 var e=SceneElement(sourceElementID:fieldIndex==0 && !titleInDisplay ? "title:source-info:\(lineIndex)":"meta:source-info:\(fieldIndex):\(lineIndex)",kind:"text",bounds:.init(x:info.x+inset,y:y,width:w,height:lineHeight),rotation:0,text:line,color:foreground,shape:"rectangle",outline:false,shadow:false,offsetX:0,offsetY:0,copies:1,preserveTypeProportions:true,fontName:bodyFace,textAlignment:"left",minimumStage:3)
+                 e.zIndex=70;items.append(e);y += lineHeight+gap
+--- a/Sources/PosterStudio/PosterStudioApp.swift
++++ b/Sources/PosterStudio/PosterStudioApp.swift
+@@ -21,5 +21,8 @@
+                 Button("Generate New Study") { model.start(newSession: true) }.keyboardShortcut("g").disabled(model.busy)
+             }
+         }
++        Settings {
++            PosterSettingsView()
++        }
+     }
+ }
+--- a/Sources/PosterChecks/PosterChecks.swift
++++ b/Sources/PosterChecks/PosterChecks.swift
+@@ -27,6 +27,11 @@
+         return bytes
+     }
+     static func main() async {
++        if CommandLine.arguments.contains("--text-wrapping-only") {
++            do { try await checkTextWrapping() }
++            catch { FileHandle.standardError.write(Data("FAIL: \(error.localizedDescription)\n".utf8)); exit(1) }
++            return
++        }
+         if CommandLine.arguments.contains("--shape-library-only") {do{try checkShapeLibrary()}catch{FileHandle.standardError.write(Data("FAIL: \(error.localizedDescription)\n".utf8));exit(1)};return}
+         if CommandLine.arguments.contains("--discovery-only") {
+             do { try checkSystemDiscovery(); try checkTypeSystems() }
+@@ -38,7 +43,7 @@
+             catch { FileHandle.standardError.write(Data("FAIL: \(error.localizedDescription)\n".utf8)); exit(1) }
+             return
+         }
+-        do { if CommandLine.arguments.contains("--taste-only"){try await checkUserTaste();return}; if CommandLine.arguments.contains("--systems-only"){try checkTypeSystems();return}; if CommandLine.arguments.contains("--fonts-only"){try checkFonts();return}; if CommandLine.arguments.contains("--colors-only"){try checkColors();return}; if CommandLine.arguments.contains("--judges-only"){try checkJudgeMix();return}; try await run(); try await checkLibrary(); try checkColors(); try checkJudgeMix(); try checkComposition(); try checkFonts(); try checkContent(); try checkTypeSystems(); try await checkUserTaste(); try checkShapeLibrary(); print("PASS: all 26 check groups") }
++        do { if CommandLine.arguments.contains("--taste-only"){try await checkUserTaste();return}; if CommandLine.arguments.contains("--systems-only"){try checkTypeSystems();return}; if CommandLine.arguments.contains("--fonts-only"){try checkFonts();return}; if CommandLine.arguments.contains("--colors-only"){try checkColors();return}; if CommandLine.arguments.contains("--judges-only"){try checkJudgeMix();return}; try await checkTextWrapping(); try await run(); try await checkLibrary(); try checkColors(); try checkJudgeMix(); try checkComposition(); try checkFonts(); try checkContent(); try checkTypeSystems(); try await checkUserTaste(); try checkShapeLibrary(); print("PASS: all 26 check groups") }
+         catch { FileHandle.standardError.write(Data("FAIL: \(error.localizedDescription)\n".utf8)); exit(1) }
+     }
+     static func run() async throws {

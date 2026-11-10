@@ -1,0 +1,654 @@
+{
+  "version": 1,
+  "verifiedAt": "2026-11-07",
+  "note": "Real event facts for editable poster studies. Source-poster facts checked visually, never inferred from uncertain OCR. Archive/current/upcoming is computed from stored dates. Sources are references, not a live ticket feed. Display phrases are typographic excerpts of the event facts; complete copy remains in the scene.",
+  "briefs": [
+    {
+      "id": "dance-first-2020",
+      "name": "Dance First Think Later · 2020",
+      "kind": "Performance",
+      "title": "DANCE FIRST\nTHINK LATER",
+      "subtitle": "Rencontre entre danse et arts visuels",
+      "institution": "Le Commun · Bâtiment d’art contemporain · Genève",
+      "footer": "21.08–13.09.2020 · artasperto.ch",
+      "startDate": "2020-08-21",
+      "endDate": "2020-09-13",
+      "dateLabel": "21 Aug – 13 Sep 2020",
+      "city": "Genève",
+      "displayPhrases": [
+        "DANCE",
+        "FIRST",
+        "THINK",
+        "LATER",
+        "DANCE FIRST",
+        "THINK LATER",
+        "GENÈVE",
+        "21.08–13.09.2020"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.e-flux.com/announcements/335736/dance-first-think-later-an-encounter-between-dance-and-visual-arts",
+          "evidence": "Organizer announcement confirms title, venue and dates."
+        }
+      ],
+      "basis": "Source poster checked visually; printed event facts retained.",
+      "sourcePosterID": "6abd02b84e990567adfe94bd-p0",
+      "posterEvidence": "The full title, encounter subtitle, Le Commun / Genève venue, date range and organizer URL are readable on the poster. Reference design: Schaffter Sahli."
+    },
+    {
+      "id": "positions-2022",
+      "name": "Positions · EPFL Archizoom",
+      "kind": "Architecture",
+      "title": "POSITIONS",
+      "subtitle": "Breaking down architecture studios · Designed and curated by TEXAS Lab",
+      "institution": "EPFL Archizoom · Lausanne",
+      "footer": "30.05–21.07.2022 · Launch 01.06, 18:30 · livingarchives.epfl.ch",
+      "startDate": "2022-05-30",
+      "endDate": "2022-07-21",
+      "dateLabel": "30 May – 21 Jul 2022",
+      "city": "Lausanne",
+      "displayPhrases": [
+        "POSITIONS",
+        "ARCHIZOOM",
+        "EPFL",
+        "ARCHITECTURE",
+        "30.05–21.07.2022"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://memento.epfl.ch/public/upload/files/EPFLPositions.pdf",
+          "evidence": "Original EPFL programme poster confirms dates, exhibition, curation and launch time."
+        }
+      ],
+      "basis": "Source poster checked visually; printed event facts retained.",
+      "sourcePosterID": "733ff863ad3f2edcc05ca7a6-p0",
+      "posterEvidence": "Printed title, date range, EPFL Archizoom, TEXAS Lab and 1 June 2022 6:30 p.m. launch are legible."
+    },
+    {
+      "id": "horizons-2018",
+      "name": "Horizons · Villa Bernasconi",
+      "kind": "Exhibition",
+      "title": "HORIZONS",
+      "subtitle": "Benoît Billotte / Marie Velardi",
+      "institution": "Villa Bernasconi · Lancy / Genève",
+      "footer": "05.12.2018–10.02.2019",
+      "startDate": "2018-12-05",
+      "endDate": "2019-02-10",
+      "dateLabel": "5 Dec 2018 – 10 Feb 2019",
+      "city": "Lancy / Genève",
+      "displayPhrases": [
+        "HORIZONS",
+        "BENOÎT BILLOTTE",
+        "MARIE VELARDI",
+        "VILLA BERNASCONI",
+        "LANCY",
+        "05.12.2018",
+        "10.02.2019"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://benoitbillotte.com/wp-content/uploads/2020/04/Horizons_VillaBernasconi.pdf",
+          "evidence": "Artist’s exhibition press dossier confirms artists, venue and date range."
+        }
+      ],
+      "basis": "Source poster checked visually; printed event facts retained.",
+      "sourcePosterID": "b45a978d6dbfc12afd7eccab-p0",
+      "posterEvidence": "All artist names, title, venue, Lancy and both dates are legible. Reference design: Schaffter Sahli."
+    },
+    {
+      "id": "museum-neu-2018",
+      "name": "Neu · Museum für Gestaltung reopening",
+      "kind": "Design",
+      "title": "NEU",
+      "subtitle": "Wiedereröffnung",
+      "institution": "Museum für Gestaltung Zürich · Ausstellungsstrasse 60",
+      "footer": "02–03.03.2018",
+      "startDate": "2018-03-02",
+      "endDate": "2018-03-03",
+      "dateLabel": "2–3 Mar 2018",
+      "city": "Zürich",
+      "displayPhrases": [
+        "NEU",
+        "NEU NEU NEU",
+        "WIEDERERÖFFNUNG",
+        "ZÜRICH",
+        "AUSSTELLUNGSSTRASSE 60"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [],
+      "basis": "Source poster checked visually; printed event facts retained.",
+      "sourcePosterID": "c4f7b71da2cc08a51451189c-p0",
+      "posterEvidence": "Museum name, reopening, address and 2./3. März 2018 are legible. Reference design attributed to Norm Zürich in the indexed caption."
+    },
+    {
+      "id": "osr-affinites-2025",
+      "name": "Wagner / Liszt / Mendelssohn · OSR",
+      "kind": "Concert",
+      "title": "WAGNER\nLISZT\nMENDELSSOHN",
+      "subtitle": "Pablo Heras-Casado, direction / Alexei Volodin, piano",
+      "institution": "Orchestre de la Suisse Romande",
+      "footer": "09.04.2025, 19:30 · Victoria Hall, Genève / 10.04.2025, 20:15 · Théâtre de Beaulieu, Lausanne",
+      "startDate": "2025-04-09",
+      "endDate": "2025-04-10",
+      "dateLabel": "9–10 Apr 2025",
+      "city": "Genève / Lausanne",
+      "displayPhrases": [
+        "WAGNER",
+        "LISZT",
+        "MENDELSSOHN",
+        "PABLO HERAS-CASADO",
+        "ALEXEI VOLODIN",
+        "OSR",
+        "09.04.2025",
+        "10.04.2025"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.osr.ch/fileadmin/Personnes/Presse/Saison_2024-25/Communiques/Communique_de_Presse_-_Concert_Heras-Casado_-_Volodin_-_09-10.04.2025.pdf",
+          "evidence": "OSR press release confirms both performances, times, venues, performers and programme."
+        }
+      ],
+      "basis": "Source poster checked visually; printed event facts retained.",
+      "sourcePosterID": "6f6c093ac56d6e16c89cc8c6-p0",
+      "posterEvidence": "Composer names, conductor, pianist, OSR and both performance dates/times/venues checked visually against the poster and the OSR release."
+    },
+    {
+      "id": "das-wort-2018",
+      "name": "Das Wort · Strauhof",
+      "kind": "Literature",
+      "title": "DAS WORT",
+      "subtitle": "Ausstellung",
+      "institution": "Strauhof · Augustinergasse 9 · Zürich",
+      "footer": "08.02–27.05.2018",
+      "startDate": "2018-02-08",
+      "endDate": "2018-05-27",
+      "dateLabel": "8 Feb – 27 May 2018",
+      "city": "Zürich",
+      "displayPhrases": [
+        "DAS",
+        "WORT",
+        "DAS WORT",
+        "STRAUHOF",
+        "08.02–27.05.2018"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [],
+      "basis": "Source poster checked visually; printed event facts retained.",
+      "sourcePosterID": "bd68de5542606e6c062b5877-p0",
+      "posterEvidence": "Title, Strauhof, address and 8/2–27/5/18 date range are legible. No artist or programme details inferred from the cropped URL."
+    },
+    {
+      "id": "bibliotopia-2024",
+      "name": "Bibliotopia · Autour de l’amour",
+      "kind": "Literature",
+      "title": "BIBLIOTOPIA",
+      "subtitle": "Week-end des littératures autour du monde · Autour de l’amour",
+      "institution": "Fondation Jan Michalski",
+      "footer": "22–24.03.2024",
+      "startDate": "2024-03-22",
+      "endDate": "2024-03-24",
+      "dateLabel": "22–24 Mar 2024",
+      "city": "",
+      "displayPhrases": [
+        "BIBLIOTOPIA",
+        "AUTOUR",
+        "DE L’AMOUR",
+        "LITTÉRATURES",
+        "FONDATION JAN MICHALSKI",
+        "22 23 24",
+        "MARS 2024"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [],
+      "basis": "Source poster checked visually; printed event facts retained.",
+      "sourcePosterID": "69124eff2f134d359b4fc764-p0",
+      "posterEvidence": "Title, literature-weekend wording, love theme, foundation name and 22/23/24 March 2024 dates are legible. City is left unset rather than inferred."
+    },
+    {
+      "id": "nuit-photo-2022",
+      "name": "10e Nuit de la Photo",
+      "kind": "Photography",
+      "title": "NUIT DE LA PHOTO",
+      "subtitle": "10e édition",
+      "institution": "La Chaux-de-Fonds",
+      "footer": "19.02.2022",
+      "startDate": "2022-02-19",
+      "endDate": "2022-02-19",
+      "dateLabel": "19 Feb 2022",
+      "city": "La Chaux-de-Fonds",
+      "displayPhrases": [
+        "NUIT",
+        "DE LA",
+        "PHOTO",
+        "10e NUIT",
+        "LA CHAUX-DE-FONDS",
+        "19.02.2022"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [],
+      "basis": "Source poster checked visually; printed event facts retained.",
+      "sourcePosterID": "7f611ce95f3efd413a9f2066-p0",
+      "posterEvidence": "Only the clearly printed 10e Nuit de la Photo / 19.02.2022 / La Chaux-de-Fonds event is extracted. Separate exhibition dates and partly legible photographer names are not merged into this brief."
+    },
+    {
+      "id": "asawa-beyeler-2026",
+      "name": "Ruth Asawa · Fondation Beyeler",
+      "kind": "Exhibition",
+      "title": "RUTH ASAWA",
+      "subtitle": "Retrospective",
+      "institution": "Fondation Beyeler · Riehen / Basel",
+      "footer": "18.10.2026–10.01.2027 · fondationbeyeler.ch",
+      "startDate": "2026-10-18",
+      "endDate": "2027-01-10",
+      "dateLabel": "18 Oct 2026 – 10 Jan 2027",
+      "city": "Riehen / Basel",
+      "displayPhrases": [
+        "RUTH ASAWA",
+        "RUTH",
+        "ASAWA",
+        "RETROSPECTIVE",
+        "FONDATION BEYELER",
+        "18.10.2026",
+        "10.01.2027"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.fondationbeyeler.ch/en/exhibitions?cHash=f5cf2d2d055409e9db4326e8a35538d6&l=0",
+          "evidence": "Current exhibition list confirms 18 October 2026–10 January 2027."
+        },
+        {
+          "url": "https://www.fondationbeyeler.ch/de/medien/ruth-asawa",
+          "evidence": "Museum media page confirms dates and Riehen/Basel venue."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "cezanne-beyeler-2026",
+      "name": "Cezanne · Fondation Beyeler",
+      "kind": "Exhibition",
+      "title": "CEZANNE",
+      "subtitle": "Paul Cezanne",
+      "institution": "Fondation Beyeler · Riehen / Basel",
+      "footer": "25.01–25.05.2026 · fondationbeyeler.ch",
+      "startDate": "2026-01-25",
+      "endDate": "2026-05-25",
+      "dateLabel": "25 Jan – 25 May 2026",
+      "city": "Riehen / Basel",
+      "displayPhrases": [
+        "CEZANNE",
+        "PAUL CEZANNE",
+        "FONDATION BEYELER",
+        "25.01–25.05.2026",
+        "BASEL"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.fondationbeyeler.ch/fileadmin/user_upload/Presse/Medienmitteilungen_E/en2026/EN_Press_Kit_Cezanne.pdf",
+          "evidence": "Museum press kit confirms exhibition title and date range."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "kusama-beyeler-2025",
+      "name": "Yayoi Kusama · Fondation Beyeler",
+      "kind": "Exhibition",
+      "title": "YAYOI KUSAMA",
+      "subtitle": "Exhibition",
+      "institution": "Fondation Beyeler · Riehen / Basel",
+      "footer": "12.10.2025–25.01.2026 · fondationbeyeler.ch",
+      "startDate": "2025-10-12",
+      "endDate": "2026-01-25",
+      "dateLabel": "12 Oct 2025 – 25 Jan 2026",
+      "city": "Riehen / Basel",
+      "displayPhrases": [
+        "YAYOI",
+        "KUSAMA",
+        "YAYOI KUSAMA",
+        "FONDATION BEYELER",
+        "12.10.2025",
+        "25.01.2026"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.fondationbeyeler.ch/en/exhibitions?cHash=f5cf2d2d055409e9db4326e8a35538d6&l=0",
+          "evidence": "Museum archive lists the exhibition and exact dates."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "raye-montreux-2026",
+      "name": "RAYE & Special Guests · Montreux",
+      "kind": "Concert",
+      "title": "RAYE",
+      "subtitle": "& Special Guests · Montreux Jazz Festival",
+      "institution": "Auditorium Stravinski · Montreux",
+      "footer": "03.07.2026 · 20:30 · montreuxjazzfestival.com",
+      "startDate": "2026-07-03",
+      "endDate": "2026-07-03",
+      "dateLabel": "3 Jul 2026 · 20:30",
+      "city": "Montreux",
+      "displayPhrases": [
+        "RAYE",
+        "SPECIAL GUESTS",
+        "MONTREUX",
+        "JAZZ FESTIVAL",
+        "03.07.2026",
+        "20:30"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.montreuxjazzfestival.com/en/programme/",
+          "evidence": "Official 2026 programme lists RAYE & Special Guests on 3 July at 20:30 in Auditorium Stravinski."
+        },
+        {
+          "url": "https://www.montreuxjazzfestival.com/en/artist/raye/",
+          "evidence": "Official artist page confirms billing."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "nick-cave-montreux-2026",
+      "name": "Nick Cave & the Bad Seeds · Montreux",
+      "kind": "Concert",
+      "title": "NICK CAVE",
+      "subtitle": "& the Bad Seeds / Aldous Harding",
+      "institution": "Auditorium Stravinski · Montreux Jazz Festival",
+      "footer": "05.07.2026 · montreuxjazzfestival.com",
+      "startDate": "2026-07-05",
+      "endDate": "2026-07-05",
+      "dateLabel": "5 Jul 2026",
+      "city": "Montreux",
+      "displayPhrases": [
+        "NICK CAVE",
+        "THE BAD SEEDS",
+        "ALDOUS HARDING",
+        "MONTREUX",
+        "05.07.2026"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.montreuxjazzfestival.com/wp-content/uploads/2026/03/Programme_2026.pdf",
+          "evidence": "Official programme puts both artists on the 5 July Auditorium Stravinski bill. No set time is inferred."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "lso-ades-2026",
+      "name": "Thomas Adès & LSO · Barbican",
+      "kind": "Concert",
+      "title": "THOMAS ADÈS",
+      "subtitle": "London Symphony Orchestra / Anna Dennis / London Symphony Chorus",
+      "institution": "Barbican Hall · Silk Street, London EC2Y 8DS",
+      "footer": "08.11.2026 · 19:00 · Sibelius / Saariaho / Adès · barbican.org.uk",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "dateLabel": "8 Nov 2026 · 19:00",
+      "city": "London",
+      "displayPhrases": [
+        "THOMAS ADÈS",
+        "ADÈS",
+        "SIBELIUS",
+        "SAARIAHO",
+        "LSO",
+        "08.11.2026",
+        "19:00"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.barbican.org.uk/whats-on/2026/event/london-symphony-orchestrathomas-ades-0",
+          "evidence": "Venue listing confirms performers, composers, date, 19:00 start, hall and address."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "montreux-2026",
+      "name": "60th Montreux Jazz Festival",
+      "kind": "Music festival",
+      "title": "MONTREUX\nJAZZ FESTIVAL",
+      "subtitle": "60th edition",
+      "institution": "Auditorium Stravinski / Montreux Jazz Lab · Montreux",
+      "footer": "03–18.07.2026 · montreuxjazzfestival.com",
+      "startDate": "2026-07-03",
+      "endDate": "2026-07-18",
+      "dateLabel": "3–18 Jul 2026",
+      "city": "Montreux",
+      "displayPhrases": [
+        "MONTREUX",
+        "JAZZ",
+        "FESTIVAL",
+        "60",
+        "MONTREUX JAZZ FESTIVAL",
+        "03–18.07.2026"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.montreuxjazzfestival.com/en/news/programme-2026/",
+          "evidence": "Organizer release confirms 60th edition, date range and venues."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "art-basel-2026",
+      "name": "Art Basel · Basel 2026",
+      "kind": "Art fair",
+      "title": "ART BASEL",
+      "subtitle": "Modern and contemporary art",
+      "institution": "Messe Basel · Basel",
+      "footer": "18–21.06.2026 · artbasel.com",
+      "startDate": "2026-06-18",
+      "endDate": "2026-06-21",
+      "dateLabel": "18–21 Jun 2026",
+      "city": "Basel",
+      "displayPhrases": [
+        "ART",
+        "BASEL",
+        "ART BASEL",
+        "MESSE BASEL",
+        "18–21.06.2026"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.artbasel.com/stories/art-basel-unveils-leading-galleries-and-first-highlights-for-its-2026-flagship-show-in-basel?lang=en",
+          "evidence": "Organizer announcement confirms public dates and Messe Basel venue."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "locarno-2026",
+      "name": "Locarno Film Festival · 2026",
+      "kind": "Cinema",
+      "title": "LOCARNO",
+      "subtitle": "Locarno Film Festival",
+      "institution": "Piazza Grande · Locarno",
+      "footer": "05–15.08.2026 · locarnofestival.ch",
+      "startDate": "2026-08-05",
+      "endDate": "2026-08-15",
+      "dateLabel": "5–15 Aug 2026",
+      "city": "Locarno",
+      "displayPhrases": [
+        "LOCARNO",
+        "FILM",
+        "FESTIVAL",
+        "PIAZZA GRANDE",
+        "05–15.08.2026"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www4.ti.ch/decs/dcsu/osservatorio/agenda-culturale/cerca-evento/dettaglio/105498/locarno_film_festival",
+          "evidence": "Canton Ticino public cultural calendar confirms dates, Piazza Grande and organizer."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "avignon-off-2026",
+      "name": "Festival Off Avignon · 2026",
+      "kind": "Theatre",
+      "title": "AVIGNON\nOFF",
+      "subtitle": "Festival Off Avignon · Édition 2026",
+      "institution": "Avignon · France",
+      "footer": "04–25.07.2026 · festivaloffavignon.com",
+      "startDate": "2026-07-04",
+      "endDate": "2026-07-25",
+      "dateLabel": "4–25 Jul 2026",
+      "city": "Avignon",
+      "displayPhrases": [
+        "AVIGNON",
+        "OFF",
+        "FESTIVAL OFF",
+        "THÉÂTRE",
+        "04–25.07.2026"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.festivaloffavignon.com/page/edition-2026",
+          "evidence": "Organizer edition page confirms event and date range. This is the Off festival, not a merged main-festival programme."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "ldf-2026",
+      "name": "London Design Festival · 2026",
+      "kind": "Design",
+      "title": "LONDON\nDESIGN FESTIVAL",
+      "subtitle": "24th edition",
+      "institution": "London · United Kingdom",
+      "footer": "12–20.09.2026 · londondesignfestival.com",
+      "startDate": "2026-09-12",
+      "endDate": "2026-09-20",
+      "dateLabel": "12–20 Sep 2026",
+      "city": "London",
+      "displayPhrases": [
+        "LONDON",
+        "DESIGN",
+        "FESTIVAL",
+        "LONDON DESIGN FESTIVAL",
+        "24",
+        "12–20.09.2026"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://londondesignfestival.com/stories/a-first-look-at-ldf26",
+          "evidence": "Organizer announcement confirms edition, city and dates."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "salone-2026",
+      "name": "Salone del Mobile.Milano · 2026",
+      "kind": "Design fair",
+      "title": "SALONE\nDEL MOBILE",
+      "subtitle": "Salone del Mobile.Milano · 64th edition",
+      "institution": "Fiera Milano Rho · Milano",
+      "footer": "21–26.04.2026 · salonemilano.it",
+      "startDate": "2026-04-21",
+      "endDate": "2026-04-26",
+      "dateLabel": "21–26 Apr 2026",
+      "city": "Milano",
+      "displayPhrases": [
+        "SALONE",
+        "DEL MOBILE",
+        "MILANO",
+        "SALONE DEL MOBILE",
+        "FIERA MILANO RHO",
+        "21–26.04.2026"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.salonemilano.it/en/articles/salone-del-mobile-2026",
+          "evidence": "Organizer article confirms 64th edition, dates and Fiera Milano Rho venue."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "edinburgh-2026",
+      "name": "Edinburgh International Festival · 2026",
+      "kind": "Performing arts",
+      "title": "EDINBURGH",
+      "subtitle": "International Festival · Music / Opera / Theatre / Dance",
+      "institution": "Edinburgh · Scotland",
+      "footer": "07–30.08.2026 · eif.co.uk",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-30",
+      "dateLabel": "7–30 Aug 2026",
+      "city": "Edinburgh",
+      "displayPhrases": [
+        "EDINBURGH",
+        "INTERNATIONAL",
+        "FESTIVAL",
+        "MUSIC",
+        "OPERA",
+        "THEATRE",
+        "DANCE",
+        "07–30.08.2026"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.eif.co.uk/my-festival",
+          "evidence": "Organizer’s 2026 festival page confirms dates and programme disciplines."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    },
+    {
+      "id": "berlinale-2026",
+      "name": "76th Berlinale · 2026",
+      "kind": "Cinema",
+      "title": "BERLINALE",
+      "subtitle": "76th Berlin International Film Festival",
+      "institution": "Berlin · Germany",
+      "footer": "12–22.02.2026 · berlinale.de",
+      "startDate": "2026-02-12",
+      "endDate": "2026-02-22",
+      "dateLabel": "12–22 Feb 2026",
+      "city": "Berlin",
+      "displayPhrases": [
+        "BERLINALE",
+        "BERLIN",
+        "FILM",
+        "76",
+        "12–22.02.2026"
+      ],
+      "verifiedAt": "2026-11-07",
+      "sources": [
+        {
+          "url": "https://www.berliner-kuenstlerprogramm.de/en/events/berlinale-2026/",
+          "evidence": "DAAD artists’ programme confirms 76th edition and exact dates."
+        },
+        {
+          "url": "https://www.berlinale.de/en/2027/news-press-releases/278428.html",
+          "evidence": "Organizer’s post-event release confirms 76th edition concluded 22 February 2026."
+        }
+      ],
+      "basis": "Event facts checked against primary organizer, venue or public cultural records."
+    }
+  ]
+}

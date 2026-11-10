@@ -1,0 +1,591 @@
+[
+  {
+    "name": "@baku89/pave",
+    "code": 0,
+    "keys": [
+      "Arc",
+      "CubicBezier",
+      "Curve",
+      "CurveGroup",
+      "Line",
+      "Path",
+      "Segment"
+    ],
+    "defaultType": "undefined",
+    "defaultKeys": [],
+    "prototype": []
+  },
+  {
+    "name": "paper",
+    "code": 0,
+    "keys": [
+      "default",
+      "defaultOptions",
+      "getLineInfo",
+      "isIdentifierChar",
+      "isIdentifierStart",
+      "parse",
+      "tokTypes",
+      "tokenize",
+      "version"
+    ],
+    "defaultType": "object",
+    "defaultKeys": [
+      "settings",
+      "project",
+      "projects",
+      "tools",
+      "_id"
+    ],
+    "prototype": []
+  },
+  {
+    "name": "svg-path-commander",
+    "code": 0,
+    "keys": [
+      "SVGPathCommander",
+      "default"
+    ],
+    "defaultType": "function",
+    "defaultKeys": [
+      "options",
+      "CSSMatrix",
+      "arcTools",
+      "bezierTools",
+      "cubicTools",
+      "lineTools",
+      "polygonTools",
+      "quadTools",
+      "pathToAbsolute",
+      "pathToRelative",
+      "pathToCurve",
+      "pathToString",
+      "distanceSquareRoot",
+      "midPoint",
+      "rotateVector",
+      "roundTo",
+      "parsePathString",
+      "finalizeSegment",
+      "invalidPathValue",
+      "isArcCommand",
+      "isDigit",
+      "isDigitStart",
+      "isMoveCommand",
+      "isPathCommand",
+      "isSpace",
+      "paramsCount",
+      "paramsParser",
+      "PathParser",
+      "scanFlag",
+      "scanParam",
+      "scanSegment",
+      "skipSpaces",
+      "distanceEpsilon",
+      "fixPath",
+      "getClosestPoint",
+      "getDrawDirection",
+      "getPathArea",
+      "getPathBBox",
+      "getPointAtLength",
+      "getPropertiesAtLength",
+      "getPropertiesAtPoint",
+      "getSegmentAtLength",
+      "getSegmentOfPoint",
+      "getTotalLength",
+      "isAbsoluteArray",
+      "isCurveArray",
+      "isPolygonArray",
+      "isNormalizedArray",
+      "isPathArray",
+      "isPointInStroke",
+      "isRelativeArray",
+      "isValidPath",
+      "samplePolygon",
+      "shapeParams",
+      "shapeToPath",
+      "shapeToPathArray",
+      "absolutizeSegment",
+      "arcToCubic",
+      "getSVGMatrix",
+      "iterate"
+    ],
+    "prototype": [
+      "constructor",
+      "bbox",
+      "length",
+      "getBBox",
+      "getTotalLength",
+      "getPointAtLength",
+      "toAbsolute",
+      "toRelative",
+      "toCurve",
+      "reverse",
+      "normalize",
+      "optimize",
+      "transform",
+      "flipX",
+      "flipY",
+      "toString",
+      "dispose"
+    ]
+  },
+  {
+    "name": "svg-path-properties",
+    "code": 0,
+    "keys": [
+      "svgPathProperties"
+    ],
+    "defaultType": "undefined",
+    "defaultKeys": [],
+    "prototype": []
+  },
+  {
+    "name": "path-bool",
+    "code": 0,
+    "keys": [
+      "FillRule",
+      "PathBoolean",
+      "PathBooleanOperation",
+      "arcSegmentToCubics",
+      "commandsFromPathData",
+      "pathCubicSegmentSelfIntersection",
+      "pathFromCommands",
+      "pathFromPathData",
+      "pathSegmentBoundingBox",
+      "pathSegmentIntersection",
+      "pathToCommands",
+      "pathToPathData",
+      "samplePathSegmentAt"
+    ],
+    "defaultType": "undefined",
+    "defaultKeys": [],
+    "prototype": []
+  },
+  {
+    "name": "clipper-lib",
+    "code": 0,
+    "keys": [
+      "default"
+    ],
+    "defaultType": "object",
+    "defaultKeys": [
+      "version",
+      "use_lines",
+      "use_xyz",
+      "biginteger_used",
+      "Path",
+      "Paths",
+      "DoublePoint",
+      "DoublePoint0",
+      "DoublePoint1",
+      "DoublePoint2",
+      "PolyNode",
+      "PolyTree",
+      "Math_Abs_Double",
+      "Math_Abs_Int32",
+      "Math_Abs_Int64",
+      "Math_Max_Int32_Int32",
+      "Cast_Int32",
+      "Cast_Int64",
+      "Clear",
+      "PI",
+      "PI2",
+      "IntPoint",
+      "IntPoint0",
+      "IntPoint1",
+      "IntPoint1dp",
+      "IntPoint2",
+      "IntRect",
+      "IntRect0",
+      "IntRect1",
+      "IntRect4",
+      "ClipType",
+      "PolyType",
+      "PolyFillType",
+      "JoinType",
+      "EndType",
+      "EdgeSide",
+      "Direction",
+      "TEdge",
+      "IntersectNode",
+      "MyIntersectNodeSort",
+      "LocalMinima",
+      "Scanbeam",
+      "Maxima",
+      "OutRec",
+      "OutPt",
+      "Join",
+      "ClipperBase",
+      "Clipper",
+      "ClipperOffset",
+      "Error",
+      "JS",
+      "ExPolygons",
+      "ExPolygon"
+    ],
+    "prototype": []
+  },
+  {
+    "name": "paper-clipper",
+    "code": 0,
+    "keys": [
+      "__esModule",
+      "clipperLib",
+      "clipperLibWeb",
+      "clipperOffset",
+      "clipperUnite",
+      "default",
+      "paperClipperSimplify"
+    ],
+    "defaultType": "object",
+    "defaultKeys": [
+      "clipperLib",
+      "clipperLibWeb",
+      "clipperOffset",
+      "clipperUnite",
+      "paperClipperSimplify"
+    ],
+    "prototype": []
+  },
+  {
+    "name": "svgpath",
+    "code": 0,
+    "keys": [
+      "default"
+    ],
+    "defaultType": "function",
+    "defaultKeys": [
+      "from"
+    ],
+    "prototype": [
+      "constructor",
+      "__matrix",
+      "__evaluateStack",
+      "toString",
+      "translate",
+      "scale",
+      "rotate",
+      "skewX",
+      "skewY",
+      "matrix",
+      "transform",
+      "round",
+      "iterate",
+      "abs",
+      "rel",
+      "unarc",
+      "unshort"
+    ]
+  },
+  {
+    "name": "bezier-js",
+    "code": 0,
+    "keys": [
+      "Bezier"
+    ],
+    "defaultType": "undefined",
+    "defaultKeys": [],
+    "prototype": []
+  },
+  {
+    "name": "svg-path-morph",
+    "code": 0,
+    "keys": [
+      "__esModule",
+      "compile",
+      "default",
+      "morph"
+    ],
+    "defaultType": "object",
+    "defaultKeys": [
+      "compile",
+      "morph"
+    ],
+    "prototype": []
+  },
+  {
+    "name": "flo-mat",
+    "code": 0,
+    "keys": [
+      "CpNodeFs",
+      "beziersToSvgPathStr",
+      "clone",
+      "cloneMat",
+      "cloneMeta",
+      "cpNodeComparator",
+      "createInitialCpTree",
+      "enableDebugForMat",
+      "enhanceCpNode",
+      "find2Prong",
+      "findAndAddHoleClosing2Prongs",
+      "findMats",
+      "floydWarshall",
+      "fromStringifyable",
+      "getAllOnCircle",
+      "getAllOnLoop",
+      "getAllOnLoop_ByLoop",
+      "getAllVertices",
+      "getBoundaryBezierPartsToNext",
+      "getBoundaryBeziersBetween",
+      "getBoundaryBeziersToNext",
+      "getBoundaryPieceBeziers",
+      "getBranch",
+      "getBranchBeziers",
+      "getBranches",
+      "getChildren",
+      "getCloseBoundaryPointsCertified",
+      "getClosestSquareDistanceToRect",
+      "getEdgeDirection",
+      "getFirstExit",
+      "getFor2ProngsOnLoop",
+      "getGraph",
+      "getHoleClosers",
+      "getImpliedBoundaryBezierBetween",
+      "getInitialDegAngleBetweenMatCurves",
+      "getLargest3Prong",
+      "getLargestVertex",
+      "getLeaves",
+      "getMatCurveBetween",
+      "getMatCurveToNext",
+      "getMatCurvesBetween",
+      "getNonTerminatingOnCircle",
+      "getOsculatingCircle",
+      "getPathsFromStr",
+      "getPotentialClosestPointsOnCurveCertified",
+      "getProngCount",
+      "getRealProngCount",
+      "getSalience",
+      "getSatCulls",
+      "getShapeBounds",
+      "getSharpCornersOnLoop",
+      "getVertexForwardChildren",
+      "isFullyTerminating",
+      "isOnSameCircle",
+      "isOnSameLoop",
+      "isOneProng",
+      "isSharp",
+      "isTerminating",
+      "isTrivial",
+      "isTwoProng",
+      "isVertexSpecial",
+      "loopFromBeziers",
+      "reconstructFromMats",
+      "removeVertex",
+      "scaleCircle",
+      "simplifyMat",
+      "sweepLine",
+      "toScaleAxis",
+      "toStringifyable",
+      "traverseCp",
+      "traverseEdges",
+      "traverseVertices",
+      "trimMat"
+    ],
+    "defaultType": "undefined",
+    "defaultKeys": [],
+    "prototype": []
+  },
+  {
+    "name": "js-svg-path",
+    "code": 0,
+    "keys": [
+      "default"
+    ],
+    "defaultType": "object",
+    "defaultKeys": [
+      "SVGParser",
+      "Outline",
+      "PointCurveShape",
+      "parse"
+    ],
+    "prototype": []
+  },
+  {
+    "name": "pathomorph",
+    "code": 0,
+    "error": "Cannot find package 'vector2' imported from /PosterLab/geometry-bench/node_modules/pathomorph/dist/pathomorph.mjs"
+  },
+  {
+    "name": "opentype.js",
+    "code": 0,
+    "keys": [
+      "default"
+    ],
+    "defaultType": "object",
+    "defaultKeys": [
+      "BoundingBox",
+      "Font",
+      "Glyph",
+      "Path",
+      "_parse",
+      "load",
+      "loadSync",
+      "parse",
+      "default"
+    ],
+    "prototype": []
+  },
+  {
+    "name": "fontkit",
+    "code": 0,
+    "keys": [
+      "create",
+      "defaultLanguage",
+      "logErrors",
+      "open",
+      "openSync",
+      "registerFormat",
+      "setDefaultLanguage"
+    ],
+    "defaultType": "undefined",
+    "defaultKeys": [],
+    "prototype": []
+  },
+  {
+    "name": "typr.js",
+    "code": 0,
+    "error": "window is not defined"
+  },
+  {
+    "name": "svg-text-to-path",
+    "code": 0,
+    "keys": [
+      "default"
+    ],
+    "defaultType": "function",
+    "defaultKeys": [
+      "defaultRenderer",
+      "defaultProviders",
+      "providers",
+      "renderers"
+    ],
+    "prototype": [
+      "constructor",
+      "params",
+      "svg",
+      "getSvgString",
+      "destroy",
+      "getFontStyleForNode",
+      "replaceAll",
+      "replace",
+      "createCache"
+    ]
+  },
+  {
+    "name": "plumin.js",
+    "code": 0,
+    "error": "Cannot read properties of undefined (reading 'userAgent')"
+  },
+  {
+    "name": "typesettable",
+    "code": 0,
+    "keys": [
+      "AbstractMeasurer",
+      "Cache",
+      "CacheCharacterMeasurer",
+      "CacheMeasurer",
+      "CanvasContext",
+      "CharacterMeasurer",
+      "HtmlContext",
+      "HtmlUtils",
+      "Measurer",
+      "Methods",
+      "SingleLineWrapper",
+      "StringMethods",
+      "SvgContext",
+      "SvgUtils",
+      "Tokenizer",
+      "Typesetter",
+      "Wrapper",
+      "Writer",
+      "__esModule",
+      "default"
+    ],
+    "defaultType": "object",
+    "defaultKeys": [
+      "SvgUtils",
+      "SvgContext",
+      "CanvasContext",
+      "HtmlUtils",
+      "HtmlContext",
+      "AbstractMeasurer",
+      "CacheCharacterMeasurer",
+      "CacheMeasurer",
+      "CharacterMeasurer",
+      "Measurer",
+      "Typesetter",
+      "Cache",
+      "Methods",
+      "StringMethods",
+      "Tokenizer",
+      "SingleLineWrapper",
+      "Wrapper",
+      "Writer"
+    ],
+    "prototype": []
+  },
+  {
+    "name": "hersheytext",
+    "code": 0,
+    "keys": [
+      "addSVGFont",
+      "default",
+      "fonts",
+      "getFontData",
+      "getFonts",
+      "renderTextArray",
+      "renderTextSVG",
+      "svgFonts"
+    ],
+    "defaultType": "object",
+    "defaultKeys": [
+      "fonts",
+      "svgFonts",
+      "getFontData",
+      "addSVGFont",
+      "getFonts",
+      "renderTextSVG",
+      "renderTextArray"
+    ],
+    "prototype": []
+  },
+  {
+    "name": "svg-text-animate",
+    "code": 0,
+    "keys": [
+      "default"
+    ],
+    "defaultType": "object",
+    "defaultKeys": [],
+    "prototype": []
+  },
+  {
+    "name": "khoshnus",
+    "code": 0,
+    "error": "Cannot find module '/PosterLab/geometry-bench/node_modules/khoshnus/initialize' imported from /PosterLab/geometry-bench/node_modules/khoshnus/operations/operations.js"
+  },
+  {
+    "name": "paper-latest",
+    "code": 0,
+    "keys": [
+      "default",
+      "defaultOptions",
+      "getLineInfo",
+      "isIdentifierChar",
+      "isIdentifierStart",
+      "parse",
+      "tokTypes",
+      "tokenize",
+      "version"
+    ],
+    "defaultType": "object",
+    "defaultKeys": [
+      "settings",
+      "_project",
+      "projects",
+      "tools",
+      "_id"
+    ],
+    "prototype": []
+  }
+]

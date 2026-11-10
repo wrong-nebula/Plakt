@@ -1,0 +1,50 @@
+[
+  {
+    "id": "headline",
+    "label": "Long headline",
+    "language": "en",
+    "text": "NEW PERSPECTIVES ON THE FUTURE OF VISUAL COMMUNICATION AND PUBLIC SPACE",
+    "fontName": "HelveticaNeue-Bold",
+    "cssFamily": "Helvetica Neue",
+    "weight": 700,
+    "fontSize": 42,
+    "lineHeight": 46,
+    "calibration": "H",
+    "width": 410,
+    "height": 420,
+    "widths": [260, 280, 300, 320, 340, 360, 380, 400, 410, 420, 440, 460, 480, 500, 520, 540],
+    "note": "A long all-caps title; inspect word integrity and the final short line."
+  },
+  {
+    "id": "details",
+    "label": "Dense event details",
+    "language": "en",
+    "text": "TOKYO DESIGN FORUM 2026 — Saturday 21 November, 10:00–19:30. Talks, screenings, workshops and an evening conversation on independent publishing. Speakers: Aiko Tanaka, Daniel Weber, Mei Nakamura and Studio North. Venue: Gallery 3, East Wing, 2–8–1 Marunouchi, Chiyoda-ku, Tokyo. Doors open 09:30; last admission 18:45. General admission ¥2,500 / students ¥1,200. Booking required at designforum.example/reservations. Step-free access; Japanese–English interpretation available. Contact: info@designforum.example.",
+    "fontName": "HelveticaNeue-Medium",
+    "cssFamily": "Helvetica Neue",
+    "weight": 500,
+    "fontSize": 18,
+    "lineHeight": 25,
+    "calibration": "Hxgj",
+    "width": 410,
+    "height": 580,
+    "widths": [240, 260, 280, 300, 320, 340, 360, 380, 400, 410, 420, 440, 460, 480, 500, 540],
+    "note": "Fictional event copy with dates, prices, names, a URL and an email."
+  },
+  {
+    "id": "japanese",
+    "label": "Japanese copy",
+    "language": "ja",
+    "text": "文字と都市のあいだ——視覚表現の未来を考える。\n東京デザインフォーラム2026「公共空間とコミュニケーション」\n11月21日（土）10:00〜19:30、東京・丸の内ギャラリー。\nトーク、上映、ワークショップを通じて、文字・余白・風景の関係を探ります。\n登壇：田中愛子、中村芽衣、スタジオ・ノース。一般2,500円、学生1,200円。事前予約制。\nお問い合わせ：info@designforum.example\n「読みやすさ」と「表現の自由」は、どこで出会うのでしょうか？",
+    "fontName": "HiraginoSans-W3",
+    "cssFamily": "Hiragino Sans",
+    "weight": 300,
+    "fontSize": 21,
+    "lineHeight": 30,
+    "calibration": "国",
+    "width": 410,
+    "height": 640,
+    "widths": [240, 252, 264, 276, 288, 300, 312, 324, 336, 348, 360, 380, 400, 410, 430, 460],
+    "note": "Japanese punctuation, explicit paragraph breaks, numerals and a Latin email address."
+  }
+]

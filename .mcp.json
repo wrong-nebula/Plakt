@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "posterlab": {
+      "command": "dist/poster",
+      "args": ["mcp"]
+    }
+  }
+}

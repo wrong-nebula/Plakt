@@ -1,0 +1,43 @@
+{
+  "name": "posterlab-geometry-bench",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bench": "node run.mjs"
+  },
+  "dependencies": {
+    "@baku89/pave": "^1.0.1",
+    "@resvg/resvg-js": "^2.6.2",
+    "bezier-js": "^6.1.4",
+    "clipper-lib": "^6.4.2",
+    "color-name-list": "^14.86.0",
+    "culori": "^4.0.2",
+    "esbuild": "^0.28.2",
+    "fettepalette": "^3.3.0",
+    "flo-mat": "^5.0.7",
+    "fontkit": "^2.0.4",
+    "hersheytext": "^2.0.0",
+    "js-svg-path": "^1.1.0",
+    "khoshnus": "^3.0.0",
+    "opentype.js": "^2.0.0",
+    "paper": "^0.12.20",
+    "paper-clipper": "^1.1.1",
+    "paper-latest": "npm:paper@^0.17.0",
+    "path-bool": "^1.0.4",
+    "pathomorph": "^0.0.5",
+    "playwright-core": "^1.65.0",
+    "plumin.js": "^1.10.7",
+    "poline": "^0.13.1",
+    "pro-color-harmonies": "^0.11.0",
+    "rampensau": "^2.4.0",
+    "svg-path-commander": "^2.3.3",
+    "svg-path-morph": "^1.0.5",
+    "svg-path-properties": "^2.2.0",
+    "svg-text-animate": "^1.4.1",
+    "svg-text-to-path": "^2.1.0",
+    "svgpath": "^2.6.0",
+    "typesettable": "^4.1.0",
+    "typr.js": "^1.0.0",
+    "vector2": "npm:@rawify/vector2@^0.0.6"
+  }
+}

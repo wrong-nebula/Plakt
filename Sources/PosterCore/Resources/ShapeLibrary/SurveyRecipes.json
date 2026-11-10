@@ -1,0 +1,4720 @@
+[
+  {
+    "id": "survey-meander",
+    "name": "Right-angle meander",
+    "group": "Continuous paths",
+    "renderer": "motif-survey-meander",
+    "parameters": [
+      {
+        "id": "turns",
+        "label": "Turns",
+        "value": 2,
+        "min": 2,
+        "max": 14,
+        "step": 1
+      },
+      {
+        "id": "inset",
+        "label": "Outer margin",
+        "value": 0.055,
+        "min": 0.012,
+        "max": 0.08,
+        "step": 0.001
+      },
+      {
+        "id": "thickness",
+        "label": "Stroke width",
+        "value": 0.09,
+        "min": 0.003,
+        "max": 0.12,
+        "step": 0.001
+      }
+    ],
+    "traits": {
+      "angularity": 0.95,
+      "curvature": 0.05,
+      "detail": 0.75,
+      "mass": 0.35,
+      "regularity": 1,
+      "counterform": 0.6,
+      "directionality": 0.4,
+      "volume": 0
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "swiss",
+      "experimental"
+    ],
+    "fontTarget": {
+      "weight": 0.4,
+      "width": 1,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 1,
+    "tags": [
+      "rectilinear",
+      "continuous-path",
+      "maze",
+      "negative-space"
+    ],
+    "logic": "Trace one open rectilinear spiral. Each circuit reduces four bounds by a fixed pitch; cap stroke width below pitch. Unlike concentric polygons this remains one continuous path.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "321228f585c4b5347861e27b-p0",
+        "sourceImageSHA256": "53792045c74d898579c2ff57b745957d3ac0e74a461c19007b6d0f204418e8aa",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "abbf7875c4af641d432a1f71-p0",
+        "sourceImageSHA256": "76924e33bbf07a69bcc011fb59b2deb5dd54bc6f0c9f8a9643cb2c85b7d9bf9e",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Visually reviewed library evidence; authored parametric interpretation. No original vectors, authorship or learned model inferred.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown."
+  },
+  {
+    "id": "survey-tunnel",
+    "name": "Off-axis perspective tunnel",
+    "group": "Perspective",
+    "renderer": "motif-survey-tunnel",
+    "parameters": [
+      {
+        "id": "count",
+        "label": "Frames",
+        "value": 28,
+        "min": 4,
+        "max": 40,
+        "step": 1
+      },
+      {
+        "id": "recession",
+        "label": "Depth ratio",
+        "value": 1,
+        "min": 0.72,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "focusX",
+        "label": "Vanishing point X",
+        "value": 0.5,
+        "min": 0.2,
+        "max": 0.8,
+        "step": 0.001
+      },
+      {
+        "id": "focusY",
+        "label": "Vanishing point Y",
+        "value": 0.5,
+        "min": 0.2,
+        "max": 0.8,
+        "step": 0.001
+      },
+      {
+        "id": "lineWidth",
+        "label": "Stroke width",
+        "value": 0.005,
+        "min": 0.0015,
+        "max": 0.014,
+        "step": 0.001
+      }
+    ],
+    "traits": {
+      "angularity": 0.9,
+      "curvature": 0.05,
+      "detail": 0.85,
+      "mass": 0.22,
+      "regularity": 1,
+      "counterform": 0.8,
+      "directionality": 0.9,
+      "volume": 0.7
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "swiss",
+      "experimental"
+    ],
+    "fontTarget": {
+      "weight": 0.4,
+      "width": 1,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.75,
+    "tags": [
+      "perspective",
+      "vanishing-point",
+      "nested-frames",
+      "depth"
+    ],
+    "logic": "Nested rectangular frames converge on one focal point. The reference default uses uniform inset spacing and a centered terminal rectangle; recession below 1 produces a geometric spacing variation.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "5d12dd24b7681dc52a39e57d-p0",
+        "sourceImageSHA256": "b3cbf5fad5b98466406a3a4c9ef621d5619abe136fc1f2e6aa0f1f489b5a17c9",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "8d44047af71f59d0ae68f3cb-p0",
+        "sourceImageSHA256": "8fe85e3a18d814dff14730de99dacb221e8177c72a83f350427ee3255339bf56",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "e7ab9b958b72f4593cf01b88-p0",
+        "sourceImageSHA256": "48abb076802aade33bea9b8eab3d400a3111f6d7a78360213635c1e85c622751",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Visually reviewed library evidence; authored parametric interpretation. No original vectors, authorship or learned model inferred.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown."
+  },
+  {
+    "id": "survey-dendrite",
+    "name": "Rounded branching molecule",
+    "group": "Branching",
+    "renderer": "motif-survey-dendrite",
+    "parameters": [
+      {
+        "id": "branches",
+        "label": "Primary arms",
+        "value": 3,
+        "min": 3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "id": "depth",
+        "label": "Branch generations",
+        "value": 1,
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "id": "spread",
+        "label": "Branch angle",
+        "value": 1.05,
+        "min": 0.3,
+        "max": 1.15,
+        "step": 0.001
+      },
+      {
+        "id": "taper",
+        "label": "Child length ratio",
+        "value": 0.6,
+        "min": 0.42,
+        "max": 0.76,
+        "step": 0.001
+      },
+      {
+        "id": "phase",
+        "label": "Orientation",
+        "value": 0.25,
+        "min": -1.3,
+        "max": 1.3,
+        "step": 0.001
+      },
+      {
+        "id": "thickness",
+        "label": "Stem width",
+        "value": 0.11,
+        "min": 0.009,
+        "max": 0.14,
+        "step": 0.001
+      }
+    ],
+    "traits": {
+      "angularity": 0.15,
+      "curvature": 0.8,
+      "detail": 0.6,
+      "mass": 0.55,
+      "regularity": 0.65,
+      "counterform": 0.45,
+      "directionality": 0.65,
+      "volume": 0
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "swiss",
+      "experimental"
+    ],
+    "fontTarget": {
+      "weight": 0.7,
+      "width": 1,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 1,
+    "tags": [
+      "dendrite",
+      "recursive-branching",
+      "rounded-junctions",
+      "molecular"
+    ],
+    "logic": "Build a low-order, three-armed molecular silhouette with rounded branch junctions. The reference default favors thick connected limbs and only one branching generation; higher recursion is an explicit variation.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "8600d11110fd184fdfca0960-p0",
+        "sourceImageSHA256": "3ec30520bf8a68c526ed2fc4b8dc57fc8e591a2eb7cd26e8692303e92001125e",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Visually reviewed library evidence; authored parametric interpretation. No original vectors, authorship or learned model inferred.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown."
+  },
+  {
+    "id": "survey-tension-web",
+    "name": "Shared-anchor tension web",
+    "group": "Line fields",
+    "renderer": "motif-survey-tension-web",
+    "parameters": [
+      {
+        "id": "count",
+        "label": "Strands",
+        "value": 4,
+        "min": 3,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "id": "pinch",
+        "label": "Anchor height",
+        "value": 0.5,
+        "min": 0.22,
+        "max": 0.78,
+        "step": 0.001
+      },
+      {
+        "id": "bow",
+        "label": "Curve tension",
+        "value": 0.92,
+        "min": 0.15,
+        "max": 0.95,
+        "step": 0.001
+      },
+      {
+        "id": "lineWidth",
+        "label": "Stroke width",
+        "value": 0.032,
+        "min": 0.002,
+        "max": 0.045,
+        "step": 0.001
+      },
+      {
+        "id": "structure",
+        "label": "Closed field / open fan",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "opening",
+        "label": "Central opening",
+        "value": 0.08,
+        "min": 0,
+        "max": 0.3,
+        "step": 0.001
+      }
+    ],
+    "traits": {
+      "angularity": 0.05,
+      "curvature": 0.95,
+      "detail": 0.75,
+      "mass": 0.25,
+      "regularity": 0.9,
+      "counterform": 0.75,
+      "directionality": 0.9,
+      "volume": 0
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "swiss",
+      "experimental"
+    ],
+    "fontTarget": {
+      "weight": 0.4,
+      "width": 1,
+      "serif": 0.35,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.72,
+    "tags": [
+      "shared-anchor",
+      "cubic-curves",
+      "pinched-field",
+      "tension"
+    ],
+    "logic": "Four curved arms fan upward and downward from each shared side anchor, leaving the center open as in VOLUMES. A separate structure control restores the closed eye-like weave as a variation.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "fac44fee509db0d6c554dcbc-p0",
+        "sourceImageSHA256": "23e322e80511b637c32a2570518656088c93bd49e40ad1d610edc412030b9e5b",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Visually reviewed library evidence; authored parametric interpretation. No original vectors, authorship or learned model inferred.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown."
+  },
+  {
+    "id": "survey-density-field",
+    "name": "Rounded module field",
+    "group": "Density fields",
+    "renderer": "motif-survey-density-field",
+    "parameters": [
+      {
+        "id": "rows",
+        "label": "Rows",
+        "value": 6,
+        "min": 6,
+        "max": 32,
+        "step": 1
+      },
+      {
+        "id": "columns",
+        "label": "Columns",
+        "value": 7,
+        "min": 5,
+        "max": 26,
+        "step": 1
+      },
+      {
+        "id": "bias",
+        "label": "Spacing exponent",
+        "value": 1,
+        "min": 0.5,
+        "max": 3.8,
+        "step": 0.001
+      },
+      {
+        "id": "radius",
+        "label": "Module radius",
+        "value": 0.045,
+        "min": 0.003,
+        "max": 0.055,
+        "step": 0.001
+      },
+      {
+        "id": "jitter",
+        "label": "Local jitter",
+        "value": 0.015,
+        "min": 0,
+        "max": 0.6,
+        "step": 0.001
+      },
+      {
+        "id": "module",
+        "label": "Discs / rounded squares",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "traits": {
+      "angularity": 0.1,
+      "curvature": 0.7,
+      "detail": 0.85,
+      "mass": 0.25,
+      "regularity": 0.8,
+      "counterform": 0.3,
+      "directionality": 0.8,
+      "volume": 0
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "swiss",
+      "experimental"
+    ],
+    "fontTarget": {
+      "weight": 0.4,
+      "width": 1,
+      "serif": 0,
+      "mono": 0.7,
+      "italic": 0
+    },
+    "idealAspect": 1.1,
+    "tags": [
+      "density-gradient",
+      "variable-pitch",
+      "module-field",
+      "graded-repetition"
+    ],
+    "logic": "A regular six-by-seven field of rounded squares follows the light-grid element in the canonical source. Density exponents, circular modules and jitter remain explicit variations.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "fe6a8b6145f82210dacc1023-p0",
+        "sourceImageSHA256": "dff8a72d63e9366c2216fc6371891bb6a3a3b440b47c63568068a646f8a156a2",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "a4399b25fc67c17496e15e30-p0",
+        "sourceImageSHA256": "1ec7a250ceaf8ebaf9889756003b442edd300cfee7a595ab6e60b95211ac2464",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Visually reviewed library evidence; authored parametric interpretation. No original vectors, authorship or learned model inferred.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown."
+  },
+  {
+    "id": "survey-scalloped-frame",
+    "name": "Scalloped letter field",
+    "group": "Modular typography",
+    "renderer": "motif-survey-scalloped-frame",
+    "parameters": [
+      {
+        "id": "columns",
+        "label": "Letter columns",
+        "value": 2,
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "id": "lobes",
+        "label": "Edge lobes",
+        "value": 10,
+        "min": 3,
+        "max": 18,
+        "step": 1
+      },
+      {
+        "id": "depth",
+        "label": "Scallop depth",
+        "value": 0.035,
+        "min": 0.007,
+        "max": 0.055,
+        "step": 0.001
+      },
+      {
+        "id": "phase",
+        "label": "Edge phase",
+        "value": 0,
+        "min": -1.2,
+        "max": 1.2,
+        "step": 0.001
+      },
+      {
+        "id": "gap",
+        "label": "Tile gap",
+        "value": 0,
+        "min": 0,
+        "max": 0.08,
+        "step": 0.001
+      },
+      {
+        "id": "alternation",
+        "label": "Alternate figure / ground",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "traits": {
+      "angularity": 0.3,
+      "curvature": 0.75,
+      "detail": 0.55,
+      "mass": 0.5,
+      "regularity": 0.9,
+      "counterform": 0.95,
+      "directionality": 0.2,
+      "volume": 0
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "swiss",
+      "experimental"
+    ],
+    "fontTarget": {
+      "weight": 0.95,
+      "width": 1,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.7,
+    "tags": [
+      "scalloped-type",
+      "modular-letterforms",
+      "counterforms",
+      "figure-ground",
+      "editable-text",
+      "FUBU"
+    ],
+    "logic": "Shape an editable word into a grid of stretched glyphs, then scallop each outer contour and counter along arc length. The canonical default is F U / B U, two columns and two rows, with alternating figure/ground. This is simultaneously a letter system and a field of shapes; glyph counters remain negative space.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "6ab7c9955fdcf4ca11eb84a4-p0",
+        "sourceImageSHA256": "6c5a29ec844a699a7387ab80b440ccae0976bab2cba152208100eceeb832a187",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "5e5b65b8f544582ee0f267dd-p0",
+        "sourceImageSHA256": "cd241a7d87b1542bdceb782666eaf5eef2be44991a6c46531d89ea2d5b7386a2",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Visually reviewed library evidence; authored parametric interpretation. No original vectors, authorship or learned model inferred.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown."
+  },
+  {
+    "id": "survey-chevron-stack",
+    "name": "Seven-shaped echo stack",
+    "group": "Serial transformations",
+    "renderer": "motif-survey-chevron-stack",
+    "parameters": [
+      {
+        "id": "count",
+        "label": "Copies",
+        "value": 32,
+        "min": 4,
+        "max": 32,
+        "step": 1
+      },
+      {
+        "id": "drift",
+        "label": "Lateral drift",
+        "value": -0.22,
+        "min": -0.4,
+        "max": 0.4,
+        "step": 0.001
+      },
+      {
+        "id": "growth",
+        "label": "Scale progression",
+        "value": 0.78,
+        "min": 0.15,
+        "max": 0.85,
+        "step": 0.001
+      },
+      {
+        "id": "thickness",
+        "label": "Band thickness",
+        "value": 0.004,
+        "min": 0.002,
+        "max": 0.05,
+        "step": 0.001
+      },
+      {
+        "id": "angle",
+        "label": "Chevron depth",
+        "value": 0.3,
+        "min": 0.12,
+        "max": 0.5,
+        "step": 0.001
+      },
+      {
+        "id": "symbol",
+        "label": "Chevron / seven-shaped band",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "traits": {
+      "angularity": 0.9,
+      "curvature": 0.05,
+      "detail": 0.75,
+      "mass": 0.45,
+      "regularity": 0.85,
+      "counterform": 0.6,
+      "directionality": 0.9,
+      "volume": 0.45
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "swiss",
+      "experimental"
+    ],
+    "fontTarget": {
+      "weight": 0.4,
+      "width": 1,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.68,
+    "tags": [
+      "serial-transform",
+      "scale-progression",
+      "translation",
+      "pseudo-volume"
+    ],
+    "logic": "Repeat a bent seven-shaped band with scale and lateral progression, following the angular top bar and long diagonal of the source. Chevron modules are an explicit alternative, rather than the default.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "04ac10f675172b3a65956c24-p0",
+        "sourceImageSHA256": "69f7c77be3984522b0b3338f0772b104d9442a51ae6cdfd10e6d1cdb7e78a054",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "4810f3c9cdf628efcd9b1cad-p0",
+        "sourceImageSHA256": "6f7affc313e6d43ef4467f4ec3b9a8e6ddfd07d1a6613630544c9f0012cc183c",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Visually reviewed library evidence; authored parametric interpretation. No original vectors, authorship or learned model inferred.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown."
+  },
+  {
+    "id": "survey-corner-brackets",
+    "name": "Opposed bracket enclosure",
+    "group": "Framing",
+    "renderer": "motif-survey-corner-brackets",
+    "parameters": [
+      {
+        "id": "thickness",
+        "label": "Bracket thickness",
+        "value": 0.05,
+        "min": 0.01,
+        "max": 0.09,
+        "step": 0.001
+      },
+      {
+        "id": "arm",
+        "label": "Arm length",
+        "value": 0.84,
+        "min": 0.35,
+        "max": 0.87,
+        "step": 0.001
+      },
+      {
+        "id": "inset",
+        "label": "Edge inset",
+        "value": 0.045,
+        "min": 0.025,
+        "max": 0.13,
+        "step": 0.001
+      },
+      {
+        "id": "disc",
+        "label": "Central disc radius",
+        "value": 0.3,
+        "min": 0.08,
+        "max": 0.33,
+        "step": 0.001
+      },
+      {
+        "id": "outline",
+        "label": "Solid / outlined brackets",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "lineWidth",
+        "label": "Outline width",
+        "value": 0.006,
+        "min": 0.002,
+        "max": 0.015,
+        "step": 0.001
+      }
+    ],
+    "traits": {
+      "angularity": 1,
+      "curvature": 0.2,
+      "detail": 0.2,
+      "mass": 0.6,
+      "regularity": 1,
+      "counterform": 0.65,
+      "directionality": 0.4,
+      "volume": 0
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "swiss",
+      "experimental"
+    ],
+    "fontTarget": {
+      "weight": 0.7,
+      "width": 1,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 1,
+    "tags": [
+      "brackets",
+      "opposed-corners",
+      "open-frame",
+      "disc-anchor"
+    ],
+    "logic": "Rotate an L-shaped bracket by a half-turn to form an open enclosure around a central disc. Bracket thickness, arm reach, margin and disc size remain independent. The disc may become an image or type anchor in later composition systems.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "b8f067f7a3c9bfd0c9af1bac-p0",
+        "sourceImageSHA256": "b9a19584a77ef07b191066512aefff16f9353960ed99670397fdfd161a136aff",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Visually reviewed library evidence; authored parametric interpretation. No original vectors, authorship or learned model inferred.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown."
+  },
+  {
+    "id": "survey-faceted-spire",
+    "name": "Folded chevron spire",
+    "group": "Folded volumes",
+    "renderer": "motif-survey-faceted-spire",
+    "parameters": [
+      {
+        "id": "folds",
+        "label": "Nested folds",
+        "value": 3,
+        "min": 2,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "id": "spread",
+        "label": "Wing span",
+        "value": 1,
+        "min": 0.4,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "notch",
+        "label": "Inner notch height",
+        "value": 0.44,
+        "min": 0.18,
+        "max": 0.7,
+        "step": 0.001
+      },
+      {
+        "id": "spine",
+        "label": "Fold axis",
+        "value": 0.5,
+        "min": 0.32,
+        "max": 0.68,
+        "step": 0.001
+      },
+      {
+        "id": "facets",
+        "label": "Facet contrast",
+        "value": 0.12,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "tipFan",
+        "label": "Edge prongs",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "sheen",
+        "label": "Metallic sheen",
+        "value": 0.6,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "direction",
+        "label": "Points up / down / left / right",
+        "value": 0,
+        "min": 0,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "id": "spires",
+        "label": "Spires side by side",
+        "value": 1,
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "id": "curve",
+        "label": "Fin curvature",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "finType",
+        "label": "Title engraved along the fins",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "traits": {
+      "angularity": 1,
+      "curvature": 0.05,
+      "detail": 0.5,
+      "mass": 0.7,
+      "regularity": 0.9,
+      "counterform": 0.7,
+      "directionality": 0.95,
+      "volume": 0.7
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "experimental",
+      "color-field"
+    ],
+    "fontTarget": {
+      "weight": 0.7,
+      "width": 1,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.63,
+    "tags": [
+      "folded-chevron",
+      "axial-fold",
+      "concave-polygon",
+      "faceted-volume"
+    ],
+    "logic": "Build nested concave chevrons around one vertical spine. Each wing shares its apex and inner notch with its partner; opacity contrast distinguishes the two folded planes. Edge prongs carry the deeper tiers' wing tips out to the field edge at rising heights, flattening the lower chevrons as in the source; metallic sheen lights each face along the fold and reverses on the far face. Variations turn the spire to point down or sideways, repeat it side by side, or bow its fins inward. Type mode engraves the poster title along both outer fins, letter tops toward the edge, in a lighter or darker tone of the ink.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "8634c255d112b346a9dafe43-p0",
+        "sourceImageSHA256": "d7d8efbac711857d55eb9921703f76fc1fa89df42407f9771940abeb2980d48b",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Source-reviewed parametric interpretation; exact original construction and authorship unknown. No traced source outlines or trained aesthetic labels.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown."
+  },
+  {
+    "id": "survey-sliced-orb",
+    "name": "Wireframe volume stack",
+    "group": "Shaded volumes",
+    "renderer": "motif-survey-sliced-orb",
+    "parameters": [
+      {
+        "id": "slices",
+        "label": "Slice count",
+        "value": 6,
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "id": "meridians",
+        "label": "Wireframe meridians",
+        "value": 9,
+        "min": 3,
+        "max": 15,
+        "step": 1
+      },
+      {
+        "id": "displacement",
+        "label": "Slice displacement",
+        "value": 0,
+        "min": 0,
+        "max": 0.24,
+        "step": 0.001
+      },
+      {
+        "id": "phase",
+        "label": "Displacement phase",
+        "value": 0,
+        "min": -1.2,
+        "max": 1.2,
+        "step": 0.001
+      },
+      {
+        "id": "gap",
+        "label": "Slice gap",
+        "value": 0,
+        "min": 0,
+        "max": 0.045,
+        "step": 0.001
+      },
+      {
+        "id": "light",
+        "label": "Light position",
+        "value": 0,
+        "min": -0.8,
+        "max": 0.8,
+        "step": 0.001
+      },
+      {
+        "id": "stack",
+        "label": "Stacked volumes",
+        "value": 3,
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "id": "flatten",
+        "label": "Volume height / width",
+        "value": 0.72,
+        "min": 0.35,
+        "max": 1.2,
+        "step": 0.001
+      },
+      {
+        "id": "bleed",
+        "label": "Volume overscale",
+        "value": 1.35,
+        "min": 1,
+        "max": 1.7,
+        "step": 0.001
+      },
+      {
+        "id": "mirror",
+        "label": "Mirrored halves",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "invert",
+        "label": "Light on dark volume",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "primitive",
+        "label": "Ellipsoid / barrel / lens",
+        "value": 0,
+        "min": 0,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "id": "axis",
+        "label": "Stacked vertically / side by side",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "twist",
+        "label": "Wireframe twist",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "surfaceType",
+        "label": "Title printed round the volumes",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "traits": {
+      "angularity": 0.3,
+      "curvature": 0.9,
+      "detail": 0.8,
+      "mass": 0.65,
+      "regularity": 0.7,
+      "counterform": 0.3,
+      "directionality": 0.85,
+      "volume": 1
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "experimental",
+      "color-field"
+    ],
+    "fontTarget": {
+      "weight": 0.45,
+      "width": 1,
+      "serif": 0.55,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.7,
+    "tags": [
+      "slice-displacement",
+      "clipped-volume",
+      "wireframe",
+      "tonal-shading"
+    ],
+    "logic": "The source-aligned default repeats broad shaded wireframe ellipsoids vertically, with one full central volume and neighboring partial volumes. Slice gaps and lateral displacement default to zero. Their controls explicitly enable the displaced-slice extension; that extension is not literally present in the FUBU reference. The canonical material is light on dark: solid volumes lit by a second ink, halves mirrored about the centre, and overscale that crops the volumes at the field edge so they read wider than the paper. Variations swap the ellipsoid for a barrel or a lens, stack the volumes side by side, or twist the wireframe slice by slice. Type mode prints the title round every slice of the volumes, foreshortened toward the rims like print on a globe, barrel or lens.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "b69b2f4d6b16fca5eba6efd4-p0",
+        "sourceImageSHA256": "ef164675b6c570ff772087d5e16b13b5303690d3194b3c0521858935b927694b",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Canonical source: FUBU, 17.03.2022. Default follows stacked broad wireframe volumes; gaps and displacement are optional authored extensions.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown.",
+    "inks": [
+      "#1d1f22",
+      "#f3f0e8"
+    ]
+  },
+  {
+    "id": "survey-gravity-drips",
+    "name": "Gravity-fed pigment trails",
+    "group": "Material flows",
+    "renderer": "motif-survey-gravity-drips",
+    "parameters": [
+      {
+        "id": "count",
+        "label": "Pigment streams",
+        "value": 24,
+        "min": 4,
+        "max": 28,
+        "step": 1
+      },
+      {
+        "id": "pool",
+        "label": "Pool radius",
+        "value": 0.16,
+        "min": 0.045,
+        "max": 0.18,
+        "step": 0.001
+      },
+      {
+        "id": "length",
+        "label": "Gravity reach",
+        "value": 0.77,
+        "min": 0.24,
+        "max": 0.77,
+        "step": 0.001
+      },
+      {
+        "id": "width",
+        "label": "Stream width",
+        "value": 0.007,
+        "min": 0.004,
+        "max": 0.034,
+        "step": 0.001
+      },
+      {
+        "id": "wind",
+        "label": "Lateral drift",
+        "value": 0,
+        "min": -0.2,
+        "max": 0.2,
+        "step": 0.001
+      },
+      {
+        "id": "taper",
+        "label": "Tail thickness",
+        "value": 0.45,
+        "min": 0.15,
+        "max": 0.85,
+        "step": 0.001
+      },
+      {
+        "id": "streams",
+        "label": "Streams per pool",
+        "value": 6,
+        "min": 1,
+        "max": 14,
+        "step": 1
+      },
+      {
+        "id": "softness",
+        "label": "Pool softness",
+        "value": 0.6,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "inkCount",
+        "label": "Pigment inks",
+        "value": 5,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "id": "scatter",
+        "label": "Pool scatter",
+        "value": 0.6,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "flow",
+        "label": "Flow down / up / right / left",
+        "value": 0,
+        "min": 0,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "id": "arrangement",
+        "label": "Pools in a row / one dominant / two rows / cloud",
+        "value": 0,
+        "min": 0,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "id": "wave",
+        "label": "Stream meander",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "letters",
+        "label": "Pools from the title letters",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "traits": {
+      "angularity": 0.05,
+      "curvature": 0.95,
+      "detail": 0.65,
+      "mass": 0.65,
+      "regularity": 0.3,
+      "counterform": 0.4,
+      "directionality": 1,
+      "volume": 0.15
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "experimental",
+      "color-field"
+    ],
+    "fontTarget": {
+      "weight": 0.45,
+      "width": 1,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.67,
+    "tags": [
+      "gravity-trails",
+      "pigment-pools",
+      "connected-flow",
+      "seeded-material"
+    ],
+    "logic": "Sample a coherent band of pigment pools. Grow each connected tapered trail downward from inside its own pool; a private seeded stream determines pool sizes and trail lengths. Wind bends the trails while gravity keeps their vertical extent positive. This is a vector flow grammar, not a fluid simulation. Scattered, soft-edged pools in up to five side-by-side inks shed many thin streams from their lower rims; stream lengths are long-tailed, so a few stop short and the longest leave the field. Variations change which way the pigment runs, gather the pools around one dominant pool, in two rows or as a loose cloud, and let streams meander. Type mode replaces the pools with the title's own letters, each bleeding streams from its lower edges in its own ink.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "f80e33c177009ce7e7e48109-p0",
+        "sourceImageSHA256": "35d7c95327932ea1ee92851ab00be3856d7ef0e648db870ac36b094fe025e569",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Source-reviewed parametric interpretation; exact original construction and authorship unknown. No traced source outlines or trained aesthetic labels.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown.",
+    "inks": [
+      "#ff3d8b",
+      "#7b3dff",
+      "#20c25b",
+      "#ece23a",
+      "#2f6cff"
+    ]
+  },
+  {
+    "id": "survey-bilateral-soft-cross",
+    "name": "Soft four-lobed cross",
+    "group": "Organic silhouettes",
+    "renderer": "motif-survey-bilateral-soft-cross",
+    "parameters": [
+      {
+        "id": "neck",
+        "label": "Central neck",
+        "value": 0.16,
+        "min": 0.11,
+        "max": 0.3,
+        "step": 0.001
+      },
+      {
+        "id": "bulge",
+        "label": "Lobe fullness",
+        "value": 0.8,
+        "min": 0.22,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "stretch",
+        "label": "Vertical stretch",
+        "value": 0.8,
+        "min": 0.65,
+        "max": 1.4,
+        "step": 0.001
+      },
+      {
+        "id": "stem",
+        "label": "Stem reach",
+        "value": 0.38,
+        "min": 0,
+        "max": 0.5,
+        "step": 0.001
+      },
+      {
+        "id": "glow",
+        "label": "Surface glow",
+        "value": 0.8,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "bodyScale",
+        "label": "Lobe field scale",
+        "value": 1.1,
+        "min": 0.5,
+        "max": 1.2,
+        "step": 0.001
+      },
+      {
+        "id": "centerY",
+        "label": "Body vertical anchor",
+        "value": 0.4,
+        "min": 0.28,
+        "max": 0.6,
+        "step": 0.001
+      },
+      {
+        "id": "stemWidth",
+        "label": "Stem width",
+        "value": 0.09,
+        "min": 0.02,
+        "max": 0.16,
+        "step": 0.001
+      },
+      {
+        "id": "twoTone",
+        "label": "Centre ink glow",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "centre",
+        "label": "Centre block",
+        "value": 0.32,
+        "min": 0,
+        "max": 0.6,
+        "step": 0.001
+      },
+      {
+        "id": "lobes",
+        "label": "Lobes",
+        "value": 4,
+        "min": 3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "id": "lobeShape",
+        "label": "Lobe squareness",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "spin",
+        "label": "Lobe rotation",
+        "value": 0,
+        "min": 0,
+        "max": 0.5,
+        "step": 0.001
+      },
+      {
+        "id": "centreRound",
+        "label": "Centre block roundness",
+        "value": 0.3,
+        "min": 0,
+        "max": 0.5,
+        "step": 0.001
+      },
+      {
+        "id": "outlineType",
+        "label": "Title round the outline",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "traits": {
+      "angularity": 0.05,
+      "curvature": 1,
+      "detail": 0.25,
+      "mass": 0.85,
+      "regularity": 1,
+      "counterform": 0.65,
+      "directionality": 0.4,
+      "volume": 0.4
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "experimental",
+      "color-field"
+    ],
+    "fontTarget": {
+      "weight": 0.7,
+      "width": 1,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.74,
+    "tags": [
+      "four-lobed",
+      "bilateral-symmetry",
+      "concave-waist",
+      "soft-cross",
+      "gradient-material"
+    ],
+    "logic": "Modulate a polar radius with fourfold symmetry to form four broad lobes and concave waists. Normalize the silhouette before stretching, optionally extend a central stem, and apply a separately controlled radial surface glow. The body glows from a second ink at its core to the first at the lobe tips; a rounded centre block and the stem take a third ink, as in the Victoria Hall source. Variations set three to eight lobes, square off their crowns, turn them onto the axes and round the centre block into a disc. Type mode runs the title clockwise just outside the silhouette, tops outward, in the lobe ink.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "e1a47c00ea7324d20b0c8736-p0",
+        "sourceImageSHA256": "c85479da8612bf0489aa5af66182876d35f1574d77e120bbb8043f4587a18fd9",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Source-reviewed parametric interpretation; exact original construction and authorship unknown. No traced source outlines or trained aesthetic labels.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown.",
+    "inks": [
+      "#f07cc4",
+      "#ff4b1f",
+      "#1e8b94"
+    ]
+  },
+  {
+    "id": "survey-portal-type",
+    "name": "Projective type portal",
+    "group": "Spatial typography",
+    "renderer": "motif-survey-portal-type",
+    "parameters": [
+      {
+        "id": "levels",
+        "label": "Depth levels",
+        "value": 2,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "id": "faces",
+        "label": "Text planes",
+        "value": 4,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "id": "depth",
+        "label": "Perspective recession",
+        "value": 0.7,
+        "min": 0.2,
+        "max": 0.7,
+        "step": 0.001
+      },
+      {
+        "id": "focusX",
+        "label": "Vanishing point X",
+        "value": 0.5,
+        "min": 0.25,
+        "max": 0.75,
+        "step": 0.001
+      },
+      {
+        "id": "focusY",
+        "label": "Vanishing point Y",
+        "value": 0.5,
+        "min": 0.25,
+        "max": 0.75,
+        "step": 0.001
+      },
+      {
+        "id": "guides",
+        "label": "Frame visibility",
+        "value": 0.05,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "tiling",
+        "label": "Natural word repeats",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "sides",
+        "label": "Frame sides",
+        "value": 4,
+        "min": 3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "id": "flow",
+        "label": "Words per wall / continuous text",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "shading",
+        "label": "Wall shading",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "fade",
+        "label": "Depth fade",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      }
+    ],
+    "traits": {
+      "angularity": 0.85,
+      "curvature": 0.1,
+      "detail": 0.85,
+      "mass": 0.45,
+      "regularity": 0.95,
+      "counterform": 0.8,
+      "directionality": 1,
+      "volume": 0.9
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "experimental",
+      "color-field"
+    ],
+    "fontTarget": {
+      "weight": 0.7,
+      "width": 1,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.7,
+    "tags": [
+      "projective-type",
+      "homography",
+      "glyph-outlines",
+      "vanishing-point",
+      "editable-text"
+    ],
+    "logic": "Shape editable brief words with Core Text. Flatten glyph curves, then project every outline through a homography onto receding quadrilateral walls. Keep text, font metadata and depth controls in the element genome; optional frame guides expose the shared vanishing point. Each wall repeats its word at natural proportions with even spacing instead of stretching one copy; all four walls run along their length. Variations build the corridor from three- to eight-sided frames, run the title round it as one continuous line, and shade each wall toward the vanishing point. Depth fade lets deeper rings recede toward the paper.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "e7ab9b958b72f4593cf01b88-p0",
+        "sourceImageSHA256": "48abb076802aade33bea9b8eab3d400a3111f6d7a78360213635c1e85c622751",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "8d44047af71f59d0ae68f3cb-p0",
+        "sourceImageSHA256": "8fe85e3a18d814dff14730de99dacb221e8177c72a83f350427ee3255339bf56",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Source-reviewed parametric interpretation; exact original construction and authorship unknown. No traced source outlines or trained aesthetic labels.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown."
+  },
+  {
+    "id": "survey-module-substitution",
+    "name": "Glyph and image density field",
+    "group": "Modular typography",
+    "renderer": "motif-survey-module-substitution",
+    "parameters": [
+      {
+        "id": "rows",
+        "label": "Module rows",
+        "value": 40,
+        "min": 4,
+        "max": 64,
+        "step": 1
+      },
+      {
+        "id": "columns",
+        "label": "Module columns",
+        "value": 20,
+        "min": 3,
+        "max": 32,
+        "step": 1
+      },
+      {
+        "id": "bias",
+        "label": "Density exponent",
+        "value": 2.5,
+        "min": 0.55,
+        "max": 3.2,
+        "step": 0.001
+      },
+      {
+        "id": "mass",
+        "label": "Module ink area",
+        "value": 0.75,
+        "min": 0.25,
+        "max": 0.82,
+        "step": 0.001
+      },
+      {
+        "id": "moduleKind",
+        "label": "Glyphs / symbols / soft squares",
+        "value": 0,
+        "min": 0,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "id": "rotation",
+        "label": "Module rotation",
+        "value": 0,
+        "min": -0.8,
+        "max": 0.8,
+        "step": 0.001
+      },
+      {
+        "id": "fuse",
+        "label": "Dense-row fusion",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "direction",
+        "label": "Density down / across / radial",
+        "value": 0,
+        "min": 0,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "id": "mask",
+        "label": "Letter mask off / inside / outside",
+        "value": 0,
+        "min": 0,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "id": "sizeField",
+        "label": "Module size: even / photo / radial / diagonal",
+        "value": 0,
+        "min": 0,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "traits": {
+      "angularity": 0.3,
+      "curvature": 0.5,
+      "detail": 0.9,
+      "mass": 0.35,
+      "regularity": 0.9,
+      "counterform": 0.45,
+      "directionality": 0.85,
+      "volume": 0
+    },
+    "styles": [
+      "abstract",
+      "optical",
+      "experimental",
+      "color-field"
+    ],
+    "fontTarget": {
+      "weight": 0.45,
+      "width": 1,
+      "serif": 0,
+      "mono": 0.8,
+      "italic": 0
+    },
+    "idealAspect": 0.67,
+    "tags": [
+      "module-substitution",
+      "ink-area-normalization",
+      "glyph-density",
+      "image-modules",
+      "editable-text"
+    ],
+    "logic": "Distribute editable brief glyphs on a nonuniform grid. Normalize glyph scale by measured outline ink area, with a cell-size cap for narrow forms. Switch to geometric symbols, or attach a checksum-verified rasterAsset to reuse the same layout with cropped image modules. Glyph and symbol exports remain vector; image modules embed their raster source. Rows too tight for the grid gain columns until their glyphs touch, so the dense end fuses into a solid band of type. Variations run the density across the field or out from its centre in rings, keep only the modules inside or outside the title's first letter, and add soft rounded modules. A size field scales the modules: by a photo's darkness, turning it into a glyph halftone, or by a radial or diagonal ramp.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "a4399b25fc67c17496e15e30-p0",
+        "sourceImageSHA256": "1ec7a250ceaf8ebaf9889756003b442edd300cfee7a595ab6e60b95211ac2464",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "fe6a8b6145f82210dacc1023-p0",
+        "sourceImageSHA256": "dff8a72d63e9366c2216fc6371891bb6a3a3b440b47c63568068a646f8a156a2",
+        "evidenceURL": "file:///PosterLab/output/library-shape-survey-v1/manifest.json"
+      }
+    ],
+    "basis": "Source-reviewed parametric interpretation; exact original construction and authorship unknown. No traced source outlines or trained aesthetic labels.",
+    "defaultPolicy": "Match the first canonical reference as closely as the procedural grammar supports. Creative departures require explicit parameter changes; exact designer algorithms remain unknown."
+  },
+  {
+    "id": "survey-orbit-wrap",
+    "name": "Orbit wrap",
+    "group": "Wrapped forms",
+    "renderer": "motif-survey-orbit-wrap",
+    "parameters": [
+      {
+        "id": "path",
+        "label": "Path: rings / coil / atom / double coil / Saturn / gimbals / knot / crown / swarm / whirl",
+        "value": 1,
+        "min": 0,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "id": "turns",
+        "label": "Rings, turns or orbits",
+        "value": 5,
+        "min": 1,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "id": "profile",
+        "label": "Cylinder / sphere / cone / hourglass / barrel / funnel",
+        "value": 0,
+        "min": 0,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "id": "radius",
+        "label": "Orbit radius (field widths)",
+        "value": 0.56,
+        "min": 0.15,
+        "max": 0.8,
+        "step": 0.001
+      },
+      {
+        "id": "height",
+        "label": "Axis length",
+        "value": 0.78,
+        "min": 0.1,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "tilt",
+        "label": "Camera height (negative: from below)",
+        "value": 0.16,
+        "min": -0.6,
+        "max": 0.6,
+        "step": 0.001
+      },
+      {
+        "id": "lean",
+        "label": "Lean in degrees",
+        "value": -6,
+        "min": -40,
+        "max": 40,
+        "step": 0.1
+      },
+      {
+        "id": "centerX",
+        "label": "Axis across",
+        "value": 0.5,
+        "min": 0.2,
+        "max": 0.8,
+        "step": 0.001
+      },
+      {
+        "id": "centerY",
+        "label": "Axis down",
+        "value": 0.5,
+        "min": 0.2,
+        "max": 0.8,
+        "step": 0.001
+      },
+      {
+        "id": "band",
+        "label": "Band width",
+        "value": 0.045,
+        "min": 0.004,
+        "max": 0.12,
+        "step": 0.001
+      },
+      {
+        "id": "bandStyle",
+        "label": "Band: tube / tape / twisted ribbon / beads / hairline / dashes / chain / zipper / double line / striped tape",
+        "value": 0,
+        "min": 0,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "id": "twist",
+        "label": "Ribbon half-twists per turn",
+        "value": 1,
+        "min": 0,
+        "max": 4,
+        "step": 0.5,
+        "activeWhen": {
+          "bandStyle": 2
+        }
+      },
+      {
+        "id": "shade",
+        "label": "Tube shading",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001,
+        "activeWhen": {
+          "bandStyle": 0
+        }
+      },
+      {
+        "id": "satellites",
+        "label": "Satellites on the hairline",
+        "value": 2,
+        "min": 0,
+        "max": 6,
+        "step": 1,
+        "activeWhen": {
+          "bandStyle": 4
+        }
+      },
+      {
+        "id": "outline",
+        "label": "Outlined bands",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "perspective",
+        "label": "Near arcs thicker",
+        "value": 0.2,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "backFade",
+        "label": "Far arcs fade into the paper",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "inkMode",
+        "label": "One ink / near and far / stepped / blended / alternating",
+        "value": 2,
+        "min": 0,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "id": "subject",
+        "label": "Subject: title only / solid / slab / glow / torus / pill / star / striped orb",
+        "value": 1,
+        "min": 0,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "id": "subjectScale",
+        "label": "Subject size",
+        "value": 0.5,
+        "min": 0.2,
+        "max": 0.95,
+        "step": 0.001
+      },
+      {
+        "id": "shadeSubject",
+        "label": "Subject shading",
+        "value": 0.35,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "incline",
+        "label": "Crossed-orbit inclination",
+        "value": 0.95,
+        "min": 0.2,
+        "max": 1.5,
+        "step": 0.001,
+        "activeWhen": {
+          "path": 2
+        }
+      },
+      {
+        "id": "wobble",
+        "label": "Ring wobble",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001,
+        "activeWhen": {
+          "path": 0
+        }
+      },
+      {
+        "id": "shift",
+        "label": "Rings slide along the axis",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.001,
+        "activeWhen": {
+          "path": 0
+        }
+      },
+      {
+        "id": "spin",
+        "label": "Spin",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "keyline",
+        "label": "Paper keyline round near arcs",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "glow",
+        "label": "Neon glow",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "bandCopy",
+        "label": "Title printed on the band",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "knotLobes",
+        "label": "Knot lobes",
+        "value": 3,
+        "min": 2,
+        "max": 7,
+        "step": 1,
+        "activeWhen": {
+          "path": 6
+        }
+      },
+      {
+        "id": "crownWaves",
+        "label": "Crown waves",
+        "value": 5,
+        "min": 2,
+        "max": 9,
+        "step": 1,
+        "activeWhen": {
+          "path": 7
+        }
+      },
+      {
+        "id": "wave",
+        "label": "Crown wave height",
+        "value": 0.5,
+        "min": 0,
+        "max": 1,
+        "step": 0.001,
+        "activeWhen": {
+          "path": 7
+        }
+      },
+      {
+        "id": "rungs",
+        "label": "Ladder rungs per turn",
+        "value": 0,
+        "min": 0,
+        "max": 12,
+        "step": 1,
+        "activeWhen": {
+          "path": 3
+        }
+      },
+      {
+        "id": "dashDuty",
+        "label": "Dash length",
+        "value": 0.5,
+        "min": 0.15,
+        "max": 0.85,
+        "step": 0.001,
+        "activeWhen": {
+          "bandStyle": 5
+        }
+      },
+      {
+        "id": "bend",
+        "label": "Axis bend",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "taper",
+        "label": "Band taper along the orbits",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "jitter",
+        "label": "Radius jitter",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "spacing",
+        "label": "Turn spacing ramp",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "echo",
+        "label": "Echo trail copies",
+        "value": 0,
+        "min": 0,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "id": "shadow",
+        "label": "Drop shadow on the paper",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "depthBlur",
+        "label": "Far arcs out of focus",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "backCopy",
+        "label": "Title shows through on the far arcs, mirrored",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "activeWhen": {
+          "bandCopy": 1
+        }
+      }
+    ],
+    "traits": {
+      "angularity": 0.15,
+      "curvature": 0.95,
+      "detail": 0.55,
+      "mass": 0.5,
+      "regularity": 0.8,
+      "counterform": 0.45,
+      "directionality": 0.6,
+      "volume": 0.9
+    },
+    "styles": [
+      "optical",
+      "experimental",
+      "abstract"
+    ],
+    "fontTarget": {
+      "weight": 0.75,
+      "width": 0.85,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.7,
+    "tags": [
+      "orbit",
+      "coil",
+      "depth-occlusion",
+      "wrap",
+      "rings",
+      "helix",
+      "torus-knot",
+      "saturn",
+      "gimbals",
+      "swarm"
+    ],
+    "logic": "Rings, a coil, crossed orbits or a double coil are wound round a vertical axis, seen by a raised camera and leaned in the page. The far half of every orbit is drawn first, then the subject (a solid on the orbit's own profile, a slab or a glow), then the poster type, then the near half of every orbit above it all, so the title sits inside the rings. Bands are round tubes, flat tape that shows its darker inside on the far arcs, twisted ribbon, beads or a hairline with satellites; inks run near/far, stepped or blended by turn, or alternate. Type mode prints the title on the near face of the band, foreshortened toward the sides, and can let it show through mirrored on the far arcs. Further paths: flat Saturn rings, nested gimbals, a torus knot, a wavy crown, a swarm of small orbits and a whirl; further bands: dashes, chain links, zipper teeth, double neon rails and striped tape; further subjects: torus, pill, faceted star and striped orb. The axis can bend, the band can taper, radii can jitter, turns can crowd toward one end, and echo trails, a drop shadow and out-of-focus far arcs finish it.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "3d8e000461288fa4d371c9e1-p0",
+        "sourceImageSHA256": "eb2c0224da2da4fc762da84b977e4a20891475831019b410acd92087dd6d98a0"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "98fc1698f85d5119e2d66668-p0",
+        "sourceImageSHA256": "173e7aaf7b6b86127a1db1a80ab204b1e6244151f3ff87b5c099ecdb22fe6f57"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "f0c8847d3dc2e3bf084e0a25-p0",
+        "sourceImageSHA256": "ecf06400fc5fa692bf6ab5245843c0404b29536ee0f08950accc479341d1a14b"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "e8a0872a4d94463a52537f14-p0",
+        "sourceImageSHA256": "2f3dc565ca4dd1b82fb1fd3081461a2b1caabba142a6e293ad88aad2f8825789"
+      }
+    ],
+    "basis": "Canonical source: Filmpodium \"Marilyn Monroe Revisited\", 2023 (census 0277): a thick two-colour coil wound round a figure, the near arcs over it and the far arcs behind. Also Journées de Soleure 2023 (0690, hoops round a column), Abstract (1062, a halo) and Mehrspur Pop & Jazz (1035, copy on a wound band).",
+    "inks": [
+      "#ef4a3f",
+      "#d9b8f2",
+      "#151515"
+    ],
+    "looks": [
+      {
+        "name": "Coil round a figure",
+        "parameters": {},
+        "inks": [
+          "#ef4a3f",
+          "#d9b8f2",
+          "#151515"
+        ]
+      },
+      {
+        "name": "Wound tape",
+        "parameters": {
+          "path": 1,
+          "turns": 4,
+          "bandStyle": 1,
+          "band": 0.11,
+          "radius": 0.62,
+          "height": 0.84,
+          "tilt": 0.24,
+          "lean": -9,
+          "inkMode": 0,
+          "subject": 0,
+          "bandCopy": 1,
+          "perspective": 0
+        },
+        "inks": [
+          "#141414",
+          "#ef4a3f"
+        ]
+      },
+      {
+        "name": "Hoop column",
+        "parameters": {
+          "path": 0,
+          "turns": 4,
+          "bandStyle": 1,
+          "outline": 1,
+          "band": 0.12,
+          "radius": 0.4,
+          "height": 0.82,
+          "tilt": 0.22,
+          "lean": 0,
+          "inkMode": 0,
+          "subject": 0,
+          "perspective": 0.1
+        },
+        "inks": [
+          "#1fc79b",
+          "#2a2a2a"
+        ]
+      },
+      {
+        "name": "Halo",
+        "parameters": {
+          "path": 0,
+          "turns": 1,
+          "shift": -0.95,
+          "bandStyle": 4,
+          "satellites": 0,
+          "band": 0.035,
+          "radius": 0.36,
+          "height": 0.8,
+          "tilt": 0.2,
+          "lean": 0,
+          "inkMode": 0,
+          "subject": 0,
+          "perspective": 0
+        },
+        "inks": [
+          "#f2d21b",
+          "#1d1d1d"
+        ],
+        "paper": "#141414"
+      },
+      {
+        "name": "Neon atom",
+        "parameters": {
+          "path": 2,
+          "turns": 3,
+          "bandStyle": 0,
+          "band": 0.016,
+          "shade": 0.7,
+          "glow": 0.8,
+          "radius": 0.42,
+          "height": 0.84,
+          "incline": 1.0,
+          "tilt": 0.1,
+          "lean": 0,
+          "inkMode": 4,
+          "subject": 3,
+          "subjectScale": 0.32,
+          "perspective": 0.5
+        },
+        "inks": [
+          "#39ff88",
+          "#ff2bd6",
+          "#3df2ff",
+          "#ffffff"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Neon rings",
+        "parameters": {
+          "path": 0,
+          "turns": 6,
+          "bandStyle": 0,
+          "band": 0.02,
+          "shade": 0.8,
+          "glow": 1,
+          "perspective": 0.5,
+          "backFade": 0.45,
+          "inkMode": 3,
+          "subject": 0,
+          "radius": 0.6,
+          "height": 0.72,
+          "tilt": 0.12,
+          "lean": -4
+        },
+        "inks": [
+          "#00e5ff",
+          "#ff2bd6"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Globe beads",
+        "parameters": {
+          "path": 0,
+          "turns": 7,
+          "profile": 1,
+          "bandStyle": 3,
+          "band": 0.022,
+          "subject": 1,
+          "subjectScale": 0.82,
+          "radius": 0.42,
+          "height": 0.8,
+          "tilt": 0.32,
+          "lean": 8,
+          "inkMode": 3,
+          "perspective": 0.7
+        },
+        "inks": [
+          "#ff5a1f",
+          "#ffd23f",
+          "#1b1b3a"
+        ]
+      },
+      {
+        "name": "Double coil",
+        "parameters": {
+          "path": 3,
+          "turns": 3,
+          "bandStyle": 0,
+          "band": 0.05,
+          "shade": 0.7,
+          "perspective": 0.6,
+          "radius": 0.34,
+          "height": 0.92,
+          "tilt": 0.26,
+          "lean": 0,
+          "inkMode": 4,
+          "subject": 0
+        },
+        "inks": [
+          "#2f5bff",
+          "#ff3d6e"
+        ]
+      },
+      {
+        "name": "Twisted ribbon",
+        "parameters": {
+          "path": 1,
+          "turns": 3,
+          "bandStyle": 2,
+          "twist": 2,
+          "band": 0.1,
+          "radius": 0.52,
+          "height": 0.74,
+          "tilt": 0.34,
+          "lean": -6,
+          "inkMode": 0,
+          "subject": 0,
+          "perspective": 0.3
+        },
+        "inks": [
+          "#ffd400",
+          "#ff4fa3",
+          "#151515"
+        ]
+      },
+      {
+        "name": "Hourglass spring",
+        "parameters": {
+          "path": 1,
+          "turns": 9,
+          "profile": 3,
+          "bandStyle": 4,
+          "satellites": 3,
+          "band": 0.03,
+          "radius": 0.44,
+          "height": 0.9,
+          "tilt": 0.2,
+          "lean": 0,
+          "inkMode": 0,
+          "subject": 1,
+          "subjectScale": 0.6
+        },
+        "inks": [
+          "#111111",
+          "#ff3b30",
+          "#d7d2c8"
+        ]
+      },
+      {
+        "name": "Cone vortex",
+        "parameters": {
+          "path": 1,
+          "turns": 7,
+          "profile": 2,
+          "bandStyle": 0,
+          "band": 0.032,
+          "shade": 0.5,
+          "inkMode": 3,
+          "lean": 12,
+          "tilt": 0.36,
+          "subject": 1,
+          "subjectScale": 0.62,
+          "radius": 0.46,
+          "height": 0.86,
+          "perspective": 0.4
+        },
+        "inks": [
+          "#7b2cff",
+          "#ff2fb3",
+          "#101014"
+        ]
+      },
+      {
+        "name": "Saturn",
+        "parameters": {
+          "path": 4,
+          "turns": 4,
+          "bandStyle": 1,
+          "band": 0.06,
+          "radius": 0.66,
+          "height": 0.6,
+          "tilt": 0.24,
+          "lean": -16,
+          "inkMode": 3,
+          "subject": 7,
+          "subjectScale": 0.52,
+          "shadeSubject": 0.7,
+          "perspective": 0.3
+        },
+        "inks": [
+          "#ffd23f",
+          "#ff8a00",
+          "#ff3b5c"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Chrome gimbals",
+        "parameters": {
+          "path": 5,
+          "turns": 4,
+          "bandStyle": 0,
+          "shade": 1,
+          "band": 0.035,
+          "radius": 0.46,
+          "height": 0.8,
+          "tilt": 0.15,
+          "lean": 0,
+          "inkMode": 4,
+          "subject": 3,
+          "subjectScale": 0.26,
+          "perspective": 0.5
+        },
+        "inks": [
+          "#e6e9ee",
+          "#9aa3ad",
+          "#ffffff"
+        ],
+        "paper": "#0e0f12"
+      },
+      {
+        "name": "Trefoil knot",
+        "parameters": {
+          "path": 6,
+          "knotLobes": 3,
+          "bandStyle": 0,
+          "shade": 0.8,
+          "band": 0.07,
+          "radius": 0.44,
+          "height": 0.62,
+          "tilt": 0.3,
+          "lean": 0,
+          "inkMode": 0,
+          "subject": 0,
+          "glow": 0.6,
+          "perspective": 0.5
+        },
+        "inks": [
+          "#ff2bd6"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Crown",
+        "parameters": {
+          "path": 7,
+          "turns": 2,
+          "crownWaves": 6,
+          "wave": 0.9,
+          "bandStyle": 1,
+          "band": 0.07,
+          "radius": 0.46,
+          "height": 0.6,
+          "tilt": 0.26,
+          "lean": 0,
+          "inkMode": 2,
+          "subject": 1,
+          "subjectScale": 0.55,
+          "perspective": 0.2
+        },
+        "inks": [
+          "#f2b705",
+          "#e8482c",
+          "#1a1a1a"
+        ]
+      },
+      {
+        "name": "Electron swarm",
+        "parameters": {
+          "path": 8,
+          "turns": 6,
+          "bandStyle": 4,
+          "satellites": 1,
+          "band": 0.022,
+          "glow": 0.9,
+          "radius": 0.5,
+          "height": 0.86,
+          "tilt": 0.2,
+          "lean": 0,
+          "inkMode": 4,
+          "subject": 3,
+          "subjectScale": 0.24,
+          "perspective": 0.5
+        },
+        "inks": [
+          "#39ff88",
+          "#3df2ff",
+          "#ff2bd6",
+          "#ffffff"
+        ],
+        "paper": "#07080b"
+      },
+      {
+        "name": "Whirlpool",
+        "parameters": {
+          "path": 9,
+          "turns": 6,
+          "bandStyle": 0,
+          "shade": 0.6,
+          "band": 0.05,
+          "taper": 0.9,
+          "tilt": 0.42,
+          "radius": 0.64,
+          "lean": -10,
+          "inkMode": 3,
+          "subject": 0,
+          "glow": 0.3,
+          "perspective": 0.5
+        },
+        "inks": [
+          "#2f5bff",
+          "#00e5ff"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Slinky arc",
+        "parameters": {
+          "path": 1,
+          "turns": 9,
+          "bend": 0.5,
+          "bandStyle": 0,
+          "shade": 0.9,
+          "band": 0.026,
+          "radius": 0.32,
+          "height": 0.84,
+          "tilt": 0.38,
+          "lean": 0,
+          "inkMode": 4,
+          "subject": 0,
+          "perspective": 0.4
+        },
+        "inks": [
+          "#d5d9df",
+          "#8a919b"
+        ],
+        "paper": "#ff3d2e"
+      },
+      {
+        "name": "Tornado",
+        "parameters": {
+          "path": 1,
+          "turns": 9,
+          "profile": 5,
+          "bandStyle": 0,
+          "band": 0.014,
+          "jitter": 0.9,
+          "echo": 2,
+          "radius": 0.5,
+          "height": 0.86,
+          "lean": 6,
+          "tilt": 0.3,
+          "subject": 0,
+          "inkMode": 0,
+          "perspective": 0.4
+        },
+        "inks": [
+          "#151515"
+        ],
+        "paper": "#e9e4d8"
+      },
+      {
+        "name": "DNA ladder",
+        "parameters": {
+          "path": 3,
+          "turns": 3,
+          "rungs": 8,
+          "bandStyle": 0,
+          "shade": 0.7,
+          "band": 0.045,
+          "radius": 0.32,
+          "height": 0.92,
+          "tilt": 0.22,
+          "lean": 18,
+          "subject": 0,
+          "inkMode": 4,
+          "perspective": 0.5
+        },
+        "inks": [
+          "#00e5ff",
+          "#ff2bd6",
+          "#f2f2f2"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Gold chain",
+        "parameters": {
+          "path": 1,
+          "turns": 4,
+          "bandStyle": 6,
+          "band": 0.05,
+          "radius": 0.5,
+          "height": 0.74,
+          "tilt": 0.22,
+          "lean": -8,
+          "inkMode": 0,
+          "subject": 5,
+          "subjectScale": 0.5,
+          "perspective": 0.3
+        },
+        "inks": [
+          "#f2c94c",
+          "#9b7a1c",
+          "#f2efe8"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Zipper",
+        "parameters": {
+          "path": 1,
+          "turns": 4,
+          "bandStyle": 7,
+          "band": 0.07,
+          "radius": 0.52,
+          "height": 0.76,
+          "tilt": 0.2,
+          "lean": -6,
+          "inkMode": 0,
+          "subject": 0,
+          "perspective": 0.2
+        },
+        "inks": [
+          "#111111"
+        ],
+        "paper": "#ffe100"
+      },
+      {
+        "name": "Barcode coil",
+        "parameters": {
+          "path": 1,
+          "turns": 4,
+          "bandStyle": 5,
+          "dashDuty": 0.3,
+          "band": 0.11,
+          "radius": 0.56,
+          "tilt": 0.2,
+          "lean": -8,
+          "inkMode": 0,
+          "subject": 0,
+          "perspective": 0.3
+        },
+        "inks": [
+          "#111111"
+        ],
+        "paper": "#f4f1e8"
+      },
+      {
+        "name": "Möbius",
+        "parameters": {
+          "path": 0,
+          "turns": 1,
+          "bandStyle": 2,
+          "twist": 1,
+          "band": 0.12,
+          "radius": 0.5,
+          "height": 0.5,
+          "tilt": 0.4,
+          "lean": -8,
+          "inkMode": 0,
+          "subject": 0,
+          "perspective": 0.3
+        },
+        "inks": [
+          "#ff4fa3",
+          "#ffd400"
+        ]
+      },
+      {
+        "name": "Neon track",
+        "parameters": {
+          "path": 1,
+          "turns": 6,
+          "bandStyle": 8,
+          "band": 0.04,
+          "glow": 1,
+          "radius": 0.58,
+          "height": 0.8,
+          "tilt": 0.16,
+          "lean": -6,
+          "inkMode": 3,
+          "subject": 0,
+          "perspective": 0.4
+        },
+        "inks": [
+          "#00ffa3",
+          "#ff2bd6"
+        ],
+        "paper": "#07080b"
+      },
+      {
+        "name": "Star orbit",
+        "parameters": {
+          "path": 2,
+          "turns": 3,
+          "bandStyle": 0,
+          "shade": 0.6,
+          "band": 0.024,
+          "subject": 6,
+          "subjectScale": 0.62,
+          "shadeSubject": 0.8,
+          "radius": 0.46,
+          "height": 0.8,
+          "incline": 1.0,
+          "tilt": 0.1,
+          "lean": 0,
+          "inkMode": 4,
+          "perspective": 0.5
+        },
+        "inks": [
+          "#ff3b8d",
+          "#2f5bff",
+          "#ffe600"
+        ]
+      },
+      {
+        "name": "Donut",
+        "parameters": {
+          "path": 2,
+          "turns": 2,
+          "bandStyle": 4,
+          "satellites": 2,
+          "band": 0.03,
+          "subject": 4,
+          "subjectScale": 0.7,
+          "shadeSubject": 0.8,
+          "radius": 0.5,
+          "height": 0.7,
+          "tilt": 0.55,
+          "incline": 1.2,
+          "lean": 0,
+          "inkMode": 0,
+          "glow": 0.5,
+          "perspective": 0.4
+        },
+        "inks": [
+          "#3df2ff",
+          "#ff6fb5"
+        ],
+        "paper": "#101014"
+      },
+      {
+        "name": "Show-through tape",
+        "parameters": {
+          "path": 0,
+          "turns": 3,
+          "bandStyle": 1,
+          "band": 0.1,
+          "bandCopy": 1,
+          "backCopy": 1,
+          "radius": 0.5,
+          "height": 0.72,
+          "tilt": 0.3,
+          "lean": -5,
+          "subject": 0,
+          "inkMode": 0,
+          "perspective": 0.1
+        },
+        "inks": [
+          "#111111"
+        ],
+        "paper": "#ffe100"
+      },
+      {
+        "name": "Soft focus",
+        "parameters": {
+          "shadow": 0.9,
+          "depthBlur": 0.7,
+          "perspective": 0.6
+        },
+        "inks": [
+          "#ef4a3f",
+          "#d9b8f2",
+          "#151515"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "survey-sawtooth-spring",
+    "name": "Sawtooth and spring",
+    "group": "Continuous paths",
+    "renderer": "motif-survey-sawtooth-spring",
+    "parameters": [
+      {
+        "id": "layout",
+        "label": "Spring / stripes / fins / ring / spiral / waveform",
+        "value": 0,
+        "min": 0,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "id": "wave",
+        "label": "Zigzag / sawtooth / square / sine / coil / pulse / stairs / bounce / noise",
+        "value": 0,
+        "min": 0,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "id": "skew",
+        "label": "Zigzag lean, toward a sawtooth",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.001,
+        "activeIn": {
+          "wave": [
+            0
+          ]
+        }
+      },
+      {
+        "id": "angle",
+        "label": "Run direction (degrees from vertical)",
+        "value": 0,
+        "min": -90,
+        "max": 90,
+        "step": 0.1
+      },
+      {
+        "id": "teeth",
+        "label": "Turns",
+        "value": 9,
+        "min": 1,
+        "max": 40,
+        "step": 1
+      },
+      {
+        "id": "amplitude",
+        "label": "Swing",
+        "value": 0.92,
+        "min": 0.1,
+        "max": 1.2,
+        "step": 0.001
+      },
+      {
+        "id": "compression",
+        "label": "Compression toward the end (negative: the start)",
+        "value": 0.65,
+        "min": -1,
+        "max": 1,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ]
+        }
+      },
+      {
+        "id": "swell",
+        "label": "Swing grows along the run",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "phase",
+        "label": "Phase",
+        "value": 0,
+        "min": -0.25,
+        "max": 0.25,
+        "step": 0.001
+      },
+      {
+        "id": "weight",
+        "label": "Band weight",
+        "value": 0.035,
+        "min": 0.004,
+        "max": 0.2,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            0,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "id": "taper",
+        "label": "Band tapers along the run",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            0,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "id": "dash",
+        "label": "Dashed band",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            0,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "id": "copies",
+        "label": "Bands, stripes, rows or rings",
+        "value": 1,
+        "min": 1,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "id": "fill",
+        "label": "Stripe depth (ring: 1 is a solid blade)",
+        "value": 1,
+        "min": 0.1,
+        "max": 1,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "id": "depth",
+        "label": "Rows recede",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            1,
+            2,
+            5
+          ]
+        }
+      },
+      {
+        "id": "bend",
+        "label": "Run bends into an arc",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            0,
+            1,
+            2,
+            5
+          ]
+        }
+      },
+      {
+        "id": "radius",
+        "label": "Ring or spiral size",
+        "value": 0.62,
+        "min": 0.1,
+        "max": 0.95,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "id": "coils",
+        "label": "Spiral coils",
+        "value": 3,
+        "min": 1,
+        "max": 8,
+        "step": 0.5,
+        "activeIn": {
+          "layout": [
+            4
+          ]
+        }
+      },
+      {
+        "id": "stagger",
+        "label": "Row stagger",
+        "value": 0.5,
+        "min": 0,
+        "max": 1,
+        "step": 0.001,
+        "activeWhen": {
+          "layout": 2
+        }
+      },
+      {
+        "id": "corner",
+        "label": "Rounded corners",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "cap",
+        "label": "End: cut / round / arrow / snake",
+        "value": 0,
+        "min": 0,
+        "max": 3,
+        "step": 1,
+        "activeIn": {
+          "layout": [
+            0,
+            4
+          ]
+        }
+      },
+      {
+        "id": "inkMode",
+        "label": "One ink / by band / by turn / blended along",
+        "value": 0,
+        "min": 0,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "id": "fold",
+        "label": "Folded faces",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "shade",
+        "label": "Face shading",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "shadeStyle",
+        "label": "Shading: smooth / halftone / hatch",
+        "value": 0,
+        "min": 0,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "id": "outline",
+        "label": "Outlined",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "jitter",
+        "label": "Hand-drawn wobble",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "grid",
+        "label": "Graph paper",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "glow",
+        "label": "Neon glow",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "extrude",
+        "label": "Extruded depth",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "misregister",
+        "label": "Second ink out of register",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "glitch",
+        "label": "Glitch slices",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "bandCopy",
+        "label": "Title along the band",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "activeIn": {
+          "layout": [
+            0,
+            3,
+            4
+          ]
+        }
+      }
+    ],
+    "traits": {
+      "angularity": 0.9,
+      "curvature": 0.25,
+      "detail": 0.6,
+      "mass": 0.55,
+      "regularity": 0.8,
+      "counterform": 0.4,
+      "directionality": 0.95,
+      "volume": 0.3
+    },
+    "styles": [
+      "optical",
+      "experimental",
+      "geometric"
+    ],
+    "fontTarget": {
+      "weight": 0.8,
+      "width": 0.75,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.7,
+    "tags": [
+      "zigzag",
+      "sawtooth",
+      "spring",
+      "chevron",
+      "compression",
+      "op-art"
+    ],
+    "logic": "One waveform (zigzag with an adjustable lean, sawtooth, square, sine, looping coil, heartbeat pulse, stairs, bouncing arcs or seeded audio noise) is laid along a run: a straight or bent line, a ring or a spiral. Its turns can compress toward one end like a loaded spring and its swing can grow or shrink. It is drawn as a band (a spring with a cut, round, arrow or snake-head end, a sawblade or sun, a coiled spiral), as stripes that tile the field exactly, as rows of fins, or mirrored into a waveform; rows can recede. Every straight side or half period is a face: faces fold into two tones or shade from a dark base as a gradient, halftone or hatch. Bands taper and dash. Effects stack over the whole drawing: an extruded depth, a second ink printed out of register, and glitch slices. Rounded corners, a hand-drawn wobble, graph paper, neon glow, outlines and the title along the band finish it.",
+    "references": [
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "38ea852fb2916941009ed64d-p0",
+        "sourceImageSHA256": "108ab20b4ad4fd122d0cadd9ccc24f0423a8686a41279c741e24fe98a3847881"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "9b8d217221b58c9f0d455a8d-p0",
+        "sourceImageSHA256": "12ab8e83b2458c53b988f6bf685b9fc435d0c52f04a323bd202114bf2802e7ff"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "074737af2aab5b910bbb5ad3-p0",
+        "sourceImageSHA256": "c80ae7b634a186b358f1c9034d688ec477da41b81403829113745e2c8010965d"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "39c209ac67411dd6f8561caf-p0",
+        "sourceImageSHA256": "c90d9d5be9919166198931591cf4dcb5ecf7203a997182a80270011647af4f06"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "b3a1da0e01f987a452176b5f-p0",
+        "sourceImageSHA256": "1c21d3dd542cef733440e1b2f7669b282ca123854292ef6d3ce69d91c5c4570f"
+      },
+      {
+        "queryID": "visual-census-2026-11-08",
+        "posterID": "d01f2ac884d7cdc8394fd7de-p0",
+        "sourceImageSHA256": "dc00337ebb1aed07e3317f279b95a945cdad6869718f6a8fe1611380cd5179a9"
+      }
+    ],
+    "basis": "Canonical source: Kevin Drumm at ECAL, 2018 (census 0255, credited to Notter+Vigne): one heavy zigzag stroke whose turns tighten toward the foot of the poster. Also Komet Soirée graphique (0702, a zigzag snake), Printemps culturel Neuchâtel (0029, chevron stripes), Claudia Basel (0262, shaded sawtooth fins), Volumes (0807, chevron arrows) and Neubad Luzern (0948, an outlined zigzag on graph paper).",
+    "inks": [
+      "#121212",
+      "#8f8f8f"
+    ],
+    "looks": [
+      {
+        "name": "Compressed spring",
+        "parameters": {},
+        "inks": [
+          "#121212",
+          "#8f8f8f"
+        ]
+      },
+      {
+        "name": "Snake",
+        "parameters": {
+          "angle": 76,
+          "teeth": 4,
+          "amplitude": 0.8,
+          "weight": 0.06,
+          "corner": 0.35,
+          "cap": 3,
+          "compression": 0
+        },
+        "inks": [
+          "#f6f4ee"
+        ],
+        "paper": "#2c3fd0"
+      },
+      {
+        "name": "Chevron stripes",
+        "parameters": {
+          "layout": 1,
+          "angle": 90,
+          "teeth": 7,
+          "copies": 9,
+          "amplitude": 0.9,
+          "compression": 0,
+          "inkMode": 1
+        },
+        "inks": [
+          "#f2b8c6",
+          "#f3d23c",
+          "#141414",
+          "#a59a55",
+          "#f4efe4"
+        ]
+      },
+      {
+        "name": "Shark fins",
+        "parameters": {
+          "layout": 2,
+          "wave": 1,
+          "angle": 70,
+          "teeth": 8,
+          "copies": 7,
+          "amplitude": 1.1,
+          "compression": 0,
+          "shade": 1,
+          "stagger": 0.5
+        },
+        "inks": [
+          "#ff2a1f"
+        ],
+        "paper": "#0b0b0b"
+      },
+      {
+        "name": "Graph-paper zigzag",
+        "parameters": {
+          "angle": 0,
+          "teeth": 8,
+          "compression": 0,
+          "amplitude": 0.8,
+          "weight": 0.06,
+          "outline": 1,
+          "grid": 1
+        },
+        "inks": [
+          "#1a1a1a"
+        ]
+      },
+      {
+        "name": "Chevron arrows",
+        "parameters": {
+          "layout": 1,
+          "angle": 90,
+          "teeth": 1,
+          "copies": 4,
+          "fill": 0.5,
+          "amplitude": 1.2,
+          "compression": 0
+        },
+        "inks": [
+          "#111111"
+        ]
+      },
+      {
+        "name": "Neon coil",
+        "parameters": {
+          "wave": 4,
+          "angle": 90,
+          "teeth": 10,
+          "amplitude": 0.6,
+          "weight": 0.02,
+          "glow": 1,
+          "compression": 0.4,
+          "cap": 1
+        },
+        "inks": [
+          "#ff2bd6"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Acid sawtooth",
+        "parameters": {
+          "layout": 1,
+          "wave": 1,
+          "angle": 90,
+          "teeth": 12,
+          "copies": 10,
+          "compression": 0.5,
+          "inkMode": 1
+        },
+        "inks": [
+          "#c6ff00",
+          "#0b0c10"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Accordion fold",
+        "parameters": {
+          "teeth": 6,
+          "amplitude": 0.8,
+          "weight": 0.12,
+          "fold": 1,
+          "compression": 0.3
+        },
+        "inks": [
+          "#ff6a00"
+        ]
+      },
+      {
+        "name": "Square meander",
+        "parameters": {
+          "layout": 1,
+          "wave": 2,
+          "angle": 90,
+          "teeth": 8,
+          "copies": 8,
+          "compression": 0,
+          "inkMode": 1
+        },
+        "inks": [
+          "#1d3bff",
+          "#f4f1ea"
+        ]
+      },
+      {
+        "name": "Sine ribbons",
+        "parameters": {
+          "layout": 1,
+          "wave": 3,
+          "angle": 90,
+          "teeth": 3,
+          "copies": 6,
+          "fill": 0.6,
+          "inkMode": 3,
+          "swell": 0.5,
+          "compression": 0
+        },
+        "inks": [
+          "#ff3b30",
+          "#2b2bff"
+        ]
+      },
+      {
+        "name": "Lightning",
+        "parameters": {
+          "angle": 20,
+          "teeth": 5,
+          "jitter": 0.8,
+          "weight": 0.06,
+          "amplitude": 0.6,
+          "cap": 2,
+          "glow": 0.5,
+          "compression": -0.4
+        },
+        "inks": [
+          "#ffe100"
+        ],
+        "paper": "#121212"
+      },
+      {
+        "name": "Telephone cord",
+        "parameters": {
+          "wave": 4,
+          "teeth": 14,
+          "weight": 0.012,
+          "amplitude": 0.35,
+          "compression": 0.8,
+          "swell": 0.6,
+          "cap": 1
+        },
+        "inks": [
+          "#111111"
+        ]
+      },
+      {
+        "name": "Twin springs",
+        "parameters": {
+          "copies": 3,
+          "inkMode": 1,
+          "glow": 0.6,
+          "weight": 0.018,
+          "compression": 0.7,
+          "cap": 1
+        },
+        "inks": [
+          "#00e5ff",
+          "#ff2bd6",
+          "#c6ff00"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Sawblade",
+        "parameters": {
+          "layout": 3,
+          "skew": 0.9,
+          "teeth": 18,
+          "radius": 0.7,
+          "amplitude": 0.7,
+          "fill": 1,
+          "shade": 0.6,
+          "fold": 0.5,
+          "extrude": 0.7
+        },
+        "inks": [
+          "#c9ccd2",
+          "#1b1d22"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Sunburst",
+        "parameters": {
+          "layout": 3,
+          "teeth": 24,
+          "radius": 0.75,
+          "amplitude": 0.55,
+          "fill": 1,
+          "fold": 1
+        },
+        "inks": [
+          "#ffcc00"
+        ],
+        "paper": "#ff5a1f"
+      },
+      {
+        "name": "Heartbeat",
+        "parameters": {
+          "wave": 5,
+          "angle": 90,
+          "teeth": 4,
+          "amplitude": 0.9,
+          "weight": 0.018,
+          "compression": 0,
+          "glow": 1
+        },
+        "inks": [
+          "#39ff88"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Audio waveform",
+        "parameters": {
+          "layout": 5,
+          "wave": 8,
+          "angle": 90,
+          "teeth": 40,
+          "amplitude": 1.1,
+          "compression": 0,
+          "glow": 0.5
+        },
+        "inks": [
+          "#ff2bd6"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Spiral saw",
+        "parameters": {
+          "layout": 4,
+          "coils": 4,
+          "teeth": 40,
+          "radius": 0.85,
+          "weight": 0.012,
+          "amplitude": 0.8
+        },
+        "inks": [
+          "#111111"
+        ]
+      },
+      {
+        "name": "Riso stairs",
+        "parameters": {
+          "layout": 1,
+          "wave": 6,
+          "angle": 90,
+          "teeth": 6,
+          "copies": 7,
+          "fill": 0.55,
+          "misregister": 1,
+          "compression": 0
+        },
+        "inks": [
+          "#ff4fa3",
+          "#1d3bff"
+        ]
+      },
+      {
+        "name": "Glitch zigzag",
+        "parameters": {
+          "angle": 90,
+          "teeth": 7,
+          "weight": 0.05,
+          "glitch": 1,
+          "misregister": 0.6,
+          "compression": 0.3
+        },
+        "inks": [
+          "#00e5ff",
+          "#ff2bd6"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Extruded bolt",
+        "parameters": {
+          "angle": 15,
+          "teeth": 4,
+          "jitter": 0.5,
+          "weight": 0.08,
+          "extrude": 1,
+          "cap": 2,
+          "compression": -0.3,
+          "amplitude": 0.6
+        },
+        "inks": [
+          "#ffe100"
+        ],
+        "paper": "#141414"
+      },
+      {
+        "name": "Bent chevrons",
+        "parameters": {
+          "layout": 1,
+          "angle": 90,
+          "teeth": 6,
+          "copies": 8,
+          "bend": 0.7,
+          "compression": 0,
+          "inkMode": 1
+        },
+        "inks": [
+          "#ff3b30",
+          "#111111",
+          "#f4efe4"
+        ]
+      },
+      {
+        "name": "Halftone fins",
+        "parameters": {
+          "layout": 2,
+          "wave": 1,
+          "angle": 90,
+          "teeth": 7,
+          "copies": 6,
+          "shade": 1,
+          "shadeStyle": 1,
+          "amplitude": 1.1,
+          "compression": 0
+        },
+        "inks": [
+          "#ff2a1f"
+        ],
+        "paper": "#0b0b0b"
+      },
+      {
+        "name": "Scallops",
+        "parameters": {
+          "layout": 1,
+          "wave": 7,
+          "angle": 90,
+          "teeth": 5,
+          "copies": 7,
+          "compression": 0,
+          "inkMode": 1
+        },
+        "inks": [
+          "#3df2ff",
+          "#0b0c10"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Tapered brush",
+        "parameters": {
+          "angle": -8,
+          "teeth": 7,
+          "weight": 0.09,
+          "taper": -0.9,
+          "jitter": 0.35,
+          "compression": 0.5,
+          "corner": 0.4
+        },
+        "inks": [
+          "#111111"
+        ]
+      },
+      {
+        "name": "Concentric saws",
+        "parameters": {
+          "layout": 3,
+          "teeth": 16,
+          "copies": 3,
+          "fill": 1,
+          "inkMode": 1,
+          "radius": 0.8
+        },
+        "inks": [
+          "#ff2bd6",
+          "#0b0c10",
+          "#c6ff00"
+        ],
+        "paper": "#0b0c10"
+      },
+      {
+        "name": "Receding fins",
+        "parameters": {
+          "layout": 2,
+          "angle": 90,
+          "teeth": 9,
+          "copies": 9,
+          "depth": 0.9,
+          "shade": 0.8,
+          "compression": 0
+        },
+        "inks": [
+          "#1d3bff"
+        ]
+      },
+      {
+        "name": "Hatched waveform",
+        "parameters": {
+          "layout": 5,
+          "wave": 3,
+          "angle": 90,
+          "teeth": 5,
+          "copies": 3,
+          "shade": 1,
+          "shadeStyle": 2,
+          "compression": 0
+        },
+        "inks": [
+          "#1d3bff"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "survey-circle-pack",
+    "name": "Circle packing",
+    "group": "Density fields",
+    "renderer": "motif-survey-circle-pack",
+    "parameters": [
+      {
+        "id": "layout",
+        "label": "Largest gap first / Apollonian gasket / rolling rows / sunflower / lattice",
+        "value": 0,
+        "min": 0,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "id": "container",
+        "label": "Field: rectangle / circle / arch / triangle / diamond",
+        "value": 0,
+        "min": 0,
+        "max": 4,
+        "step": 1,
+        "activeIn": {
+          "layout": [
+            0,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "id": "size",
+        "label": "Largest circle",
+        "value": 0.29,
+        "min": 0.02,
+        "max": 0.6,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            0
+          ]
+        }
+      },
+      {
+        "id": "minSize",
+        "label": "Smallest circle",
+        "value": 0.07,
+        "min": 0.004,
+        "max": 0.3,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "id": "count",
+        "label": "Circles at most",
+        "value": 13,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "activeIn": {
+          "layout": [
+            0,
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "id": "bias",
+        "label": "Big circles go: scattered / along the diagonal / centre / edges / foot / from the top left",
+        "value": 1,
+        "min": 0,
+        "max": 5,
+        "step": 1,
+        "activeIn": {
+          "layout": [
+            0
+          ]
+        }
+      },
+      {
+        "id": "looseness",
+        "label": "Looseness",
+        "value": 0.15,
+        "min": 0,
+        "max": 1,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            0
+          ]
+        }
+      },
+      {
+        "id": "falloff",
+        "label": "Size falls off toward the edge (negative: the centre)",
+        "value": 0,
+        "min": -0.9,
+        "max": 0.9,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            0,
+            4
+          ]
+        }
+      },
+      {
+        "id": "start",
+        "label": "Gasket starts from two halves / three equal circles / an off-centre pair",
+        "value": 0,
+        "min": 0,
+        "max": 2,
+        "step": 1,
+        "activeIn": {
+          "layout": [
+            1
+          ]
+        }
+      },
+      {
+        "id": "split",
+        "label": "Off-centre split",
+        "value": 0.62,
+        "min": 0.15,
+        "max": 0.85,
+        "step": 0.001,
+        "activeWhen": {
+          "layout": 1,
+          "start": 2
+        }
+      },
+      {
+        "id": "angle",
+        "label": "Rotation",
+        "value": 0,
+        "min": 0,
+        "max": 175,
+        "step": 0.1,
+        "activeIn": {
+          "layout": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "id": "rows",
+        "label": "Rows",
+        "value": 4,
+        "min": 1,
+        "max": 12,
+        "step": 1,
+        "activeIn": {
+          "layout": [
+            2
+          ]
+        }
+      },
+      {
+        "id": "perRow",
+        "label": "Circles per row",
+        "value": 5,
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "activeIn": {
+          "layout": [
+            2
+          ]
+        }
+      },
+      {
+        "id": "growth",
+        "label": "Circles grow along the row",
+        "value": 0.5,
+        "min": -1,
+        "max": 1,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            2
+          ]
+        }
+      },
+      {
+        "id": "alternate",
+        "label": "Alternate rows run back",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "activeIn": {
+          "layout": [
+            2
+          ]
+        }
+      },
+      {
+        "id": "align",
+        "label": "Sit on a baseline / strung on a centre line",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "activeIn": {
+          "layout": [
+            2
+          ]
+        }
+      },
+      {
+        "id": "spread",
+        "label": "Spiral spread (low: small circles at the centre)",
+        "value": 0.5,
+        "min": 0.25,
+        "max": 1.2,
+        "step": 0.001,
+        "activeIn": {
+          "layout": [
+            3
+          ]
+        }
+      },
+      {
+        "id": "pattern",
+        "label": "Size field: radial / linear / waves / random",
+        "value": 0,
+        "min": 0,
+        "max": 3,
+        "step": 1,
+        "activeIn": {
+          "layout": [
+            4
+          ]
+        }
+      },
+      {
+        "id": "gap",
+        "label": "Gap between circles",
+        "value": 0,
+        "min": 0,
+        "max": 0.06,
+        "step": 0.001
+      },
+      {
+        "id": "wedges",
+        "label": "Wedges",
+        "value": 4,
+        "min": 0,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "id": "wedgeWidth",
+        "label": "Wedge width",
+        "value": 0.13,
+        "min": 0.02,
+        "max": 0.45,
+        "step": 0.001
+      },
+      {
+        "id": "reach",
+        "label": "Wedges reach the edge",
+        "value": 1,
+        "min": 0.2,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "mark",
+        "label": "Mark: disc / ring / target / half moon / pac / ball / halftone / hatch / flower / rounded square",
+        "value": 0,
+        "min": 0,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "id": "inset",
+        "label": "Marks inset in their slot",
+        "value": 0,
+        "min": 0,
+        "max": 0.6,
+        "step": 0.001
+      },
+      {
+        "id": "markAngle",
+        "label": "Mark angle",
+        "value": 0,
+        "min": -90,
+        "max": 90,
+        "step": 0.1,
+        "activeIn": {
+          "mark": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      },
+      {
+        "id": "spin",
+        "label": "Each mark turns at random",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001,
+        "activeIn": {
+          "mark": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      },
+      {
+        "id": "rings",
+        "label": "Target rings",
+        "value": 4,
+        "min": 2,
+        "max": 10,
+        "step": 1,
+        "activeWhen": {
+          "mark": 2
+        }
+      },
+      {
+        "id": "cut",
+        "label": "Pac opening",
+        "value": 0.22,
+        "min": 0.05,
+        "max": 0.45,
+        "step": 0.001,
+        "activeWhen": {
+          "mark": 4
+        }
+      },
+      {
+        "id": "screen",
+        "label": "Screen size",
+        "value": 0.014,
+        "min": 0.005,
+        "max": 0.04,
+        "step": 0.001,
+        "activeIn": {
+          "mark": [
+            6,
+            7
+          ]
+        }
+      },
+      {
+        "id": "lobes",
+        "label": "Petals",
+        "value": 8,
+        "min": 3,
+        "max": 18,
+        "step": 1,
+        "activeWhen": {
+          "mark": 8
+        }
+      },
+      {
+        "id": "roundness",
+        "label": "Square roundness",
+        "value": 0.3,
+        "min": 0,
+        "max": 1,
+        "step": 0.001,
+        "activeWhen": {
+          "mark": 9
+        }
+      },
+      {
+        "id": "line",
+        "label": "Line weight",
+        "value": 0.01,
+        "min": 0.002,
+        "max": 0.05,
+        "step": 0.001,
+        "activeIn": {
+          "mark": [
+            1,
+            7
+          ]
+        }
+      },
+      {
+        "id": "inkMode",
+        "label": "Inks: one / by size / alternating / random / blended by size / blended down the field",
+        "value": 0,
+        "min": 0,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "id": "field",
+        "label": "Filled field",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "holes",
+        "label": "Circles and wedges punched out of the field",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "outline",
+        "label": "Outlined",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "id": "shadow",
+        "label": "Cut-paper shadow",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "misregister",
+        "label": "Second ink out of register",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001
+      },
+      {
+        "id": "letters",
+        "label": "Title letters: none / one per circle / packed with the circles / letters only",
+        "value": 0,
+        "min": 0,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "id": "letterTurn",
+        "label": "Packed letters turn",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.001,
+        "activeIn": {
+          "letters": [
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "traits": {
+      "angularity": 0.35,
+      "curvature": 0.95,
+      "detail": 0.55,
+      "mass": 0.75,
+      "regularity": 0.6,
+      "counterform": 0.55,
+      "directionality": 0.4,
+      "volume": 0.2
+    },
+    "styles": [
+      "swiss",
+      "geometric",
+      "playful"
+    ],
+    "fontTarget": {
+      "weight": 0.35,
+      "width": 0.5,
+      "serif": 0,
+      "mono": 0,
+      "italic": 0
+    },
+    "idealAspect": 0.71,
+    "tags": [
+      "circles",
+      "packing",
+      "kissing",
+      "wedges",
+      "apollonian",
+      "figure-ground"
+    ],
+    "logic": "Circles are packed into a field until they kiss: the largest gap first (capped by a size that can fall off toward the edge or the centre, with ties going to snug places along a diagonal, at the centre, the edges or the foot), an Apollonian gasket, rolling rows of tangent circles that grow along the row, a golden-angle sunflower, or a hex lattice whose sizes follow a radial, linear, wave or random field. The field can be a rectangle, circle, arch, triangle or diamond. Sharp wedges run from the kissing points out through the gaps to the field edge. Every circle carries one mark (disc, ring, target, half moon, pac, shaded ball, halftone, hatch, flower or rounded square) in one ink or several. The field is filled, or the circles and wedges are punched out of it; a cut-paper shadow, a misregistered second printing, outlines and the title set one letter per circle finish it. Type sits inside the largest circles.",
+    "references": [],
+    "basis": "Source: Spektakuli, Miller's Zürich 2017 (Kabarett und Kleinkunst Festival), supplied by the user with a simplified study of its shapes: red circles of falling size packed tangent to each other and to the frame on a yellow field, the two largest on the diagonal carrying the title, white wedges running from the kissing points to the edges, and the dates set one figure per circle. Constructions are interpretations, not traced.",
+    "inks": [
+      "#e2262b",
+      "#e6df2a",
+      "#ecebe6"
+    ],
+    "looks": [
+      {
+        "name": "Spektakuli",
+        "parameters": {},
+        "inks": [
+          "#e2262b",
+          "#e6df2a",
+          "#ecebe6"
+        ],
+        "paper": "#e9e8e3"
+      },
+      {
+        "name": "Paper cut",
+        "parameters": {
+          "holes": 1
+        },
+        "inks": [
+          "#d8362e",
+          "#d8362e",
+          "#e9e8e3"
+        ],
+        "paper": "#e9e8e3"
+      },
+      {
+        "name": "Apollonian gasket",
+        "parameters": {
+          "layout": 1,
+          "minSize": 0.012,
+          "count": 260,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#1f3a8a",
+          "#efe9dc"
+        ],
+        "paper": "#efe9dc"
+      },
+      {
+        "name": "Gasket cut-out",
+        "parameters": {
+          "layout": 1,
+          "start": 1,
+          "holes": 1,
+          "count": 120,
+          "minSize": 0.015,
+          "wedges": 3
+        },
+        "inks": [
+          "#141414",
+          "#141414",
+          "#f2efe6"
+        ],
+        "paper": "#f2efe6"
+      },
+      {
+        "name": "Rolling rows",
+        "parameters": {
+          "layout": 2,
+          "rows": 5,
+          "perRow": 6,
+          "growth": 0.7,
+          "alternate": 1,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#1d1d1b",
+          "#f0ece2"
+        ],
+        "paper": "#f0ece2"
+      },
+      {
+        "name": "Date rows",
+        "parameters": {
+          "layout": 2,
+          "rows": 3,
+          "perRow": 4,
+          "growth": 0.4,
+          "letters": 1,
+          "wedges": 3
+        },
+        "inks": [
+          "#e2262b",
+          "#e6df2a",
+          "#f4f2ec"
+        ],
+        "paper": "#f4f2ec"
+      },
+      {
+        "name": "Sunflower",
+        "parameters": {
+          "layout": 3,
+          "container": 1,
+          "count": 240,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#2f6b3c",
+          "#efe8d6"
+        ],
+        "paper": "#efe8d6"
+      },
+      {
+        "name": "Sunflower burst",
+        "parameters": {
+          "layout": 3,
+          "count": 160,
+          "spread": 0.8,
+          "inkMode": 4,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#e85d2a",
+          "#f3efe4",
+          "#f4c430",
+          "#2b4c7e"
+        ],
+        "paper": "#f3efe4"
+      },
+      {
+        "name": "Halftone lattice",
+        "parameters": {
+          "layout": 4,
+          "count": 320,
+          "falloff": 0.9,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#141414",
+          "#f1ede4"
+        ],
+        "paper": "#f1ede4"
+      },
+      {
+        "name": "Wave lattice",
+        "parameters": {
+          "layout": 4,
+          "count": 260,
+          "pattern": 2,
+          "falloff": 0.85,
+          "angle": 30,
+          "wedges": 0
+        },
+        "inks": [
+          "#1e4fa0",
+          "#dfe8ec"
+        ],
+        "paper": "#f2f0ea"
+      },
+      {
+        "name": "Targets",
+        "parameters": {
+          "count": 30,
+          "minSize": 0.03,
+          "mark": 2,
+          "rings": 5,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#c8102e",
+          "#f3eee3"
+        ],
+        "paper": "#f3eee3"
+      },
+      {
+        "name": "Half moons",
+        "parameters": {
+          "count": 40,
+          "minSize": 0.025,
+          "mark": 3,
+          "spin": 1,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#264653",
+          "#e9c46a",
+          "#f4f1e8",
+          "#e76f51"
+        ],
+        "paper": "#f4f1e8"
+      },
+      {
+        "name": "Pac field",
+        "parameters": {
+          "count": 60,
+          "minSize": 0.02,
+          "mark": 4,
+          "cut": 0.25,
+          "spin": 0.5,
+          "wedges": 0
+        },
+        "inks": [
+          "#111111",
+          "#f2c12e"
+        ]
+      },
+      {
+        "name": "Shaded balls",
+        "parameters": {
+          "count": 50,
+          "minSize": 0.02,
+          "bias": 4,
+          "mark": 5,
+          "markAngle": -30,
+          "wedges": 0
+        },
+        "inks": [
+          "#d94f30",
+          "#1c2541"
+        ]
+      },
+      {
+        "name": "Dot screen",
+        "parameters": {
+          "count": 25,
+          "mark": 6,
+          "screen": 0.012,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#1d3557",
+          "#f1faee"
+        ],
+        "paper": "#f1faee"
+      },
+      {
+        "name": "Hatched bubbles",
+        "parameters": {
+          "count": 40,
+          "minSize": 0.02,
+          "mark": 7,
+          "markAngle": 45,
+          "spin": 0.3,
+          "line": 0.004,
+          "screen": 0.012,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#202020",
+          "#ece6d6"
+        ],
+        "paper": "#ece6d6"
+      },
+      {
+        "name": "Flowers",
+        "parameters": {
+          "count": 45,
+          "minSize": 0.025,
+          "mark": 8,
+          "lobes": 9,
+          "inkMode": 3,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#e4572e",
+          "#f6efe0",
+          "#76b041",
+          "#17bebb",
+          "#ffc914"
+        ],
+        "paper": "#f6efe0"
+      },
+      {
+        "name": "Squares in slots",
+        "parameters": {
+          "count": 60,
+          "minSize": 0.02,
+          "mark": 9,
+          "roundness": 0.25,
+          "spin": 0.4,
+          "wedges": 0
+        },
+        "inks": [
+          "#0b3c5d",
+          "#d9b310"
+        ]
+      },
+      {
+        "name": "Bubble foam",
+        "parameters": {
+          "bias": 0,
+          "count": 320,
+          "minSize": 0.008,
+          "size": 0.14,
+          "looseness": 0.4,
+          "mark": 1,
+          "line": 0.004,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#1a1a1a",
+          "#f0ede5"
+        ],
+        "paper": "#f0ede5"
+      },
+      {
+        "name": "Arch window",
+        "parameters": {
+          "container": 2,
+          "count": 30,
+          "minSize": 0.03,
+          "wedges": 5
+        },
+        "inks": [
+          "#f2ede3",
+          "#2a4d8f",
+          "#e9b44c"
+        ]
+      },
+      {
+        "name": "Triangle pile",
+        "parameters": {
+          "container": 3,
+          "bias": 4,
+          "count": 60,
+          "minSize": 0.02,
+          "size": 0.2,
+          "wedges": 3
+        },
+        "inks": [
+          "#c1121f",
+          "#fdf0d5",
+          "#003049"
+        ]
+      },
+      {
+        "name": "Diamond",
+        "parameters": {
+          "container": 4,
+          "bias": 2,
+          "falloff": 0.7,
+          "count": 80,
+          "minSize": 0.012,
+          "wedges": 0
+        },
+        "inks": [
+          "#3a5a40",
+          "#dad7cd"
+        ]
+      },
+      {
+        "name": "Shard burst",
+        "parameters": {
+          "count": 18,
+          "wedges": 12,
+          "wedgeWidth": 0.2
+        },
+        "inks": [
+          "#1747a6",
+          "#f2efe7",
+          "#111111"
+        ]
+      },
+      {
+        "name": "Cut-paper shadow",
+        "parameters": {
+          "holes": 1,
+          "shadow": 1,
+          "count": 20
+        },
+        "inks": [
+          "#e07a1f",
+          "#e07a1f",
+          "#f6f2ea"
+        ],
+        "paper": "#f6f2ea"
+      },
+      {
+        "name": "Riso offset",
+        "parameters": {
+          "count": 22,
+          "misregister": 1
+        },
+        "inks": [
+          "#ff48b0",
+          "#f4f0e6",
+          "#0078bf"
+        ],
+        "paper": "#f4f0e6"
+      },
+      {
+        "name": "Gradient sizes",
+        "parameters": {
+          "bias": 2,
+          "falloff": 0.85,
+          "count": 200,
+          "minSize": 0.01,
+          "size": 0.22,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#111111",
+          "#ece4d4"
+        ],
+        "paper": "#ece4d4"
+      },
+      {
+        "name": "Kissing chain",
+        "parameters": {
+          "layout": 2,
+          "align": 1,
+          "rows": 6,
+          "perRow": 7,
+          "growth": -0.6,
+          "alternate": 1,
+          "mark": 1,
+          "line": 0.006,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#b5179e",
+          "#f7f1e8"
+        ],
+        "paper": "#f7f1e8"
+      },
+      {
+        "name": "Packed title",
+        "parameters": {
+          "letters": 2,
+          "count": 40,
+          "minSize": 0.03,
+          "gap": 0.008,
+          "wedges": 3
+        },
+        "inks": [
+          "#e2262b",
+          "#e6df2a",
+          "#ecebe6"
+        ],
+        "paper": "#e9e8e3"
+      },
+      {
+        "name": "Letter foam",
+        "parameters": {
+          "letters": 3,
+          "count": 90,
+          "minSize": 0.018,
+          "size": 0.24,
+          "bias": 0,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#1b1b1b",
+          "#efe9dc"
+        ],
+        "paper": "#efe9dc"
+      },
+      {
+        "name": "Tumbling letters",
+        "parameters": {
+          "letters": 3,
+          "letterTurn": 1,
+          "count": 70,
+          "minSize": 0.02,
+          "inkMode": 3,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#2a4d8f",
+          "#f2ede3",
+          "#e9b44c",
+          "#d1495b"
+        ],
+        "paper": "#f2ede3"
+      },
+      {
+        "name": "Letters and dots",
+        "parameters": {
+          "letters": 2,
+          "count": 160,
+          "minSize": 0.012,
+          "size": 0.26,
+          "gap": 0.006,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#111111",
+          "#f4f0e6",
+          "#ff48b0"
+        ],
+        "paper": "#f4f0e6"
+      },
+      {
+        "name": "Confetti scatter",
+        "parameters": {
+          "bias": 0,
+          "looseness": 1,
+          "count": 40,
+          "minSize": 0.025,
+          "inkMode": 3,
+          "field": 0,
+          "wedges": 0
+        },
+        "inks": [
+          "#ef476f",
+          "#fffcf2",
+          "#ffd166",
+          "#06d6a0",
+          "#118ab2"
+        ],
+        "paper": "#fffcf2"
+      }
+    ]
+  }
+]

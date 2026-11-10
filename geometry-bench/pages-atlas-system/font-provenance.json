@@ -1,0 +1,17 @@
+{
+  "condensed": {
+    "file": "/System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf",
+    "family": "Arial Narrow",
+    "fullName": "Arial Narrow Bold"
+  },
+  "black": {
+    "file": "/System/Library/Fonts/Supplemental/Arial Black.ttf",
+    "family": "Arial Black",
+    "fullName": "Arial Black"
+  },
+  "serif": {
+    "file": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+    "family": "Times New Roman",
+    "fullName": "Times New Roman"
+  }
+}

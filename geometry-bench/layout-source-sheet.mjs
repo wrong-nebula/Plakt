@@ -1,0 +1,9 @@
+import fs from 'node:fs/promises';import path from 'node:path';import {fileURLToPath} from 'node:url';import {Resvg} from '@resvg/resvg-js';
+const index=JSON.parse(await fs.readFile('library/library.json','utf8')),rows=[];
+for(const item of index.posters){const r=JSON.parse(await fs.readFile(fileURLToPath(item.recordURL),'utf8')),lines=r.elements.filter(e=>e.kind==='text-line'&&e.reviewStatus!=='rejected'&&(e.text||'').replace(/[^A-Za-z]/g,'').length>=2),large=lines.filter(e=>e.bounds.height>.045&&e.bounds.width>.15),aspect=r.height/r.width;
+ if(aspect<1.1||aspect>1.8||large.length<2)continue;
+ const mass=large.reduce((s,e)=>s+e.bounds.width*e.bounds.height,0),angle=large.reduce((s,e)=>s+Math.min(30,Math.abs(e.rotation)),0),score=mass*2+Math.min(8,large.length)*.04+angle*.002;
+ rows.push({id:r.id,image:r.imageURL,score,lines:lines.length,large:large.length,caption:r.source.caption,aspect});}
+rows.sort((a,b)=>b.score-a.score);const selected=rows.slice(0,96),root='output/layout-inheritance-audit';await fs.mkdir(root,{recursive:true});await fs.writeFile(path.join(root,'ranked-sources.json'),JSON.stringify(rows,null,2));
+for(let page=0;page<4;page++){const subset=selected.slice(page*24,(page+1)*24);let svg='<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1440"><rect width="100%" height="100%" fill="#dedbd1"/>';for(const [i,r]of subset.entries()){const b=await fs.readFile(fileURLToPath(r.image)),mime=r.image.endsWith('.png')?'png':'jpeg';svg+=`<g transform="translate(${i%6*240},${Math.floor(i/6)*360})"><image href="data:image/${mime};base64,${b.toString('base64')}" x="6" y="8" width="228" height="316"/><text x="6" y="344" font-family="Helvetica" font-size="12">${page*24+i}: ${r.id.slice(0,12)} · ${r.large}L</text></g>`}await fs.writeFile(path.join(root,`sources-${page}.png`),new Resvg(svg+'</svg>').render().asPng());}
+console.log({eligible:rows.length,contacted:selected.length});
