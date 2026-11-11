@@ -2,7 +2,7 @@
 
 **A poster workshop for the Mac.** Plakt generates print posters as editable vector scenes, ranks them with a jury you can tune and train on your own taste, and lets you finish the winner by hand. Everything runs locally: no account, no keys, no network.
 
-> **Alpha.** Plakt is being prepared for a first alpha release. It was developed under the name **PosterLab**, and the app (`PosterLab.app`), the command (`poster`) and the Swift package still use that name. There is no packaged download yet; you build it from source. Read [the alpha notes](docs/ALPHA.md) before you rely on anything.
+> **Alpha.** Plakt is an early alpha, with a packaged build to download (below). It was developed under the name **PosterLab**, and the source in this repository still uses that name: it builds `PosterLab.app`, the command `poster` and a Swift package of that name. The packaged build comes from a newer alpha workspace, and the source here has not caught up with it yet. Read [the alpha notes](docs/ALPHA.md) before you rely on anything.
 
 ## Download
 
