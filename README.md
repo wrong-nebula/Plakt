@@ -6,7 +6,7 @@
 
 ## Download
 
-Get the latest build from [Releases](https://github.com/wrong-nebula/Plakt/releases): `Plakt-0.1.0-alpha-macos-arm64.zip`. Unzip it; inside are `Plakt.app` and `How to open Plakt.txt`. It needs a Mac with Apple silicon and macOS 15 or later.
+Get the latest build from [Releases](https://github.com/wrong-nebula/Plakt/releases): `Plakt-0.1.1-alpha-macos-arm64.zip`. Unzip it; inside are `Plakt.app` and `How to open Plakt.txt`. It needs a Mac with Apple silicon and macOS 15 or later.
 
 ### How to open it
 
